@@ -6,13 +6,13 @@ inputdir = 'content/';
 cachedir = 'cache/';
 outputdir = 'output/';
 
-imagefile = 'mni152.nii.gz';
-atlasfile = 'aal.nii.gz';
-namefile = 'aal.nii.txt';
+% imagefile = 'mni152.nii.gz';
+% atlasfile = 'aal.nii.gz';
+% namefile = 'aal.nii.txt';
 
-% imagefile = 'mni152_2mm.nii.gz';
-% atlasfile = 'bnatlas_2mm.nii.gz';
-% namefile = 'bnatlas_2mm.nii.txt';
+imagefile = 'mni152.nii.gz';
+atlasfile = 'bnatlas.nii.gz';
+namefile = 'bnatlas.nii.txt';
 
 if ~exist(cachedir,'dir'),mkdir(cachedir);end
 if ~exist(outputdir,'dir'),mkdir(outputdir);end

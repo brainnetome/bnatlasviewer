@@ -10,6 +10,8 @@ var GLOBAL={
 // var iiarr=[90,107,90];
 window.onload=function()
 {
+	loadLabelMaps();
+
   document.getElementById("toggle-area-map").addEventListener("click",ToggleAreaMapHandler,false);
   document.getElementById("toggle-fiber").addEventListener("click",ToggleFiberHandler,false);
 	
@@ -21,13 +23,33 @@ window.onload=function()
 			GLOBAL.opacity=Math.min(1,Math.max(0,GLOBAL.opacity+0.1));Update();},false);
   
 	document.getElementById("status").innerHTML="status: "+(GLOBAL.area_map_flag?"on":"off");
-  handler("display-x");
-  handler("display-y");
-  handler("display-z");
-	// initializeFiber('fib');
-	// initializeFiber('den');
-	// initializeFiber('fun');
-	Update();
+
+  function loadLabelMaps()
+	{
+		var xmlhttp;
+		if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp=new XMLHttpRequest();
+		}else{// code for IE6, IE5
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange=function(){
+			if (xmlhttp.readyState==4 && xmlhttp.status==200){
+				document.getElementById("map-container").innerHTML=xmlhttp.responseText;
+
+				handler("display-x");
+				handler("display-y");
+				handler("display-z");
+				// initializeFiber('fib');
+				// initializeFiber('den');
+				// initializeFiber('fun');
+				Update();
+
+				document.getElementById("display-splash").style.opacity=0;
+			}
+		}
+		xmlhttp.open("GET","labelmaps.txt",true);
+		xmlhttp.send();
+	}
 
 	function ToggleFiberHandler(e){
 		var canvas=document.getElementById("display-fib");

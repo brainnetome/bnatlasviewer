@@ -44,7 +44,7 @@ window.onload=function()
 				// initializeFiber('fun');
 				Update();
 
-				document.getElementById("display-splash").style.opacity=0;
+				document.getElementById("display-splash").style.display='none';
 			}
 		}
 		xmlhttp.open("GET","labelmaps.txt",true);

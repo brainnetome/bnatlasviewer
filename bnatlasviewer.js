@@ -4,13 +4,14 @@ var GLOBAL={
   drag:{mousedown:false},
   opacity:0.5,
 	iiarr:[90,107,90],
-	fiber:{rotate:1,id:28,angle:0,mouse:{down:false,startloc:{x:-1,y:-1},startangle:-1}},
-	fibtimer:window.setInterval(function(){GLOBAL.fiber.angle=(GLOBAL.fiber.angle+10)%360;Update();},500)
+	// fiber:{rotate:1,id:28,angle:0,mouse:{down:false,startloc:{x:-1,y:-1},startangle:-1}},
+	// fibtimer:window.setInterval(function(){GLOBAL.fiber.angle=(GLOBAL.fiber.angle+10)%360;Update();},500)
 };
 // var iiarr=[90,107,90];
-window.onload=function()
+window.addEventListener("load",function()
 {
 	loadLabelMaps();
+	// loadBarCharts();
 
   document.getElementById("toggle-area-map").addEventListener("click",ToggleAreaMapHandler,false);
   document.getElementById("toggle-fiber").addEventListener("click",ToggleFiberHandler,false);
@@ -42,13 +43,42 @@ window.onload=function()
 				// initializeFiber('fib');
 				// initializeFiber('den');
 				// initializeFiber('fun');
-				Update();
 
+				Update();
 				document.getElementById("display-splash").style.display='none';
 			}
 		}
 		xmlhttp.open("GET","labelmaps.txt",true);
 		xmlhttp.send();
+	}
+
+	function loadBarCharts(){
+		var randomScalingFactor = function(){ return Math.round(Math.random()*60)};
+		var barChartData = {
+			labels : ["Action","Cognition","Emotion","Interoception","Perception"],
+			datasets : [
+				// {
+				// 	fillColor : "rgba(220,220,220,0.5)",
+				// 	strokeColor : "rgba(220,220,220,0.8)",
+				// 	highlightFill: "rgba(220,220,220,0.75)",
+				// 	highlightStroke: "rgba(220,220,220,1)",
+				// 	data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),
+				// 			randomScalingFactor(),randomScalingFactor()]
+				// },
+				{
+					fillColor : "rgba(151,187,205,0.5)",
+					strokeColor : "rgba(151,187,205,0.8)",
+					highlightFill : "rgba(151,187,205,0.75)",
+					highlightStroke : "rgba(151,187,205,1)",
+					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),
+							randomScalingFactor(),randomScalingFactor()]
+				}
+			]
+		}
+		var ctx = document.getElementById("behavior_barchart").getContext("2d");
+		window.myBar = new Chart(ctx).HorizontalBar(barChartData, {
+			responsive : true
+		});
 	}
 
 	function ToggleFiberHandler(e){
@@ -98,7 +128,7 @@ window.onload=function()
 			GLOBAL.fiber.mouse.startangle=-1;
 		}
 		function fibMouse_over(e){
-			clearInterval(GLOBAL.fibtimer);
+			//clearInterval(GLOBAL.fibtimer);
 		}
 	}
 
@@ -264,7 +294,7 @@ window.onload=function()
 			} // for loop
 		}
   }
-};
+});
 
 function centeringAreasByTitle(title)
 {

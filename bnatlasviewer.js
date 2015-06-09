@@ -4,8 +4,14 @@ var GLOBAL={
   drag:{mousedown:false},
   opacity:0.5,
 	iiarr:[90,107,90],
-	// fiber:{rotate:1,id:28,angle:0,mouse:{down:false,startloc:{x:-1,y:-1},startangle:-1}},
-	// fibtimer:window.setInterval(function(){GLOBAL.fiber.angle=(GLOBAL.fiber.angle+10)%360;Update();},500)
+	fiber:{
+		rotate:1,id:28,angle:0,mouse:{
+			down:false,startloc:{x:-1,y:-1},startangle:-1
+		}
+	},
+	// fibtimer:window.setInterval(function(){
+	// 	GLOBAL.fiber.angle=(GLOBAL.fiber.angle+10)%360;Update();
+	// },500)
 };
 // var iiarr=[90,107,90];
 window.addEventListener("load",function()
@@ -43,6 +49,7 @@ window.addEventListener("load",function()
 				// initializeFiber('fib');
 				// initializeFiber('den');
 				// initializeFiber('fun');
+				initializeBehaviorBar();
 
 				Update();
 				document.getElementById("display-splash").style.display='none';
@@ -53,18 +60,11 @@ window.addEventListener("load",function()
 	}
 
 	function loadBarCharts(){
+
 		var randomScalingFactor = function(){ return Math.round(Math.random()*60)};
 		var barChartData = {
 			labels : ["Action","Cognition","Emotion","Interoception","Perception"],
 			datasets : [
-				// {
-				// 	fillColor : "rgba(220,220,220,0.5)",
-				// 	strokeColor : "rgba(220,220,220,0.8)",
-				// 	highlightFill: "rgba(220,220,220,0.75)",
-				// 	highlightStroke: "rgba(220,220,220,1)",
-				// 	data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),
-				// 			randomScalingFactor(),randomScalingFactor()]
-				// },
 				{
 					fillColor : "rgba(151,187,205,0.5)",
 					strokeColor : "rgba(151,187,205,0.8)",
@@ -132,6 +132,21 @@ window.addEventListener("load",function()
 		}
 	}
 
+	function initializeBehaviorBar()
+	{
+		var xmlhttp;
+		if (window.XMLHttpRequest){
+			xmlhttp=new XMLHttpRequest();
+		}
+		xmlhttp.onreadystatechange=function(){
+			if (xmlhttp.readyState==4 && xmlhttp.status==200){
+				eval('BDf_FDR05='+xmlhttp.responseText);
+			}
+		}
+		xmlhttp.open("GET","data_behaviors.json",true);
+		xmlhttp.send();
+	}
+
   // -------------------------------------------------------
   // handle mouse wheel events
   // -------------------------------------------------------
@@ -154,8 +169,9 @@ window.addEventListener("load",function()
 		phony.useMap="#"+phonyid;
 		var areas=document.getElementById(phony.useMap.substr(1)).childNodes;
 		for (var areaiter=0; areaiter < areas.length; areaiter++){
+			areas[areaiter].addEventListener("click",MouseClickAreaHandler,false);
 			areas[areaiter].addEventListener("mouseover",MouseOverAreaHandler,false);
-			areas[areaiter].addEventListener("mouseout", MouseOutAreaHandler ,false);
+			// areas[areaiter].addEventListener("mouseout", MouseOutAreaHandler ,false);
 		}
 		
 		phony.addEventListener("mousedown",     MouseDraggingHandler_start,false);
@@ -179,7 +195,8 @@ window.addEventListener("load",function()
 				var areas=document.getElementById(phony.useMap.substr(1)).childNodes;
 				for (var areaiter=0; areaiter < areas.length; areaiter++){
 					areas[areaiter].addEventListener("mouseover",MouseOverAreaHandler,false);
-					areas[areaiter].addEventListener("mouseout", MouseOutAreaHandler ,false);
+					areas[areaiter].addEventListener("click",MouseClickAreaHandler,false);
+					// areas[areaiter].addEventListener("mouseout", MouseOutAreaHandler ,false);
 				}
 			}
 		} // function MouseWheelHandler
@@ -188,12 +205,27 @@ window.addEventListener("load",function()
   function MouseOverAreaHandler(e)
   {
   	var title=e.target.title;
-		// viewFiberByTitle(title);
+		viewFiberByTitle(title);
 		// DrawFiber('fib');
 		// DrawFiber('den');
 		// DrawFiber('fun');
+  	// document.getElementById("label").innerHTML=title;
+		// DrawBehaviorBar(title);
+		// highlightAreasByTitle(title);
+  }
+
+  function MouseClickAreaHandler(e)
+  {
+		MouseOutAreaHandler(e);
+		
+  	var title=e.target.title;
+		viewFiberByTitle(title);
+		// DrawFiber('fib');
+		// DrawFiber('den');
+		// DrawFiber('fun');
+  	// document.getElementById("label").innerHTML=title;
+		DrawBehaviorBar(title);
 		highlightAreasByTitle(title);
-  	document.getElementById("label").innerHTML=title;
   }
 
   function MouseOutAreaHandler(e)
@@ -213,7 +245,8 @@ window.addEventListener("load",function()
 				DrawImage(canvas,img,idx);
 			}
 		}
-		document.getElementById("label").innerHTML="";
+		
+		// document.getElementById("label").innerHTML="";
   }
 
   function MouseDraggingHandler_start(e)
@@ -223,8 +256,10 @@ window.addEventListener("load",function()
 		var canvas=img.parentNode;
 		var offsetX=canvas.offsetLeft;
 		var offsetY=canvas.offsetTop;
-		if (GLOBAL.area_map_flag){document.getElementById("label").innerHTML="";return;}
-		else{
+		if (GLOBAL.area_map_flag){
+			//document.getElementById("label").innerHTML="";
+			return;
+		}else{
 			GLOBAL.drag.mousedown=true;
 		}
 		MouseDraggingHandler_move(e);
@@ -237,8 +272,10 @@ window.addEventListener("load",function()
 		var canvas=img.parentNode;
 		var offsetX=canvas.offsetLeft;
 		var offsetY=canvas.offsetTop;
-		if (GLOBAL.area_map_flag){document.getElementById("label").innerHTML="";return;}
-		else{
+		if (GLOBAL.area_map_flag){
+			// document.getElementById("label").innerHTML="";
+			return;
+		}else{
 			if (GLOBAL.drag.mousedown){
 				var posX=e.pageX-offsetX;
 				var posY=e.pageY-offsetY;
@@ -252,7 +289,7 @@ window.addEventListener("load",function()
 				}
 				Update();
 			}else{
-				document.getElementById("label").innerHTML="";
+				// document.getElementById("label").innerHTML="";
 			}
 		}
   }
@@ -262,7 +299,7 @@ window.addEventListener("load",function()
 		if (GLOBAL.area_map_flag){document.getElementById("label").innerHTML="";return;}
 		else{
 			GLOBAL.drag.mousedown=false;
-			document.getElementById("label").innerHTML="";
+			// document.getElementById("label").innerHTML="";
 		}
   }
 
@@ -276,8 +313,9 @@ window.addEventListener("load",function()
 				var phony=document.getElementById(canvas.id+"-img-phony");
 				var areas=document.getElementById(phony.useMap.substr(1)).childNodes;
 				for (var areaiter=0; areaiter < areas.length; areaiter++){
+					areas[areaiter].addEventListener("click",MouseClickAreaHandler,false);
 					areas[areaiter].removeEventListener("mouseover",MouseOverAreaHandler,false);
-					areas[areaiter].removeEventListener("mouseout", MouseOutAreaHandler ,false);
+					// areas[areaiter].removeEventListener("mouseout", MouseOutAreaHandler ,false);
 				}
 				phony.useMap="";
 			} // for loop
@@ -288,8 +326,9 @@ window.addEventListener("load",function()
 				phony.useMap="#map-"+idx+"-"+GLOBAL.iiarr[idx];
 				var areas=document.getElementById(phony.useMap.substr(1)).childNodes;
 				for (var areaiter=0; areaiter < areas.length; areaiter++){
+					areas[areaiter].addEventListener("click",MouseClickAreaHandler,false);
 					areas[areaiter].addEventListener("mouseover",MouseOverAreaHandler,false);
-					areas[areaiter].addEventListener("mouseout", MouseOutAreaHandler ,false);
+					// areas[areaiter].addEventListener("mouseout", MouseOutAreaHandler ,false);
 				}
 			} // for loop
 		}
@@ -355,7 +394,7 @@ function Update()
 	// DrawFiber('fib');
 	// DrawFiber('den');
 	// DrawFiber('fun');
-	document.getElementById("opacity").innerHTML="opacity:"+String(GLOBAL.opacity).substr(0,3);
+	document.getElementById("opacity").innerHTML="opacity:"+GLOBAL.opacity.toFixed(1);
 }
 
 function DrawImage(canvas,img,idx)
@@ -410,3 +449,67 @@ function DrawFiber(fibstr)
 	if (imgfib){ctx.drawImage(imgfib,ww*xloc,hh*yloc,ww,hh,0,0,ww,hh);}
 }
 
+function DrawBehaviorBar(title)
+{
+	// console.log(BDf_FDR05[idx]);
+	var idx=GLOBAL_title2ind[title]+1;
+
+	var lut = BDf_FDR05[idx];
+	var labels = [];
+	var data = [];
+	var colors = {};
+	var datasets = [];
+
+	colors['Int']='151,187,205';
+	colors['Emo']='220,220,220';
+	colors['Cog']='220,0,220';
+	colors['Act']='220,20,0';
+	colors['Per']='0,220,220';
+
+	function sortByDictValue(dict){
+		var items=Object.keys(dict).map(function(key){return [key,dict[key]];});
+		items.sort(function(a,b){return a[1]-b[1];});
+		return items;
+	}
+
+	lut = sortByDictValue(lut);
+	// console.log(lut);
+
+	var ii = 0;
+	for (var ii=0;ii<lut.length;ii++){
+		labels[ii]=lut[ii][0];
+		data[ii]=lut[ii][1];
+		// datasets[ii]={
+		// 	'label': labels[ii],
+		// 	'fillColor' : "rgba("+colors[labels[ii].substr(0,3)]+",0.5)",
+		// 	'strokeColor' : "rgba("+colors[labels[ii].substr(0,3)]+",0.8)",
+		// 	'highlightFill' : "rgba("+colors[labels[ii].substr(0,3)]+",0.75)",
+		// 	'highlightStroke' : "rgba("+colors[labels[ii].substr(0,3)]+",1)",
+		// 	'data' : [data[ii]]
+		// };
+	}
+	
+	var barChartData = {
+		'labels' : labels,
+		'datasets' : [
+			{
+				'label': title+" - Behaviorial Domains (likelihood ratio)",
+				'fillColor' : "rgba("+colors['Act']+",0.5)",
+				'strokeColor' : "rgba("+colors['Act']+",0.8)",
+				'highlightFill' : "rgba("+colors['Act']+",0.75)",
+				'highlightStroke' : "rgba("+colors['Act']+",1)",
+				'data' : data
+			}
+		]
+	}
+	var ctx = document.getElementById("behavior_barchart").getContext("2d");
+	ctx.canvas.width = 200;
+	ctx.canvas.height = 80;
+	if (window.myBar){window.myBar.destroy();}
+	// window.myBar = new Chart(ctx).HorizontalBar(barChartData, {
+	window.myBar = new Chart(ctx).HorizontalBar(barChartData, {
+		responsive : true,
+		multiTooltipTemplate: "<%= datasetLabel %> - <%= value %>"
+	});
+	//document.getElementById("label").innerHTML = window.myBar.generateLegend();
+}

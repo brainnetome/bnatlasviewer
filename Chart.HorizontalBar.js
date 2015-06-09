@@ -258,6 +258,10 @@
     					ctx.fillText(label, 0, 0);
     					ctx.restore();
     				},this);
+// revised by liangfu, for adding title bar 
+ctx.font="bold 14px Arial";
+var ww = ctx.measureText(data.datasets[0].label).width;
+ctx.fillText(data.datasets[0].label,(ctx.canvas.width+ww)*.5,5);
 
     			}
     		}

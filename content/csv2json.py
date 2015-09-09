@@ -4,8 +4,8 @@ import json
 from pprint import pprint
 
 
-csvfile = open('bnatlas_246.csv', 'r')
-jsonfile = open('bnatlas_246.json', 'w')
+csvfile = open('bnatlas_tree.csv', 'r')
+jsonfile = open('bnatlas_tree.json', 'w')
 
 fieldnames = ("index","id","lobe","gyrus","area")
 reader = csv.DictReader( csvfile, fieldnames)
@@ -23,6 +23,7 @@ for row in reader:
   ID = row['id']
   lobe = row['lobe'].capitalize()
   gyrus = row['gyrus'].capitalize()
+  area = row['area']
   if lobe not in lobes:
     lobes.append(lobe)
     result.append({'text':lobe})
@@ -36,7 +37,7 @@ for row in reader:
     gidx=gyruses.index(gyrus)
     result[lidx]['children'][gidx]['children']=[]
   gidx=gyruses.index(gyrus)
-  result[lidx]['children'][gidx]['children'].append({'text':ID,'id':index})
+  result[lidx]['children'][gidx]['children'].append({'text':ID,'id':index,'area':area})
   
   
 # print lobe,gyrus

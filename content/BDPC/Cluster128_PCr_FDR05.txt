@@ -1,0 +1,10 @@
+n-back	0.0879
+Saccades	0.0825
+Counting/Calculation	0.0703
+Visual Pursuit/Tracking	0.0651
+Mental Rotation	0.0409
+Semantic.Monitor/Discrimination	0.0330
+Visual Distractor/Visual.Attention	0.0228
+Pointing	0.0176
+Anti-Saccades	0.0170
+Grasping	0.0164

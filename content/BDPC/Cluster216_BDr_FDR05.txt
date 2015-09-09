@@ -1,0 +1,7 @@
+Emotion	0.2145
+Cognition	0.1334
+Cognition.Memory.Explicit	0.1229
+Emotion.Fear	0.0377
+Perception.Olfaction	0.0328
+Emotion.Anger	0.0173
+Interoception.Air-Hunger	0.0074

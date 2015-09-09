@@ -1,0 +1,6 @@
+Passive Listening	0.1100
+Reading (Overt)	0.0320
+Music.Comprehension/Production	0.0219
+Theory of Mind Task	0.0216
+Deception Task	0.0156
+Oddball Discrimination	0.0136

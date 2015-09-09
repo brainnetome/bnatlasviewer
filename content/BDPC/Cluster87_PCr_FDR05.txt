@@ -1,0 +1,7 @@
+Semantic.Monitor/Discrimination	0.1654
+Phonological.Discrimination	0.0480
+Theory of Mind Task	0.0414
+Reading (Overt)	0.0394
+Pitch.Monitor/Discrimination	0.0318
+Reading (Covert)	0.0200
+Delay Discounting Task	0.0174

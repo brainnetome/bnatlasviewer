@@ -1,0 +1,3 @@
+Emotion	0.2050
+Emotion.Happiness	0.0435
+Emotion.Disgust	0.0430

@@ -1,0 +1,7 @@
+Cognition.Language	2.39
+Perception.Vision.Shape	2.71
+Cognition.Reasoning	3.76
+Cognition.Language.Orthography	2.14
+Perception.Vision	1.53
+Action.Observation	2.41
+Cognition.Language.Semantics	2.20

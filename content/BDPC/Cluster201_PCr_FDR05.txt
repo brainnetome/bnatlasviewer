@@ -1,0 +1,7 @@
+Film Viewing	0.0971
+Visual Distractor/Visual.Attention	0.0620
+Mental Rotation	0.0475
+Reward Task	0.0441
+Passive Viewing	0.0403
+Visual Pursuit/Tracking	0.0300
+Action Observation	0.0278

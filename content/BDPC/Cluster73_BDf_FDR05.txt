@@ -1,0 +1,6 @@
+Cognition.Music	4.85
+Action.Motor Learning	4.04
+Cognition.Language.Speech	2.35
+Perception.Audition	1.71
+Cognition.Language.Phonology	4.30
+Action.Execution.Speech	2.40

@@ -1,0 +1,9 @@
+Action.Execution	0.1099
+Cognition.Memory.Working	0.0739
+Perception.Somesthesis	0.0452
+Action.Inhibition	0.0392
+Cognition.Space	0.0292
+Action.Imagination	0.0172
+Cognition.Music	0.0146
+Cognition.Time	0.0124
+Action.Motor Learning	0.0106

@@ -1,0 +1,3 @@
+Action.Inhibition	2.39
+Cognition	1.96
+Perception.Somesthesis.Pain	1.42

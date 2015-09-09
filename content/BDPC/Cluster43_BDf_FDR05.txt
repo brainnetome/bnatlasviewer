@@ -1,0 +1,5 @@
+Perception.Gustation	1.88
+Emotion	3.59
+Cognition.Memory.Explicit	4.05
+Cognition.Language.Semantics	1.58
+Emotion.Sadness	1.64

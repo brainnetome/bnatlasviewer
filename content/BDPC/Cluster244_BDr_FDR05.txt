@@ -1,0 +1,2 @@
+Cognition	0.1473
+Perception.Somesthesis.Pain	0.0815

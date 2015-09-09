@@ -1,0 +1,6 @@
+Perception.Vision.Shape	0.0619
+Perception.Vision	0.0539
+Cognition.Language.Orthography	0.0349
+Cognition.Reasoning	0.0241
+Action.Observation	0.0214
+Cognition.Language	0.0210

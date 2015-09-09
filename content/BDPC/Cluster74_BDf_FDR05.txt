@@ -1,0 +1,5 @@
+Perception.Audition	2.76
+Perception.Somesthesis.Pain	3.78
+Action.Execution.Speech	2.22
+Cognition.Music	1.79
+Emotion.Anxiety	3.23

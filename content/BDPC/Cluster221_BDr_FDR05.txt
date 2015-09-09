@@ -1,0 +1,4 @@
+Action.Execution	0.1501
+Perception.Vision.Motion	0.0338
+Action.Execution.Speech	0.0288
+Action.Imagination	0.0228

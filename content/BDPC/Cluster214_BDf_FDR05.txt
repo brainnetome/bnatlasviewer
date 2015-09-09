@@ -1,0 +1,6 @@
+Emotion	2.93
+Cognition	6.02
+Emotion.Fear	2.14
+Emotion.Disgust	6.58
+Emotion.Anger	4.76
+Emotion.Happiness	3.57

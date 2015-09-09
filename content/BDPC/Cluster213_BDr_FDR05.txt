@@ -1,0 +1,5 @@
+Emotion	0.2373
+Emotion.Fear	0.1174
+Emotion.Happiness	0.0480
+Emotion.Disgust	0.0367
+Perception.Olfaction	0.0289

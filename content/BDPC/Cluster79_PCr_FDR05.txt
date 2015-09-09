@@ -1,0 +1,9 @@
+Passive Listening	0.1424
+Pitch.Monitor/Discrimination	0.0561
+Film Viewing	0.0553
+Tone.Monitor/Discrimination	0.0508
+Drawing	0.0425
+Phonological.Discrimination	0.0390
+Music.Comprehension/Production	0.0322
+Reading (Overt)	0.0230
+Oddball Discrimination	0.0128

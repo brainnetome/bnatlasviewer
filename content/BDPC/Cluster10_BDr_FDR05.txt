@@ -1,0 +1,6 @@
+Action.Execution	0.2393
+Perception.Vision.Motion	0.0500
+Action.Inhibition	0.0344
+Action.Imagination	0.0297
+Cognition.Music	0.0167
+Action.Motor Learning	0.0089

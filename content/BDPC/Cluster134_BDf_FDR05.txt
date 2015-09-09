@@ -1,0 +1,8 @@
+Cognition.Reasoning	3.76
+Perception.Vision.Motion	2.89
+Cognition.Attention	2.57
+Cognition.Space	1.54
+Perception.Vision.Color	2.64
+Interoception.Sexuality	4.97
+Perception.Vision.Shape	1.48
+Cognition.Memory.Working	2.16

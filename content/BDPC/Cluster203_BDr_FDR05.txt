@@ -1,0 +1,4 @@
+Cognition.Language.Speech	0.0852
+Perception.Vision	0.0477
+Action.Execution.Speech	0.0258
+Cognition.Language	0.0238

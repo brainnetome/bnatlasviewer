@@ -1,0 +1,7 @@
+Cognition.Language.Semantics	2.45
+Cognition.Memory.Explicit	4.89
+Cognition.Social Cognition	2.80
+Cognition.Language.Phonology	1.79
+Cognition.Language.Speech	2.04
+Perception.Audition	2.48
+Cognition.Language.Syntax	1.57

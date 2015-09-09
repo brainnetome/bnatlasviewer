@@ -1,0 +1,5 @@
+Face.Monitor/Discrimination	0.1576
+Passive Viewing	0.1358
+Film Viewing	0.0573
+Classical Conditioning	0.0566
+Olfactory.Monitor/Discrimination	0.0439

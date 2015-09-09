@@ -1,0 +1,6 @@
+Visual Distractor/Visual.Attention	7.08
+Naming (Covert)	3.58
+Delayed Match To Sample	2.60
+Face.Monitor/Discrimination	3.34
+Drawing	1.81
+Naming (Overt)	1.78

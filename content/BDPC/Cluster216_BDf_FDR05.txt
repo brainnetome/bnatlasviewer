@@ -1,0 +1,10 @@
+Perception.Olfaction	2.57
+Cognition.Memory.Explicit	1.88
+Perception.Gustation	5.90
+Emotion.Anger	3.07
+Emotion.Happiness	5.49
+Perception.Vision.Shape	4.39
+Emotion	1.59
+Interoception.Air-Hunger	2.79
+Emotion.Fear	1.86
+Cognition	2.65

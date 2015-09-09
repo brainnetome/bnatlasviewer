@@ -1,0 +1,3 @@
+Action.Execution	3.42
+Perception.Somesthesis.Pain	1.83
+Action.Preparation	3.77

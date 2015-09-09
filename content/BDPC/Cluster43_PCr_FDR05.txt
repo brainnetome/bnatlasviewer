@@ -1,0 +1,3 @@
+Semantic.Monitor/Discrimination	0.1287
+Passive Viewing	0.0721
+Reading (Covert)	0.0279

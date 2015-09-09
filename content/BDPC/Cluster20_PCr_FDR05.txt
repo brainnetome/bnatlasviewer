@@ -1,0 +1,4 @@
+Go/No-Go	0.0470
+Paired Associate Recall	0.0445
+Tone.Monitor/Discrimination	0.0222
+Deception Task	0.0214

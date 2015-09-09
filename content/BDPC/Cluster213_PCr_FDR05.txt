@@ -1,0 +1,4 @@
+Face.Monitor/Discrimination	0.2184
+Passive Viewing	0.1089
+Subjective Emotional.Picture Discrimination	0.0700
+Olfactory.Monitor/Discrimination	0.0533

@@ -1,0 +1,4 @@
+Reading (Overt)	0.0440
+Saccades	0.0251
+Action Observation	0.0155
+Anti-Saccades	0.0116

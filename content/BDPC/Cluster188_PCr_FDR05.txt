@@ -1,0 +1,4 @@
+Reward Task	0.1581
+Pain.Monitor/Discrimination	0.0698
+Eating/Drinking	0.0626
+Delay Discounting Task	0.0169

@@ -1,0 +1,4 @@
+Pain.Monitor/Discrimination	0.0820
+Flexion/Extension	0.0336
+Delayed Match To Sample	0.0322
+Recitation/Repetition.(Overt)	0.0174

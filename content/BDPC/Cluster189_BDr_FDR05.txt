@@ -1,0 +1,3 @@
+Perception.Vision	0.0526
+Perception.Vision.Motion	0.0496
+Action.Observation	0.0204

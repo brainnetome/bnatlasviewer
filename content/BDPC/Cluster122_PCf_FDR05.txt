@@ -1,0 +1,8 @@
+Face.Monitor/Discrimination	3.02
+Reading (Overt)	3.47
+Film Viewing	2.40
+Tone.Monitor/Discrimination	3.22
+Passive Listening	3.39
+Phonological.Discrimination	2.79
+Pitch.Monitor/Discrimination	3.92
+Action Observation	3.53

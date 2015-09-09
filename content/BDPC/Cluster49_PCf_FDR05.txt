@@ -1,0 +1,4 @@
+Reward Task	3.53
+Face.Monitor/Discrimination	5.99
+Subjective Emotional.Picture Discrimination	3.11
+Olfactory.Monitor/Discrimination	2.04

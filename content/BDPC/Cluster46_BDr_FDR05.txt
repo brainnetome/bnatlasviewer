@@ -1,0 +1,3 @@
+Emotion	0.2173
+Cognition	0.1303
+Perception.Olfaction	0.0455

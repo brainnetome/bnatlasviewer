@@ -1,0 +1,11 @@
+Saccades	0.0755
+Visual Distractor/Visual.Attention	0.0717
+Mental Rotation	0.0639
+Imagined Movement	0.0579
+Drawing	0.0367
+Finger Tapping	0.0349
+Action Observation	0.0289
+Sequence Recall/Learning	0.0258
+Reward Task	0.0213
+Tone.Monitor/Discrimination	0.0160
+Anti-Saccades	0.0140

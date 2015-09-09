@@ -1,0 +1,6 @@
+Semantic.Monitor/Discrimination	1.92
+Encoding	2.36
+Stroop Task	2.20
+Task Switching	2.14
+n-back	2.14
+Word Generation (Covert)	1.69

@@ -1,0 +1,3 @@
+Cognition.Memory.Working	0.0768
+Cognition.Social Cognition	0.0471
+Cognition.Space	0.0467

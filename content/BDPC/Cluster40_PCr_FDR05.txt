@@ -1,0 +1,5 @@
+Imagined Movement	0.0710
+Pain.Monitor/Discrimination	0.0315
+Semantic.Monitor/Discrimination	0.0250
+Reward Task	0.0173
+Action Observation	0.0159

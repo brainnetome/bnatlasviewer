@@ -1,0 +1,4 @@
+Visual Distractor/Visual.Attention	0.0685
+Spatial/Location.Discrimination	0.0488
+Mental Rotation	0.0463
+Naming (Covert)	0.0291

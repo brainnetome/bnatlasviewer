@@ -1,0 +1,4 @@
+Action.Execution	1.39
+Cognition.Space	1.76
+Action.Observation	2.61
+Action.Preparation	1.86

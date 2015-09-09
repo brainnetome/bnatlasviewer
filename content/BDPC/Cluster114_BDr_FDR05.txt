@@ -1,0 +1,2 @@
+Cognition.Memory.Explicit	0.1418
+Perception.Gustation	0.0758

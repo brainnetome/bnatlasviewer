@@ -1,0 +1,8 @@
+Emotion	0.1767
+Cognition.Memory.Explicit	0.1471
+Emotion.Fear	0.0619
+Emotion.Happiness	0.0299
+Emotion.Sadness	0.0294
+Interoception.Sexuality	0.0257
+Perception.Olfaction	0.0248
+Emotion.Disgust	0.0156

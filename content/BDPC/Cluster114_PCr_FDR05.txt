@@ -1,0 +1,2 @@
+Semantic.Monitor/Discrimination	0.1730
+Imagined Objects/Scenes	0.0826

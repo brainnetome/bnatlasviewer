@@ -1,0 +1,4 @@
+Semantic.Monitor/Discrimination	2.82
+Reading (Covert)	3.82
+Pitch.Monitor/Discrimination	4.29
+Transcranial Magnetic.Stimulation	5.65

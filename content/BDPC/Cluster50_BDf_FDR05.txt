@@ -1,0 +1,7 @@
+Emotion	2.58
+Cognition	2.27
+Emotion.Fear	6.56
+Emotion.Sadness	3.88
+Emotion.Happiness	3.93
+Perception.Gustation	3.39
+Interoception.Sexuality	3.29

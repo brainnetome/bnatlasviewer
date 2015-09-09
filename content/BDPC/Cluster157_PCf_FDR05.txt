@@ -1,0 +1,6 @@
+Pain.Monitor/Discrimination	3.37
+Chewing/Swallowing	5.04
+Finger Tapping	6.83
+Recitation/Repetition.(Overt)	9.26
+Tactile.Monitor/Discrimination	2.24
+Non-Painful Electrical.Stimulation	2.80

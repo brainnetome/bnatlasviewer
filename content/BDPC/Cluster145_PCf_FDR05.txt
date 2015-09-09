@@ -1,0 +1,9 @@
+Pain.Monitor/Discrimination	2.64
+Oddball Discrimination	3.71
+Tactile.Monitor/Discrimination	2.65
+Non-Painful Electrical.Stimulation	4.57
+Transcranial Magnetic.Stimulation	8.00
+Grasping	3.67
+Flexion/Extension	5.70
+Vibrotactile.Monitor/Discrimination	3.45
+Finger Tapping	2.08

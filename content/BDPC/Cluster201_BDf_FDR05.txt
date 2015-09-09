@@ -1,0 +1,6 @@
+Cognition.Space	4.83
+Interoception.Sexuality	2.89
+Perception.Vision	3.74
+Action.Observation	2.00
+Perception.Vision.Shape	1.87
+Perception.Vision.Motion	2.01

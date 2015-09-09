@@ -1,0 +1,3 @@
+Deception Task	4.03
+n-back	4.79
+Spatial/Location.Discrimination	2.65

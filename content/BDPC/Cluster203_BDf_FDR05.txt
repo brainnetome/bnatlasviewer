@@ -1,0 +1,3 @@
+Cognition.Language.Semantics	4.16
+Perception.Vision	2.06
+Cognition.Language	1.55

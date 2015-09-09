@@ -1,0 +1,3 @@
+Reward Task	2.03
+Episodic Recall	3.67
+Delay Discounting Task	2.95

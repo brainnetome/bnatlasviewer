@@ -1,0 +1,3 @@
+Emotion	1.93
+Cognition	1.63
+Action.Execution	1.50

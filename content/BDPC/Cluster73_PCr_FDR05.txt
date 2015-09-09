@@ -1,0 +1,10 @@
+Phonological.Discrimination	0.1303
+Reward Task	0.0657
+Passive Listening	0.0470
+Tone.Monitor/Discrimination	0.0432
+Reading (Overt)	0.0403
+Music.Comprehension/Production	0.0393
+Pitch.Monitor/Discrimination	0.0360
+Recitation/Repetition.(Overt)	0.0307
+Drawing	0.0219
+Oddball Discrimination	0.0129

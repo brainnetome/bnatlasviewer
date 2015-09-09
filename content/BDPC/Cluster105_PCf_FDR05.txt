@@ -1,0 +1,4 @@
+Naming (Covert)	3.80
+Naming (Overt)	2.15
+Delayed Match To Sample	2.87
+Passive Viewing	2.24

@@ -1,0 +1,4 @@
+Emotion	0.2225
+Cognition	0.1406
+Cognition.Memory.Explicit	0.0967
+Cognition.Social Cognition	0.0444

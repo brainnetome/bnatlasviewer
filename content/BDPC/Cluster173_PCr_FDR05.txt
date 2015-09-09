@@ -1,0 +1,4 @@
+Recitation/Repetition.(Overt)	0.1325
+Semantic.Monitor/Discrimination	0.0190
+Pain.Monitor/Discrimination	0.0167
+Isometric Force	0.0084

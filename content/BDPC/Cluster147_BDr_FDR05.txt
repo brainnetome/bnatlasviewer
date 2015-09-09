@@ -1,0 +1,3 @@
+Cognition.Memory.Working	0.1005
+Perception.Vision.Motion	0.0564
+Cognition.Space	0.0484

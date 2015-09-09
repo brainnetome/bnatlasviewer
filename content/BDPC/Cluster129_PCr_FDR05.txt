@@ -1,0 +1,10 @@
+Mental Rotation	0.0687
+Reward Task	0.0675
+n-back	0.0510
+Imagined Movement	0.0386
+Saccades	0.0330
+Visual Pursuit/Tracking	0.0297
+Face.Monitor/Discrimination	0.0260
+Visual Distractor/Visual.Attention	0.0194
+Action Observation	0.0166
+Pointing	0.0160

@@ -1,0 +1,6 @@
+Finger Tapping	5.18
+Flexion/Extension	2.90
+Saccades	3.37
+Imagined Movement	2.71
+Sequence Recall/Learning	2.37
+Pointing	3.03

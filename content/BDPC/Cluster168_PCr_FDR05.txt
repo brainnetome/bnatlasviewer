@@ -1,0 +1,6 @@
+Reward Task	0.1347
+Go/No-Go	0.0800
+Sternberg Task	0.0379
+Face.Monitor/Discrimination	0.0200
+Pain.Monitor/Discrimination	0.0192
+Oddball Discrimination	0.0099

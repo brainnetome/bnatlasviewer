@@ -1,0 +1,3 @@
+Emotion	1.79
+Emotion.Sadness	3.77
+Emotion.Disgust	3.57

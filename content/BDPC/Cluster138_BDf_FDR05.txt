@@ -1,0 +1,5 @@
+Cognition	3.03
+Cognition.Space	1.83
+Cognition.Attention	2.58
+Cognition.Reasoning	1.37
+Cognition.Memory.Working	1.35

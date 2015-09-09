@@ -1,0 +1,3 @@
+Emotion	1.37
+Cognition.Memory.Explicit	1.91
+Action.Inhibition	1.45

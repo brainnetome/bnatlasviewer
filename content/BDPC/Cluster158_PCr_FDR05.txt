@@ -1,0 +1,7 @@
+Pain.Monitor/Discrimination	0.1144
+Flexion/Extension	0.0611
+Tactile.Monitor/Discrimination	0.0487
+Chewing/Swallowing	0.0298
+Non-Painful Electrical.Stimulation	0.0292
+Reading (Overt)	0.0269
+Recitation/Repetition.(Overt)	0.0252

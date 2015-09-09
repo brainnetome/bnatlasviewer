@@ -1,0 +1,3 @@
+Counting/Calculation	2.62
+Mental Rotation	2.70
+Wisconsin Card Sorting.Test	3.13

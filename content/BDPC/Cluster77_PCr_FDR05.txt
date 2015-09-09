@@ -1,0 +1,3 @@
+Film Viewing	0.0564
+Reading (Overt)	0.0258
+Tone.Monitor/Discrimination	0.0236

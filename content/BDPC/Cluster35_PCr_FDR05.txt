@@ -1,0 +1,3 @@
+Semantic.Monitor/Discrimination	0.1629
+Word Generation (Covert)	0.0438
+Reading (Covert)	0.0275

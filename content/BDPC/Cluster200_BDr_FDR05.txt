@@ -1,0 +1,5 @@
+Perception.Vision.Shape	0.0864
+Perception.Vision	0.0513
+Perception.Vision.Motion	0.0470
+Cognition.Space	0.0322
+Interoception.Sexuality	0.0169

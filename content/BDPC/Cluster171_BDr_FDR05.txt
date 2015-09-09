@@ -1,0 +1,5 @@
+Action.Execution	0.1062
+Perception.Somesthesis.Pain	0.0931
+Perception.Somesthesis	0.0741
+Emotion.Disgust	0.0354
+Interoception.Sexuality	0.0272

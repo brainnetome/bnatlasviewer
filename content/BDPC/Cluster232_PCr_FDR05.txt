@@ -1,0 +1,3 @@
+Reward Task	0.1754
+Pain.Monitor/Discrimination	0.0614
+Go/No-Go	0.0382

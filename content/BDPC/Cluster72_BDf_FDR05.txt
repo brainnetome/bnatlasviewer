@@ -1,0 +1,5 @@
+Perception.Audition	5.67
+Perception.Somesthesis	3.99
+Cognition.Language.Phonology	3.32
+Action.Execution.Speech	2.58
+Cognition.Music	1.96

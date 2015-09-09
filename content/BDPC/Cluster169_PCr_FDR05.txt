@@ -1,0 +1,2 @@
+Pain.Monitor/Discrimination	0.1090
+Acupuncture	0.0260

@@ -1,0 +1,3 @@
+Cognition.Language.Semantics	3.08
+Cognition.Memory.Explicit	1.95
+Cognition.Language.Speech	1.98

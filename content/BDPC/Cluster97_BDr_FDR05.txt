@@ -1,0 +1,5 @@
+Cognition.Language.Semantics	0.1417
+Cognition.Language.Speech	0.0909
+Cognition.Memory.Working	0.0807
+Action.Observation	0.0268
+Interoception.Sexuality	0.0248

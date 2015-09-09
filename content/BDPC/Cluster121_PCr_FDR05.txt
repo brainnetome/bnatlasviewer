@@ -1,0 +1,8 @@
+Phonological.Discrimination	0.1415
+Word Generation (Covert)	0.0815
+Passive Listening	0.0814
+Word Generation (Overt)	0.0492
+Reading (Overt)	0.0472
+Reward Task	0.0348
+Semantic.Monitor/Discrimination	0.0239
+Reading (Covert)	0.0216

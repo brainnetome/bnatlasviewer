@@ -1,0 +1,8 @@
+Imagined Movement	13.69
+Saccades	4.62
+Mental Rotation	4.48
+Spatial/Location.Discrimination	4.25
+Drawing	3.11
+Action Observation	4.87
+Sequence Recall/Learning	2.92
+Oddball Discrimination	3.57

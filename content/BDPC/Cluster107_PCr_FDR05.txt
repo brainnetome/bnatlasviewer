@@ -1,0 +1,9 @@
+Face.Monitor/Discrimination	0.1141
+Passive Viewing	0.0942
+Naming (Overt)	0.0667
+Delayed Match To Sample	0.0450
+Semantic.Monitor/Discrimination	0.0402
+Naming (Covert)	0.0350
+Reading (Overt)	0.0275
+Reward Task	0.0259
+Reading (Covert)	0.0194

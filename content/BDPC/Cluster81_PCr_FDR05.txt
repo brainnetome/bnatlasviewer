@@ -1,0 +1,4 @@
+Semantic.Monitor/Discrimination	0.1678
+Cued Explicit.Recognition	0.0864
+Reading (Covert)	0.0551
+Theory of Mind Task	0.0353

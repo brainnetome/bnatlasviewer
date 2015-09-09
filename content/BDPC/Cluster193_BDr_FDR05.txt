@@ -1,0 +1,3 @@
+Cognition.Language.Semantics	0.1220
+Cognition.Language.Speech	0.0857
+Perception.Vision.Motion	0.0385

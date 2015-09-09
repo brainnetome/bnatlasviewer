@@ -1,0 +1,4 @@
+Cognition.Memory.Explicit	5.96
+Cognition.Social Cognition	4.00
+Emotion.Happiness	2.42
+Cognition.Language	4.05

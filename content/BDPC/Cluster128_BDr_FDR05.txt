@@ -1,0 +1,7 @@
+Cognition.Attention	0.1343
+Action.Execution	0.1093
+Cognition.Memory.Working	0.0919
+Perception.Vision.Shape	0.0840
+Perception.Vision.Motion	0.0726
+Action.Inhibition	0.0681
+Cognition.Space	0.0363

@@ -1,0 +1,7 @@
+Reward Task	0.0529
+Counting/Calculation	0.0415
+Tactile.Monitor/Discrimination	0.0402
+Tone.Monitor/Discrimination	0.0218
+Sequence Recall/Learning	0.0199
+Drawing	0.0189
+Isometric Force	0.0048

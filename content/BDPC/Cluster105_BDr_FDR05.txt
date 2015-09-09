@@ -1,0 +1,9 @@
+Cognition.Language.Semantics	0.1144
+Cognition.Language.Speech	0.0733
+Cognition.Memory.Working	0.0608
+Perception.Vision.Shape	0.0597
+Perception.Vision	0.0392
+Action.Execution.Speech	0.0226
+Cognition.Language.Orthography	0.0216
+Cognition.Language	0.0176
+Interoception.Air-Hunger	0.0036

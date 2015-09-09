@@ -1,0 +1,6 @@
+Flexion/Extension	0.0890
+Reading (Overt)	0.0794
+Recitation/Repetition.(Overt)	0.0375
+Chewing/Swallowing	0.0333
+Semantic.Monitor/Discrimination	0.0265
+Finger Tapping	0.0251

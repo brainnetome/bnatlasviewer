@@ -1,0 +1,5 @@
+Cognition.Language.Semantics	1.57
+Cognition.Language.Speech	1.55
+Cognition.Memory.Working	1.48
+Cognition.Language.Phonology	1.58
+Action.Execution.Speech	1.67

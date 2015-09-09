@@ -1,0 +1,2 @@
+Emotion	1.49
+Perception.Gustation	2.79

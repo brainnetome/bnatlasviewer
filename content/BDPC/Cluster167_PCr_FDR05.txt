@@ -1,0 +1,5 @@
+Pain.Monitor/Discrimination	0.0526
+Go/No-Go	0.0335
+Word Generation (Covert)	0.0329
+Tone.Monitor/Discrimination	0.0209
+Recitation/Repetition.(Overt)	0.0134

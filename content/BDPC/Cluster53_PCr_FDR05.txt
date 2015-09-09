@@ -1,0 +1,10 @@
+Flexion/Extension	0.0992
+Recitation/Repetition.(Overt)	0.0419
+Sequence Recall/Learning	0.0276
+Reading (Overt)	0.0275
+Imagined Movement	0.0261
+Cued Explicit.Recognition	0.0177
+Sternberg Task	0.0176
+Chewing/Swallowing	0.0160
+Finger Tapping	0.0092
+Isometric Force	0.0055

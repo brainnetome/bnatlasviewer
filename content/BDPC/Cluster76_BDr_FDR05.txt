@@ -1,0 +1,7 @@
+Cognition.Language.Speech	0.1410
+Perception.Audition	0.0995
+Cognition.Language.Phonology	0.0592
+Action.Execution.Speech	0.0478
+Emotion.Happiness	0.0362
+Cognition.Music	0.0318
+Cognition.Language	0.0267

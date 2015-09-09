@@ -1,0 +1,6 @@
+Naming (Overt)	0.0594
+Delayed Match To Sample	0.0407
+Visual Distractor/Visual.Attention	0.0385
+Reward Task	0.0377
+Naming (Covert)	0.0336
+Drawing	0.0305

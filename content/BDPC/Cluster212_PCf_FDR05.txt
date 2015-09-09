@@ -1,0 +1,4 @@
+Face.Monitor/Discrimination	4.88
+Passive Viewing	3.65
+Classical Conditioning	7.67
+Olfactory.Monitor/Discrimination	5.68

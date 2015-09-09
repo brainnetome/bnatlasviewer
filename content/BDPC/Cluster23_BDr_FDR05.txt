@@ -1,0 +1,3 @@
+Cognition.Memory.Explicit	0.0950
+Cognition.Memory.Working	0.0669
+Cognition.Reasoning	0.0257

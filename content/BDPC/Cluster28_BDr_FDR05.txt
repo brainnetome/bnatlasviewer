@@ -1,0 +1,2 @@
+Cognition.Memory.Explicit	0.1086
+Cognition.Memory.Working	0.0790

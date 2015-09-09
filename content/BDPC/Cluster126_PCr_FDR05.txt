@@ -1,0 +1,10 @@
+Mental Rotation	0.0670
+Action Observation	0.0656
+Visual Distractor/Visual.Attention	0.0644
+Saccades	0.0630
+Drawing	0.0571
+Sequence Recall/Learning	0.0326
+Spatial/Location.Discrimination	0.0315
+Imagined Movement	0.0201
+Oddball Discrimination	0.0175
+Anti-Saccades	0.0150

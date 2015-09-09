@@ -1,0 +1,4 @@
+Pain.Monitor/Discrimination	0.0496
+Go/No-Go	0.0425
+Stroop Task	0.0374
+Anti-Saccades	0.0135

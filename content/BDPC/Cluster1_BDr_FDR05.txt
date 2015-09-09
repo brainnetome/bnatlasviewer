@@ -1,0 +1,4 @@
+Cognition.Language.Semantics	0.1174
+Cognition.Language.Speech	0.0834
+Cognition.Memory.Working	0.0752
+Action.Execution.Speech	0.0246

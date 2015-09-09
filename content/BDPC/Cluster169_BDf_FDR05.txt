@@ -1,0 +1,4 @@
+Perception.Somesthesis.Pain	3.23
+Emotion.Disgust	4.76
+Perception.Somesthesis	5.08
+Emotion.Fear	3.01

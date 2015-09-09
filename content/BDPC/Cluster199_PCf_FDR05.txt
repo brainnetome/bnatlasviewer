@@ -1,0 +1,3 @@
+Counting/Calculation	3.20
+Visual Pursuit/Tracking	2.18
+Passive Viewing	2.32

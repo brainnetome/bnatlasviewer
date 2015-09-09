@@ -1,0 +1,6 @@
+Pain.Monitor/Discrimination	0.1309
+Deception Task	0.0249
+Transcranial Magnetic.Stimulation	0.0186
+Grasping	0.0182
+Chewing/Swallowing	0.0173
+Anti-Saccades	0.0125

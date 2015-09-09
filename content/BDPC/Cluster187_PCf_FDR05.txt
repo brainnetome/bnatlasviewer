@@ -1,0 +1,3 @@
+Reward Task	2.38
+Episodic Recall	4.85
+Eating/Drinking	3.26

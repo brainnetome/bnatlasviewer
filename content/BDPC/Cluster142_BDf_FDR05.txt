@@ -1,0 +1,6 @@
+Cognition.Attention	2.46
+Perception.Vision.Motion	2.10
+Action.Execution	1.98
+Perception.Somesthesis.Pain	1.43
+Action.Inhibition	1.37
+Interoception.Bladder	2.99

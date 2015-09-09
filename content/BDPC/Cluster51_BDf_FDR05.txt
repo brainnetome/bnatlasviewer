@@ -1,0 +1,3 @@
+Emotion	1.90
+Cognition.Language.Semantics	1.46
+Cognition.Memory.Explicit	1.44

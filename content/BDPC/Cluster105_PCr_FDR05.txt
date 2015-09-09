@@ -1,0 +1,6 @@
+Visual Distractor/Visual.Attention	0.0656
+Passive Viewing	0.0541
+Naming (Covert)	0.0433
+Naming (Overt)	0.0325
+Reading (Overt)	0.0262
+Delayed Match To Sample	0.0213

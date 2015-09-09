@@ -1,0 +1,7 @@
+Film Viewing	0.1174
+Mental Rotation	0.0632
+Visual Pursuit/Tracking	0.0385
+Reward Task	0.0363
+Passive Viewing	0.0349
+Naming (Covert)	0.0288
+Action Observation	0.0265

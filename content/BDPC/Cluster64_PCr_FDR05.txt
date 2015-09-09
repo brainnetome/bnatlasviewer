@@ -1,0 +1,5 @@
+Reward Task	0.0373
+Delayed Match To Sample	0.0263
+Tone.Monitor/Discrimination	0.0184
+Action Observation	0.0116
+Isometric Force	0.0052

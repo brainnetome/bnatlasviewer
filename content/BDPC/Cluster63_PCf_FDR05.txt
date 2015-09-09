@@ -1,0 +1,4 @@
+Counting/Calculation	3.15
+Phonological.Discrimination	2.28
+Sternberg Task	2.08
+Reading (Covert)	1.76

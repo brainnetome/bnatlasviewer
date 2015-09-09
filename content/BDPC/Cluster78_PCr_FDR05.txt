@@ -1,0 +1,3 @@
+Face.Monitor/Discrimination	0.1014
+Passive Listening	0.0677
+Film Viewing	0.0544

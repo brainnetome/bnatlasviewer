@@ -1,0 +1,7 @@
+Pain.Monitor/Discrimination	0.0842
+Passive Listening	0.0605
+Tone.Monitor/Discrimination	0.0416
+Reading (Overt)	0.0343
+Music.Comprehension/Production	0.0257
+Pitch.Monitor/Discrimination	0.0237
+Recitation/Repetition.(Overt)	0.0228

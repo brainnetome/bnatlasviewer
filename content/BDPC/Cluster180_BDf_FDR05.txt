@@ -1,0 +1,3 @@
+Cognition.Attention	2.17
+Action.Inhibition	1.38
+Perception.Olfaction	3.02

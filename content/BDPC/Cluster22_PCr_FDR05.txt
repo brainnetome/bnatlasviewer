@@ -1,0 +1,7 @@
+Pain.Monitor/Discrimination	0.0932
+n-back	0.0587
+Go/No-Go	0.0318
+Delayed Match To Sample	0.0306
+Tone.Monitor/Discrimination	0.0244
+Sternberg Task	0.0191
+Delay Discounting Task	0.0095

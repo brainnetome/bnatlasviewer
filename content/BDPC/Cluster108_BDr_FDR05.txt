@@ -1,0 +1,9 @@
+Cognition.Language.Semantics	0.1151
+Perception.Vision.Shape	0.1013
+Perception.Vision	0.0426
+Cognition.Space	0.0312
+Cognition.Language.Orthography	0.0232
+Action.Observation	0.0195
+Cognition.Language	0.0165
+Emotion.Anger	0.0154
+Interoception.Sexuality	0.0151

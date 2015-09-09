@@ -1,0 +1,4 @@
+Cognition.Attention	0.1243
+Cognition.Memory.Working	0.0617
+Perception.Somesthesis.Pain	0.0389
+Action.Inhibition	0.0365

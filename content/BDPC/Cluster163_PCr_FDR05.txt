@@ -1,0 +1,3 @@
+Pain.Monitor/Discrimination	0.1825
+Reading (Overt)	0.0609
+Classical Conditioning	0.0279

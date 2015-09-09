@@ -1,0 +1,4 @@
+Cognition.Memory.Explicit	0.1171
+Action.Inhibition	0.0384
+Cognition.Social Cognition	0.0353
+Perception.Vision.Motion	0.0319

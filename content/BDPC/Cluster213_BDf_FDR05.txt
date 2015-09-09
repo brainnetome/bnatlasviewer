@@ -1,0 +1,7 @@
+Emotion.Happiness	10.12
+Emotion.Fear	2.21
+Perception.Olfaction	5.65
+Cognition.Social Cognition	7.00
+Emotion.Sadness	4.48
+Emotion.Disgust	4.23
+Emotion	2.63

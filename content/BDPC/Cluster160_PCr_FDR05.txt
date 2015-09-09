@@ -1,0 +1,5 @@
+Finger Tapping	0.0896
+Imagined Movement	0.0413
+Chewing/Swallowing	0.0161
+Oddball Discrimination	0.0120
+Isometric Force	0.0090

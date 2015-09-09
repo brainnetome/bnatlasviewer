@@ -1,0 +1,6 @@
+Finger Tapping	7.22
+Transcranial Magnetic.Stimulation	7.40
+Tactile.Monitor/Discrimination	3.36
+Flexion/Extension	5.17
+Pointing	2.72
+Grasping	4.62

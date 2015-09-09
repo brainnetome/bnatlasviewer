@@ -1,0 +1,2 @@
+Emotion	0.1799
+Cognition.Memory.Explicit	0.1047

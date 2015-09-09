@@ -1,0 +1,2 @@
+Go/No-Go	0.0559
+Eating/Drinking	0.0477

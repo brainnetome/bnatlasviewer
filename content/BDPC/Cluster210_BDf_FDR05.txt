@@ -1,0 +1,6 @@
+Cognition.Reasoning	4.74
+Perception.Vision.Shape	3.33
+Cognition.Space	2.22
+Perception.Vision.Motion	2.26
+Perception.Vision	2.69
+Cognition.Memory.Working	2.15

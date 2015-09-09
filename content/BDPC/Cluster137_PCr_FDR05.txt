@@ -1,0 +1,7 @@
+n-back	0.0765
+Counting/Calculation	0.0558
+Word Generation (Covert)	0.0357
+Mental Rotation	0.0325
+Tone.Monitor/Discrimination	0.0217
+Wisconsin Card Sorting.Test	0.0184
+Sternberg Task	0.0168

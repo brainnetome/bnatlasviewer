@@ -1,0 +1,7 @@
+Pain.Monitor/Discrimination	3.43
+Flexion/Extension	7.15
+Eating/Drinking	14.01
+Tactile.Monitor/Discrimination	4.11
+Recitation/Repetition.(Overt)	3.88
+Chewing/Swallowing	3.10
+Non-Painful Electrical.Stimulation	3.46

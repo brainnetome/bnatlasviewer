@@ -1,0 +1,4 @@
+Perception.Vision.Motion	4.01
+Action.Execution.Speech	2.46
+Action.Execution	1.97
+Cognition.Music	2.18

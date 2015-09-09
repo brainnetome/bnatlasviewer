@@ -1,0 +1,3 @@
+Semantic.Monitor/Discrimination	0.1553
+Naming (Overt)	0.0806
+Rest	0.0221

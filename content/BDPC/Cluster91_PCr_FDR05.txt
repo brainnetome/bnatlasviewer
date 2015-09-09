@@ -1,0 +1,4 @@
+Reading (Covert)	0.0552
+Naming (Overt)	0.0418
+Word Generation (Covert)	0.0378
+Delayed Match To Sample	0.0293

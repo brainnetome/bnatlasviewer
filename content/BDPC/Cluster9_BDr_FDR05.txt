@@ -1,0 +1,4 @@
+Action.Execution	0.2456
+Perception.Vision.Motion	0.0362
+Action.Imagination	0.0227
+Cognition.Music	0.0151

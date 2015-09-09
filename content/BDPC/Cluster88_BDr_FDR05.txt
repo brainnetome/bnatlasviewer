@@ -1,0 +1,5 @@
+Cognition.Language.Speech	0.0904
+Perception.Audition	0.0778
+Action.Execution.Speech	0.0205
+Cognition.Music	0.0167
+Cognition.Language	0.0148

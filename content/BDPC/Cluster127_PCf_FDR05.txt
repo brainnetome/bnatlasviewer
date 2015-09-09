@@ -1,0 +1,9 @@
+Mental Rotation	4.28
+Counting/Calculation	5.31
+Saccades	2.11
+Grasping	2.77
+Anti-Saccades	4.23
+Visual Distractor/Visual.Attention	2.45
+Imagined Objects/Scenes	4.15
+Pointing	2.33
+Spatial/Location.Discrimination	2.65

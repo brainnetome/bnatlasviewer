@@ -1,0 +1,3 @@
+Counting/Calculation	0.0497
+Saccades	0.0367
+Delay Discounting Task	0.0123

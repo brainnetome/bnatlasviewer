@@ -1,0 +1,9 @@
+Visual Distractor/Visual.Attention	0.0682
+Counting/Calculation	0.0596
+Spatial/Location.Discrimination	0.0431
+Saccades	0.0410
+Mental Rotation	0.0382
+Imagined Objects/Scenes	0.0296
+Grasping	0.0195
+Pointing	0.0185
+Anti-Saccades	0.0134

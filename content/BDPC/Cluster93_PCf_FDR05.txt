@@ -1,0 +1,2 @@
+Semantic.Monitor/Discrimination	5.08
+Face.Monitor/Discrimination	3.90

@@ -1,0 +1,3 @@
+Perception.Vision.Shape	3.05
+Perception.Vision	2.93
+Cognition.Space	2.33

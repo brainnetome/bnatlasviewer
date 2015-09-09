@@ -1,0 +1,6 @@
+Action.Execution	3.35
+Action.Imagination	2.27
+Perception.Somesthesis	2.71
+Action.Inhibition	2.77
+Perception.Vision.Motion	1.71
+Action.Motor Learning	1.68

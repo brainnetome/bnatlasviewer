@@ -1,0 +1,5 @@
+Semantic.Monitor/Discrimination	0.1407
+Imagined Objects/Scenes	0.0898
+Theory of Mind Task	0.0644
+Episodic Recall	0.0634
+Reading (Covert)	0.0479

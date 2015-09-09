@@ -1,0 +1,3 @@
+Pain.Monitor/Discrimination	4.84
+Eating/Drinking	4.53
+Chewing/Swallowing	3.29

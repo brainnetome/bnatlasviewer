@@ -1,0 +1,7 @@
+Pain.Monitor/Discrimination	3.38
+Non-Painful Electrical.Stimulation	4.49
+Flexion/Extension	3.18
+Finger Tapping	8.03
+Grasping	4.31
+Oddball Discrimination	3.45
+Tactile.Monitor/Discrimination	1.88

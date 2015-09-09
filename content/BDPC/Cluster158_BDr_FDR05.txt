@@ -1,0 +1,4 @@
+Action.Execution	0.1353
+Perception.Somesthesis.Pain	0.0971
+Perception.Somesthesis	0.0736
+Action.Execution.Speech	0.0492

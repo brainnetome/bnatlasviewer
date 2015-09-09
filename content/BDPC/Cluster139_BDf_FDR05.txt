@@ -1,0 +1,7 @@
+Perception.Somesthesis	1.50
+Action.Observation	1.89
+Cognition.Attention	1.90
+Cognition.Memory.Working	2.04
+Action.Execution	1.30
+Action.Imagination	1.79
+Cognition.Space	1.35

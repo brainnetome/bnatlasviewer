@@ -1,0 +1,2 @@
+Reward Task	0.3526
+Film Viewing	0.0447

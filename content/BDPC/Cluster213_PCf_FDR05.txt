@@ -1,0 +1,4 @@
+Face.Monitor/Discrimination	4.84
+Passive Viewing	3.74
+Subjective Emotional.Picture Discrimination	6.83
+Olfactory.Monitor/Discrimination	4.52

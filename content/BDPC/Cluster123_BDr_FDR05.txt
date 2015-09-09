@@ -1,0 +1,5 @@
+Cognition.Language.Semantics	0.1854
+Cognition.Language.Speech	0.0932
+Perception.Audition	0.0705
+Cognition.Language.Orthography	0.0385
+Cognition.Language.Syntax	0.0364

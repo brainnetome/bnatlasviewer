@@ -1,0 +1,5 @@
+Emotion	0.2966
+Cognition	0.1472
+Emotion.Fear	0.0656
+Emotion.Happiness	0.0380
+Emotion.Anger	0.0231

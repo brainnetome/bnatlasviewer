@@ -1,0 +1,4 @@
+Reward Task	4.49
+Face.Monitor/Discrimination	2.24
+Eating/Drinking	4.55
+Olfactory.Monitor/Discrimination	3.07

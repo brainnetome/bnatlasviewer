@@ -1,0 +1,4 @@
+Cognition.Space	5.45
+Perception.Vision.Shape	3.73
+Action.Inhibition	2.88
+Perception.Vision.Motion	2.57

@@ -1,0 +1,7 @@
+Passive Listening	5.33
+Music.Comprehension/Production	4.87
+Pitch.Monitor/Discrimination	4.78
+Tone.Monitor/Discrimination	4.42
+Phonological.Discrimination	4.60
+Recitation/Repetition.(Overt)	6.39
+Oddball Discrimination	2.81

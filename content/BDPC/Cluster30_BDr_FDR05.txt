@@ -1,0 +1,2 @@
+Cognition.Attention	0.1452
+Cognition.Reasoning	0.0264

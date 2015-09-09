@@ -1,0 +1,3 @@
+Reward Task	0.1453
+Semantic.Monitor/Discrimination	0.1128
+Eating/Drinking	0.0641

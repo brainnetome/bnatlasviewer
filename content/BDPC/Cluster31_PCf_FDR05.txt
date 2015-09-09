@@ -1,0 +1,5 @@
+Phonological.Discrimination	3.58
+Word Generation (Covert)	2.16
+Semantic.Monitor/Discrimination	3.30
+Encoding	2.76
+Word Generation (Overt)	2.33

@@ -1,0 +1,3 @@
+Pain.Monitor/Discrimination	3.45
+Finger Tapping	4.36
+Pointing	2.15

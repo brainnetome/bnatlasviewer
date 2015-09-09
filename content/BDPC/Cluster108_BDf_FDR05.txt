@@ -1,0 +1,10 @@
+Emotion.Anger	3.57
+Cognition.Language.Orthography	3.91
+Perception.Vision.Shape	1.58
+Cognition.Language.Semantics	1.93
+Interoception.Sexuality	2.75
+Cognition.Language	2.32
+Action.Observation	2.23
+Perception.Vision	1.94
+Cognition.Space	2.11
+Emotion.Fear	1.83

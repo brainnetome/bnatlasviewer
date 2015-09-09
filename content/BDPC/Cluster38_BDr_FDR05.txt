@@ -1,0 +1,4 @@
+Perception.Somesthesis.Pain	0.0521
+Action.Inhibition	0.0308
+Cognition.Music	0.0151
+Cognition.Time	0.0149

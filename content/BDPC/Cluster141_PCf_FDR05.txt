@@ -1,0 +1,3 @@
+Word Generation (Covert)	3.75
+Deception Task	3.78
+Delay Discounting Task	2.59

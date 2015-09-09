@@ -1,0 +1,3 @@
+Action.Execution	0.1976
+Perception.Somesthesis.Pain	0.0524
+Action.Imagination	0.0456

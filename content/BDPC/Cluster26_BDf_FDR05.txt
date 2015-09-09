@@ -1,0 +1,7 @@
+Cognition.Memory.Working	2.68
+Perception.Vision.Motion	2.35
+Action.Preparation	4.48
+Cognition.Space	2.41
+Action.Motor Learning	2.10
+Action.Inhibition	2.21
+Cognition.Reasoning	3.15

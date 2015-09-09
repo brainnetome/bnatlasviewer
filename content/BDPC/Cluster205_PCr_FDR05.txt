@@ -1,0 +1,3 @@
+Face.Monitor/Discrimination	0.0949
+Reading (Overt)	0.0419
+Reading (Covert)	0.0206

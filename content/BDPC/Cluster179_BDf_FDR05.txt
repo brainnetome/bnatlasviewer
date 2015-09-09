@@ -1,0 +1,5 @@
+Emotion	1.83
+Cognition	1.86
+Perception.Somesthesis.Pain	2.19
+Perception.Gustation	2.95
+Emotion.Sadness	2.45

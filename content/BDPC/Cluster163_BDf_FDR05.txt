@@ -1,0 +1,2 @@
+Perception.Somesthesis.Pain	5.48
+Perception.Somesthesis	2.96

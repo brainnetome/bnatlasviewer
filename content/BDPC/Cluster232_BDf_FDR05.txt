@@ -1,0 +1,3 @@
+Emotion	1.70
+Cognition	1.47
+Perception.Somesthesis.Pain	1.93

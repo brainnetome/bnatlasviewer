@@ -1,0 +1,7 @@
+Action.Observation	4.19
+Cognition.Language.Speech	2.84
+Emotion.Happiness	4.35
+Cognition.Language.Semantics	2.69
+Perception.Audition	1.84
+Action.Execution.Speech	2.32
+Cognition.Language.Phonology	2.82

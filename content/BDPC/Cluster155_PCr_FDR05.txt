@@ -1,0 +1,10 @@
+Finger Tapping	0.1538
+Go/No-Go	0.0612
+Flexion/Extension	0.0303
+Imagined Movement	0.0252
+Sequence Recall/Learning	0.0235
+Chewing/Swallowing	0.0234
+Reading (Overt)	0.0232
+Recitation/Repetition.(Overt)	0.0224
+Grasping	0.0216
+Pointing	0.0128

@@ -1,0 +1,4 @@
+Semantic.Monitor/Discrimination	0.1812
+Encoding	0.0549
+Imagined Objects/Scenes	0.0541
+Naming (Overt)	0.0501

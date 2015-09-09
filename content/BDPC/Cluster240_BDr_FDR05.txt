@@ -1,0 +1,4 @@
+Cognition.Attention	0.1467
+Perception.Somesthesis.Pain	0.0471
+Perception.Vision.Motion	0.0428
+Interoception.Sleep	0.0175

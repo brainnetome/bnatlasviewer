@@ -1,0 +1,4 @@
+Emotion	2.06
+Perception.Gustation	4.85
+Interoception.Sexuality	1.92
+Cognition	3.66

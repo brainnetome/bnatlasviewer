@@ -1,0 +1,5 @@
+Face.Monitor/Discrimination	4.57
+Passive Viewing	5.84
+Subjective Emotional.Picture Discrimination	4.57
+Episodic Recall	2.27
+Theory of Mind Task	2.30

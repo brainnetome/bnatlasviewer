@@ -1,0 +1,6 @@
+Pain.Monitor/Discrimination	0.1055
+Finger Tapping	0.0676
+Imagined Movement	0.0263
+Recitation/Repetition.(Overt)	0.0208
+Chewing/Swallowing	0.0149
+Isometric Force	0.0116

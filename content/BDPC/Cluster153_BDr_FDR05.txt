@@ -1,0 +1,3 @@
+Cognition.Memory.Explicit	0.1287
+Cognition.Social Cognition	0.0730
+Cognition.Language	0.0257

@@ -1,0 +1,4 @@
+Pain.Monitor/Discrimination	3.29
+Chewing/Swallowing	5.90
+Isometric Force	3.08
+Flexion/Extension	4.56

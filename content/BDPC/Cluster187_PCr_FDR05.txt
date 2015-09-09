@@ -1,0 +1,4 @@
+Reward Task	0.1807
+Episodic Recall	0.0665
+Eating/Drinking	0.0476
+Delay Discounting Task	0.0110

@@ -1,0 +1,4 @@
+Passive Viewing	4.90
+Eating/Drinking	2.01
+Reward Task	2.37
+Delay Discounting Task	3.53

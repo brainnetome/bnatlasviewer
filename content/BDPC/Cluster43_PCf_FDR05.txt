@@ -1,0 +1,3 @@
+Semantic.Monitor/Discrimination	2.33
+Passive Viewing	2.55
+Paired Associate Recall	2.83

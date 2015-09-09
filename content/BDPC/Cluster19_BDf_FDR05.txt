@@ -1,0 +1,7 @@
+Cognition.Memory.Working	1.88
+Cognition	1.55
+Interoception.Sexuality	1.66
+Action.Inhibition	2.80
+Cognition.Memory.Explicit	1.43
+Cognition.Social Cognition	2.13
+Emotion	1.85

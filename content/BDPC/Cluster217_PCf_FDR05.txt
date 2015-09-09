@@ -1,0 +1,5 @@
+Encoding	4.41
+Cued Explicit.Recognition	3.07
+Episodic Recall	3.91
+Passive Viewing	3.65
+Paired Associate Recall	2.45

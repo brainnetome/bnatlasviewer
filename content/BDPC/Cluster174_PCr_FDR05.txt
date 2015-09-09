@@ -1,0 +1,4 @@
+Pain.Monitor/Discrimination	0.1661
+Recitation/Repetition.(Overt)	0.0190
+Chewing/Swallowing	0.0185
+Isometric Force	0.0106

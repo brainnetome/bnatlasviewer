@@ -1,0 +1,4 @@
+Emotion	0.1720
+Cognition.Language.Speech	0.0797
+Cognition.Music	0.0208
+Emotion.Anger	0.0144

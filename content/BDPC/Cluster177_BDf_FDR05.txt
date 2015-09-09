@@ -1,0 +1,2 @@
+Emotion	3.84
+Perception.Somesthesis.Pain	1.93

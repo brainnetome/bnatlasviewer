@@ -1,0 +1,5 @@
+Sternberg Task	5.07
+Mental Rotation	2.86
+Wisconsin Card Sorting.Test	3.53
+Counting/Calculation	2.56
+Spatial/Location.Discrimination	3.03

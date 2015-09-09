@@ -1,0 +1,7 @@
+Finger Tapping	3.44
+Flexion/Extension	3.94
+Saccades	3.14
+Drawing	4.95
+Chewing/Swallowing	2.82
+Grasping	4.41
+Imagined Movement	3.67

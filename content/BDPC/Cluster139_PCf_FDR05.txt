@@ -1,0 +1,6 @@
+Counting/Calculation	2.86
+Mental Rotation	2.80
+Action Observation	2.07
+Tactile.Monitor/Discrimination	1.84
+Imagined Movement	2.21
+Finger Tapping	2.15

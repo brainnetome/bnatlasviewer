@@ -1,0 +1,2 @@
+Perception.Somesthesis.Pain	2.14
+Cognition.Time	3.28

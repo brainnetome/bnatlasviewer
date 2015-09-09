@@ -1,0 +1,6 @@
+Visual Distractor/Visual.Attention	2.85
+Delayed Match To Sample	4.33
+Saccades	2.98
+Mental Rotation	2.48
+Orthographic.Discrimination	3.49
+Deductive Reasoning	2.97

@@ -1,0 +1,3 @@
+Emotion	0.1863
+Cognition	0.1444
+Interoception.Sexuality	0.0207

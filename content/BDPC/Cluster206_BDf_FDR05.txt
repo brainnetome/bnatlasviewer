@@ -1,0 +1,4 @@
+Perception.Vision.Shape	3.20
+Perception.Vision	2.76
+Cognition.Space	2.25
+Cognition.Language.Orthography	1.72

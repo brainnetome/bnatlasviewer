@@ -1,0 +1,4 @@
+Word Generation (Covert)	2.18
+Task Switching	2.32
+Word Generation (Overt)	2.17
+Sternberg Task	1.87

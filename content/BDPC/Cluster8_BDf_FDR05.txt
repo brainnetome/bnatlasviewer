@@ -1,0 +1,6 @@
+Cognition.Attention	6.39
+Cognition.Memory.Working	2.72
+Action.Execution	2.76
+Action.Inhibition	1.97
+Perception.Vision.Motion	1.76
+Action.Motor Learning	1.47

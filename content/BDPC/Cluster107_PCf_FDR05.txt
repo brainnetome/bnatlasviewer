@@ -1,0 +1,7 @@
+Naming (Covert)	3.95
+Naming (Overt)	1.91
+Passive Viewing	2.73
+Semantic.Monitor/Discrimination	1.99
+Reading (Covert)	2.19
+Phonological.Discrimination	3.01
+Face.Monitor/Discrimination	2.18

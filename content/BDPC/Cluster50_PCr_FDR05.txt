@@ -1,0 +1,4 @@
+Reward Task	0.2310
+Face.Monitor/Discrimination	0.1156
+Film Viewing	0.0706
+Eating/Drinking	0.0447

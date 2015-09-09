@@ -1,0 +1,2 @@
+Pain.Monitor/Discrimination	0.0885
+Tactile.Monitor/Discrimination	0.0826

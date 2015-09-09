@@ -1,0 +1,7 @@
+Sternberg Task	0.0764
+Counting/Calculation	0.0550
+Spatial/Location.Discrimination	0.0491
+Delayed Match To Sample	0.0330
+Wisconsin Card Sorting.Test	0.0288
+Mental Rotation	0.0275
+Semantic.Monitor/Discrimination	0.0258

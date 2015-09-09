@@ -1,0 +1,6 @@
+Emotion	0.1595
+Cognition.Attention	0.1357
+Cognition	0.1132
+Cognition.Memory.Working	0.0626
+Action.Inhibition	0.0370
+Cognition.Reasoning	0.0188

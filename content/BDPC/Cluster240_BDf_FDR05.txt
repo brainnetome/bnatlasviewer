@@ -1,0 +1,4 @@
+Cognition.Attention	1.71
+Interoception.Sleep	2.31
+Perception.Somesthesis.Pain	5.58
+Perception.Vision.Motion	2.07

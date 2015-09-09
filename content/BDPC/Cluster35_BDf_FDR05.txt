@@ -1,0 +1,4 @@
+Cognition.Language.Semantics	2.55
+Cognition.Language	5.43
+Cognition.Language.Speech	5.04
+Cognition.Language.Syntax	1.57

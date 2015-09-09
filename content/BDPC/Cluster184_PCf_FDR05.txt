@@ -1,0 +1,4 @@
+Pain.Monitor/Discrimination	3.85
+Tactile.Monitor/Discrimination	4.38
+Transcranial Magnetic.Stimulation	4.53
+Chewing/Swallowing	2.63

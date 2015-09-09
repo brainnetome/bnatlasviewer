@@ -1,0 +1,5 @@
+Sequence Recall/Learning	13.22
+Pointing	7.93
+Grasping	4.92
+Imagined Movement	6.63
+Drawing	3.81

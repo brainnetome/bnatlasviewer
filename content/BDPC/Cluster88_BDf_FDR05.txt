@@ -1,0 +1,7 @@
+Cognition.Social Cognition	3.34
+Emotion.Happiness	3.28
+Cognition.Language.Speech	2.11
+Cognition.Language	1.53
+Perception.Audition	1.49
+Cognition.Language.Semantics	2.41
+Cognition.Time	2.85

@@ -1,0 +1,4 @@
+Finger Tapping	3.72
+Grasping	3.02
+Flexion/Extension	3.97
+Tactile.Monitor/Discrimination	2.28

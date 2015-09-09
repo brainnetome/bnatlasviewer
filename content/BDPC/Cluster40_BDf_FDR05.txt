@@ -1,0 +1,2 @@
+Perception.Somesthesis.Pain	2.12
+Action.Observation	2.56

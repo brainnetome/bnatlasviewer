@@ -1,0 +1,8 @@
+Reward Task	0.0556
+Tactile.Monitor/Discrimination	0.0553
+Imagined Movement	0.0433
+Counting/Calculation	0.0387
+Face.Monitor/Discrimination	0.0243
+Finger Tapping	0.0238
+Sternberg Task	0.0161
+Action Observation	0.0155

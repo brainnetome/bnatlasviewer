@@ -1,0 +1,2 @@
+Reward Task	0.2283
+Imagined Objects/Scenes	0.0345

@@ -1,0 +1,5 @@
+Cognition.Language.Phonology	2.15
+Cognition.Language.Semantics	2.60
+Cognition.Language.Speech	1.63
+Action.Imagination	2.47
+Cognition.Music	2.15

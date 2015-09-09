@@ -1,0 +1,5 @@
+Emotion	3.47
+Cognition	1.87
+Cognition.Memory.Explicit	1.46
+Cognition.Social Cognition	1.36
+Cognition.Language	2.69

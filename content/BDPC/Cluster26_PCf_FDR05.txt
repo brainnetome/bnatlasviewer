@@ -1,0 +1,7 @@
+n-back	3.80
+Mental Rotation	7.79
+Pointing	6.12
+Anti-Saccades	2.76
+Saccades	2.89
+Drawing	2.17
+Counting/Calculation	3.65

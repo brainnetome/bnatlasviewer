@@ -1,0 +1,10 @@
+Cognition.Language.Speech	4.53
+Emotion.Sadness	7.10
+Action.Motor Learning	2.05
+Cognition.Language.Phonology	3.01
+Cognition.Language.Semantics	3.54
+Emotion.Happiness	2.67
+Cognition.Language	1.94
+Cognition.Music	2.57
+Perception.Audition	1.46
+Action.Execution.Speech	2.49

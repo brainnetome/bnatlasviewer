@@ -1,0 +1,4 @@
+Pain.Monitor/Discrimination	3.04
+Transcranial Magnetic.Stimulation	4.66
+Isometric Force	2.20
+Finger Tapping	4.17

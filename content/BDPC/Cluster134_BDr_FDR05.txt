@@ -1,0 +1,11 @@
+Cognition.Attention	0.1351
+Cognition.Memory.Working	0.0786
+Perception.Vision.Shape	0.0753
+Action.Execution	0.0673
+Cognition.Reasoning	0.0579
+Cognition.Space	0.0484
+Cognition.Language.Orthography	0.0273
+Perception.Vision.Motion	0.0266
+Action.Inhibition	0.0213
+Interoception.Sexuality	0.0151
+Perception.Vision.Color	0.0073

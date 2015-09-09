@@ -1,0 +1,4 @@
+Finger Tapping	3.70
+Saccades	2.75
+Mental Rotation	2.99
+Imagined Movement	2.92

@@ -1,0 +1,10 @@
+Face.Monitor/Discrimination	0.1088
+Passive Listening	0.0712
+Film Viewing	0.0599
+Phonological.Discrimination	0.0590
+Word Generation (Covert)	0.0429
+Reading (Overt)	0.0387
+Tone.Monitor/Discrimination	0.0387
+Pitch.Monitor/Discrimination	0.0370
+Action Observation	0.0210
+Oddball Discrimination	0.0152

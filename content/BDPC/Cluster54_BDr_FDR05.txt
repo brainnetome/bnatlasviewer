@@ -1,0 +1,6 @@
+Action.Execution	0.1722
+Cognition.Language.Speech	0.0855
+Perception.Vision.Motion	0.0669
+Action.Execution.Speech	0.0425
+Action.Imagination	0.0220
+Cognition.Music	0.0200

@@ -1,0 +1,3 @@
+Reward Task	0.3466
+Face.Monitor/Discrimination	0.0998
+Olfactory.Monitor/Discrimination	0.0351

@@ -1,0 +1,5 @@
+Face.Monitor/Discrimination	0.1243
+Film Viewing	0.0913
+Subjective Emotional.Picture Discrimination	0.0769
+Episodic Recall	0.0614
+Pitch.Monitor/Discrimination	0.0434

@@ -1,0 +1,2 @@
+Emotion	1.94
+Cognition	1.86

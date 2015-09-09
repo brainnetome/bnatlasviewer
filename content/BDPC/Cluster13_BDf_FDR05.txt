@@ -1,0 +1,5 @@
+Emotion	2.13
+Cognition	4.04
+Cognition.Memory.Explicit	4.32
+Cognition.Social Cognition	1.57
+Emotion.Sadness	1.57

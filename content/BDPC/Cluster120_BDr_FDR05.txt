@@ -1,0 +1,2 @@
+Cognition.Memory.Explicit	0.1428
+Perception.Vision	0.1005

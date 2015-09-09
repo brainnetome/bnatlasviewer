@@ -1,0 +1,5 @@
+Mental Rotation	9.74
+Writing	3.94
+Saccades	14.14
+Imagined Movement	3.22
+Drawing	2.64

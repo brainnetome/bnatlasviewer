@@ -1,0 +1,6 @@
+Passive Viewing	0.1468
+Naming (Covert)	0.0751
+Reward Task	0.0481
+Film Viewing	0.0365
+Face.Monitor/Discrimination	0.0323
+Action Observation	0.0150

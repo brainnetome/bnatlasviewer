@@ -1,0 +1,2 @@
+Reward Task	0.2604
+Olfactory.Monitor/Discrimination	0.0440

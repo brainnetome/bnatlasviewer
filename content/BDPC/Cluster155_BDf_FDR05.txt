@@ -1,0 +1,3 @@
+Action.Execution	3.52
+Perception.Somesthesis	2.70
+Action.Execution.Speech	1.81

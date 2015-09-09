@@ -1,0 +1,2 @@
+Reading (Overt)	0.0365
+Reading (Covert)	0.0295

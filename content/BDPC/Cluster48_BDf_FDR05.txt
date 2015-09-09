@@ -1,0 +1,3 @@
+Emotion	2.27
+Cognition	1.96
+Cognition.Language.Orthography	3.33

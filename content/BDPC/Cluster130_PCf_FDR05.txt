@@ -1,0 +1,4 @@
+Flanker Task	11.31
+Finger Tapping	6.73
+Grasping	5.43
+Drawing	2.32

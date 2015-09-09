@@ -1,0 +1,2 @@
+Cognition.Memory.Working	2.35
+Perception.Somesthesis.Pain	1.70

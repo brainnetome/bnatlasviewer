@@ -1,0 +1,6 @@
+Go/No-Go	0.0686
+Saccades	0.0444
+Semantic.Monitor/Discrimination	0.0302
+Pain.Monitor/Discrimination	0.0254
+Delay Discounting Task	0.0116
+Anti-Saccades	0.0112

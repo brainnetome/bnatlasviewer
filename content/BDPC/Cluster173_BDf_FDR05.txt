@@ -1,0 +1,2 @@
+Perception.Somesthesis.Pain	3.84
+Perception.Gustation	2.89

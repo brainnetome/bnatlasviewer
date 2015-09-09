@@ -1,0 +1,4 @@
+Cued Explicit.Recognition	2.91
+Episodic Recall	4.96
+Imagined Objects/Scenes	3.11
+Anti-Saccades	2.89

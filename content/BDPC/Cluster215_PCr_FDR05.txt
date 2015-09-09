@@ -1,0 +1,6 @@
+Face.Monitor/Discrimination	0.1606
+Passive Viewing	0.0840
+Cued Explicit.Recognition	0.0771
+Film Viewing	0.0446
+Paired Associate Recall	0.0352
+Olfactory.Monitor/Discrimination	0.0334

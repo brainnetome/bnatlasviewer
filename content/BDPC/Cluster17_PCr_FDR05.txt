@@ -1,0 +1,8 @@
+n-back	0.1145
+Word Generation (Covert)	0.0528
+Semantic.Monitor/Discrimination	0.0523
+Encoding	0.0418
+Stroop Task	0.0392
+Task Switching	0.0343
+Pain.Monitor/Discrimination	0.0328
+Reward Task	0.0087

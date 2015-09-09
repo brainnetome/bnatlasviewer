@@ -1,0 +1,6 @@
+Delayed Match To Sample	3.37
+Mental Rotation	2.68
+Saccades	3.54
+Stroop Task	2.73
+Wisconsin Card Sorting.Test	2.45
+Task Switching	2.44

@@ -1,0 +1,5 @@
+Perception.Vision.Shape	0.0588
+Perception.Vision.Motion	0.0430
+Cognition.Social Cognition	0.0410
+Cognition.Space	0.0383
+Action.Observation	0.0190

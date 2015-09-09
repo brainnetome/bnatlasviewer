@@ -1,0 +1,5 @@
+Subjective Emotional.Picture Discrimination	5.20
+Face.Monitor/Discrimination	5.49
+Film Viewing	3.05
+Episodic Recall	4.52
+Pitch.Monitor/Discrimination	4.62

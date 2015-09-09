@@ -1,0 +1,2 @@
+Cognition.Language.Semantics	2.46
+Cognition.Language.Syntax	3.83

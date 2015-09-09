@@ -1,0 +1,4 @@
+Olfactory.Monitor/Discrimination	4.11
+Stroop Task	2.41
+Anti-Saccades	1.63
+Reward Task	3.31

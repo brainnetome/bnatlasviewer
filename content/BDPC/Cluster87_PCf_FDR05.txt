@@ -1,0 +1,7 @@
+Semantic.Monitor/Discrimination	2.99
+Delay Discounting Task	3.49
+Pitch.Monitor/Discrimination	4.38
+Passive Listening	3.76
+Theory of Mind Task	2.82
+Phonological.Discrimination	3.15
+Reading (Covert)	2.47

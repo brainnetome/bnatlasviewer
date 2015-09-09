@@ -1,0 +1,9 @@
+Drawing	4.17
+Imagined Movement	3.81
+Anti-Saccades	5.70
+Finger Tapping	3.22
+Mental Rotation	2.42
+Saccades	2.02
+Visual Distractor/Visual.Attention	3.18
+Action Observation	3.95
+Sequence Recall/Learning	2.69

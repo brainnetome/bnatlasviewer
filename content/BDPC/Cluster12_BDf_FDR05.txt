@@ -1,0 +1,4 @@
+Action.Inhibition	1.55
+Cognition	2.12
+Cognition.Attention	1.37
+Emotion	1.43

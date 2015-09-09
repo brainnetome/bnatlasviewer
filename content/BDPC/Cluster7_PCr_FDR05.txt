@@ -1,0 +1,11 @@
+Drawing	0.0624
+Action Observation	0.0475
+Saccades	0.0471
+Flexion/Extension	0.0432
+Imagined Movement	0.0390
+Mental Rotation	0.0338
+Sequence Recall/Learning	0.0201
+Visual Distractor/Visual.Attention	0.0179
+Semantic.Monitor/Discrimination	0.0157
+Pointing	0.0145
+Writing	0.0138

@@ -1,0 +1,5 @@
+Cognition.Attention	0.1296
+Cognition.Memory.Explicit	0.0969
+Cognition.Memory.Working	0.0944
+Action.Inhibition	0.0429
+Cognition.Reasoning	0.0291

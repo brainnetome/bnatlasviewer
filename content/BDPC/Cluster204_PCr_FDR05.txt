@@ -1,0 +1,5 @@
+Visual Distractor/Visual.Attention	0.0579
+Reading (Covert)	0.0339
+Naming (Covert)	0.0305
+Deductive Reasoning	0.0235
+Action Observation	0.0152

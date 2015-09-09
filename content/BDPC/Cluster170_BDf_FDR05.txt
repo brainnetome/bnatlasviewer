@@ -1,0 +1,3 @@
+Perception.Somesthesis.Pain	3.85
+Emotion.Disgust	7.40
+Perception.Olfaction	5.22

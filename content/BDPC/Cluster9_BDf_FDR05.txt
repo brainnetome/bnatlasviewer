@@ -1,0 +1,3 @@
+Action.Execution	3.40
+Perception.Vision.Motion	2.04
+Action.Imagination	1.62

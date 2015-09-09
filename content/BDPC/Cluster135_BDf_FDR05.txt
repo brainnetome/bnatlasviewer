@@ -1,0 +1,4 @@
+Cognition.Reasoning	2.71
+Perception.Vision.Shape	2.32
+Cognition.Memory.Explicit	2.78
+Cognition.Space	1.64

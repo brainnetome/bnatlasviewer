@@ -1,0 +1,7 @@
+Cognition.Language	2.17
+Perception.Vision.Shape	1.62
+Cognition.Language.Speech	3.31
+Perception.Vision	2.39
+Emotion.Fear	1.83
+Cognition.Language.Orthography	1.84
+Cognition.Language.Semantics	1.38

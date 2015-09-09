@@ -1,0 +1,5 @@
+Passive Viewing	0.0688
+Mental Rotation	0.0445
+Reading (Covert)	0.0300
+Naming (Covert)	0.0269
+Action Observation	0.0170

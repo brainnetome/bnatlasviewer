@@ -1,0 +1,8 @@
+Cognition.Attention	3.44
+Action.Execution	3.41
+Cognition.Memory.Working	1.82
+Perception.Vision.Shape	1.90
+Perception.Vision.Motion	1.45
+Cognition.Space	1.46
+Cognition.Reasoning	2.10
+Action.Preparation	2.75

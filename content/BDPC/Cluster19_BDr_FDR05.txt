@@ -1,0 +1,6 @@
+Emotion	0.1649
+Cognition	0.1211
+Cognition.Memory.Explicit	0.0989
+Cognition.Memory.Working	0.0744
+Action.Inhibition	0.0319
+Interoception.Sexuality	0.0193

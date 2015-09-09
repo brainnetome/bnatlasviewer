@@ -1,0 +1,3 @@
+Reward Task	0.4143
+Delay Discounting Task	0.0154
+Tower of London	0.0125

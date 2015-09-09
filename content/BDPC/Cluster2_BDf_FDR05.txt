@@ -1,0 +1,4 @@
+Cognition.Memory.Working	1.93
+Action.Inhibition	1.31
+Perception.Vision.Motion	1.58
+Cognition.Attention	1.35

@@ -1,0 +1,5 @@
+Phonological.Discrimination	5.66
+Reading (Overt)	4.71
+Semantic.Monitor/Discrimination	3.23
+Passive Listening	1.96
+Oddball Discrimination	3.85

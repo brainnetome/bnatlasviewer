@@ -1,0 +1,2 @@
+Cognition.Language.Semantics	3.18
+Cognition.Language.Orthography	3.82

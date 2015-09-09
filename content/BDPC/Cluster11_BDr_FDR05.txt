@@ -1,0 +1,2 @@
+Cognition.Memory.Explicit	0.0937
+Perception.Somesthesis.Pain	0.0393

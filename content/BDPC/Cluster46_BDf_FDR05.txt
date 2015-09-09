@@ -1,0 +1,4 @@
+Perception.Gustation	8.20
+Perception.Olfaction	1.91
+Emotion	1.68
+Cognition	2.74

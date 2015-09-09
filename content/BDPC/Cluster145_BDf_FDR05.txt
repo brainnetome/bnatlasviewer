@@ -1,0 +1,4 @@
+Action.Execution	3.20
+Perception.Audition	2.63
+Perception.Somesthesis.Pain	2.18
+Perception.Somesthesis	1.68

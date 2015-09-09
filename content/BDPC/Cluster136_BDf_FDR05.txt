@@ -1,0 +1,4 @@
+Cognition.Social Cognition	2.55
+Perception.Vision.Motion	2.18
+Cognition.Space	2.07
+Perception.Vision.Shape	2.29

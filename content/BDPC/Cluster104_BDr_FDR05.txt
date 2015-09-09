@@ -1,0 +1,3 @@
+Cognition.Memory.Explicit	0.1165
+Perception.Vision.Shape	0.0761
+Cognition.Language	0.0235

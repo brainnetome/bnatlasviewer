@@ -1,0 +1,5 @@
+Action.Execution	2.34
+Action.Imagination	2.70
+Perception.Vision.Shape	2.64
+Cognition.Space	2.30
+Perception.Vision.Motion	1.87

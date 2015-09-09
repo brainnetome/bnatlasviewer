@@ -1,0 +1,7 @@
+Cognition.Language.Speech	0.0814
+Cognition.Memory.Working	0.0783
+Cognition.Language.Phonology	0.0439
+Action.Execution.Speech	0.0237
+Cognition.Language.Orthography	0.0173
+Action.Imagination	0.0154
+Cognition.Music	0.0120

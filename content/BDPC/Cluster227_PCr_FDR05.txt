@@ -1,0 +1,3 @@
+Reward Task	0.1908
+Deception Task	0.0237
+Delay Discounting Task	0.0128

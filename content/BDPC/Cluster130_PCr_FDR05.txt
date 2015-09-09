@@ -1,0 +1,6 @@
+Finger Tapping	0.0679
+Grasping	0.0539
+Drawing	0.0280
+Flanker Task	0.0246
+Action Observation	0.0225
+Imagined Movement	0.0170

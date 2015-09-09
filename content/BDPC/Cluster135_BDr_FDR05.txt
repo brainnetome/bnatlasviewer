@@ -1,0 +1,8 @@
+Cognition.Attention	0.1147
+Cognition.Memory.Explicit	0.0887
+Cognition.Memory.Working	0.0640
+Perception.Vision.Shape	0.0636
+Perception.Vision.Motion	0.0424
+Cognition.Space	0.0294
+Cognition.Language.Orthography	0.0292
+Cognition.Reasoning	0.0228

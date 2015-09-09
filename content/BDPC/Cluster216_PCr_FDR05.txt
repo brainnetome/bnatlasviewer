@@ -1,0 +1,6 @@
+Reward Task	0.1438
+Face.Monitor/Discrimination	0.1287
+Cued Explicit.Recognition	0.0750
+Film Viewing	0.0500
+Paired Associate Recall	0.0487
+Olfactory.Monitor/Discrimination	0.0449

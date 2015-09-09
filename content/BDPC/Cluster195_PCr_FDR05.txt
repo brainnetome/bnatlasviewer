@@ -1,0 +1,2 @@
+Drawing	0.0364
+Chewing/Swallowing	0.0149

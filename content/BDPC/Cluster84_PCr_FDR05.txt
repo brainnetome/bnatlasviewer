@@ -1,0 +1,3 @@
+Episodic Recall	0.0837
+Theory of Mind Task	0.0646
+Rest	0.0260

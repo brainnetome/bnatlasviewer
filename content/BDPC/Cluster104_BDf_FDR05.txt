@@ -1,0 +1,4 @@
+Cognition.Language	2.72
+Cognition.Memory.Explicit	2.14
+Cognition.Language.Semantics	4.35
+Perception.Vision.Shape	1.76

@@ -1,0 +1,7 @@
+Pitch.Monitor/Discrimination	6.68
+Semantic.Monitor/Discrimination	6.43
+Phonological.Discrimination	4.32
+Tone.Monitor/Discrimination	4.13
+Music.Comprehension/Production	2.79
+Passive Listening	2.02
+Reading (Overt)	2.92

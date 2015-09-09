@@ -1,0 +1,7 @@
+Emotion	2.34
+Emotion.Sadness	8.78
+Emotion.Disgust	7.87
+Emotion.Anger	5.02
+Interoception.Sexuality	4.36
+Emotion.Fear	4.16
+Perception.Olfaction	3.15

@@ -1,0 +1,4 @@
+Perception.Vision	0.0487
+Perception.Vision.Motion	0.0470
+Action.Observation	0.0236
+Interoception.Hunger	0.0205

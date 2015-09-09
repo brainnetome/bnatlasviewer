@@ -1,0 +1,4 @@
+Emotion	0.2287
+Cognition	0.1148
+Cognition.Social Cognition	0.0595
+Emotion.Sadness	0.0336

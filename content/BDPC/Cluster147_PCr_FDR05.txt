@@ -1,0 +1,3 @@
+Visual Distractor/Visual.Attention	0.0795
+Saccades	0.0488
+Imagined Objects/Scenes	0.0331

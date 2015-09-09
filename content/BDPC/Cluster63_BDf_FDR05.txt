@@ -1,0 +1,6 @@
+Cognition.Language.Orthography	2.53
+Cognition.Language.Semantics	1.61
+Cognition.Language.Phonology	1.33
+Cognition.Language.Speech	1.76
+Cognition.Memory.Working	1.34
+Cognition.Language.Syntax	2.16

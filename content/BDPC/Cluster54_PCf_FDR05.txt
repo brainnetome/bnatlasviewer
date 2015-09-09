@@ -1,0 +1,5 @@
+Flexion/Extension	4.75
+Reading (Overt)	3.36
+Saccades	2.83
+Recitation/Repetition.(Overt)	3.55
+Chewing/Swallowing	4.80

@@ -1,0 +1,2 @@
+Cognition.Social Cognition	0.0806
+Cognition.Language	0.0590

@@ -1,0 +1,7 @@
+Semantic.Monitor/Discrimination	0.0959
+Theory of Mind Task	0.0694
+Passive Viewing	0.0634
+Episodic Recall	0.0571
+Imagined Objects/Scenes	0.0506
+Subjective Emotional.Picture Discrimination	0.0377
+Film Viewing	0.0249

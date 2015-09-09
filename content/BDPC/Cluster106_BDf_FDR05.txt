@@ -1,0 +1,5 @@
+Perception.Vision.Shape	2.46
+Perception.Vision	3.86
+Emotion.Fear	2.47
+Cognition.Language	2.82
+Action.Motor Learning	1.86

@@ -1,0 +1,5 @@
+Music.Comprehension/Production	3.75
+Recitation/Repetition.(Overt)	4.18
+Pitch.Monitor/Discrimination	3.23
+Pain.Monitor/Discrimination	3.07
+Passive Listening	1.88

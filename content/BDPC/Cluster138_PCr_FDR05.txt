@@ -1,0 +1,5 @@
+n-back	0.0647
+Counting/Calculation	0.0460
+Delayed Match To Sample	0.0345
+Mental Rotation	0.0271
+Wisconsin Card Sorting.Test	0.0256

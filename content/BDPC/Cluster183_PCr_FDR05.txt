@@ -1,0 +1,4 @@
+Pain.Monitor/Discrimination	0.1137
+Finger Tapping	0.0628
+Chewing/Swallowing	0.0166
+Pointing	0.0133

@@ -1,0 +1,5 @@
+Action.Execution	0.1227
+Perception.Somesthesis.Pain	0.0842
+Action.Execution.Speech	0.0275
+Action.Imagination	0.0230
+Cognition.Music	0.0175

@@ -1,0 +1,4 @@
+Semantic.Monitor/Discrimination	0.1031
+Cued Explicit.Recognition	0.0579
+Imagined Objects/Scenes	0.0435
+Theory of Mind Task	0.0258

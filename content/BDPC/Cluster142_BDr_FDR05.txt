@@ -1,0 +1,5 @@
+Cognition.Attention	0.1301
+Action.Execution	0.0949
+Perception.Somesthesis.Pain	0.0528
+Perception.Vision.Motion	0.0467
+Action.Inhibition	0.0404

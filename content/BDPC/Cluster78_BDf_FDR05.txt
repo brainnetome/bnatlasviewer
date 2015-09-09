@@ -1,0 +1,5 @@
+Cognition.Language.Speech	5.37
+Emotion.Anger	1.54
+Perception.Gustation	2.64
+Emotion.Disgust	2.91
+Emotion	1.59

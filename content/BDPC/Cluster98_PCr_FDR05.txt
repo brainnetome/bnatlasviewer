@@ -1,0 +1,4 @@
+Spatial/Location.Discrimination	0.0600
+Delayed Match To Sample	0.0547
+Action Observation	0.0296
+Delay Discounting Task	0.0178

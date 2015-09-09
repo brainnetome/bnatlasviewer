@@ -1,0 +1,3 @@
+Action Observation	3.94
+Spatial/Location.Discrimination	5.52
+Delayed Match To Sample	3.44

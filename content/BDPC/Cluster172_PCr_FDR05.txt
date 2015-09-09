@@ -1,0 +1,4 @@
+Pain.Monitor/Discrimination	0.1435
+Flexion/Extension	0.0489
+Recitation/Repetition.(Overt)	0.0284
+Chewing/Swallowing	0.0238

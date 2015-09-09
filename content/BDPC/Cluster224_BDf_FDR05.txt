@@ -1,0 +1,6 @@
+Emotion	2.80
+Cognition	3.44
+Emotion.Fear	4.67
+Perception.Gustation	3.73
+Perception.Olfaction	2.98
+Emotion.Sadness	2.98

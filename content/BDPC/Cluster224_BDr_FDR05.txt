@@ -1,0 +1,4 @@
+Emotion	0.2855
+Cognition	0.2387
+Emotion.Sadness	0.0275
+Perception.Olfaction	0.0232

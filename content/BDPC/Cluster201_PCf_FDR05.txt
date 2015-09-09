@@ -1,0 +1,7 @@
+Action Observation	3.17
+Visual Distractor/Visual.Attention	4.98
+Visual Pursuit/Tracking	3.09
+Mental Rotation	2.32
+Subjective Emotional.Picture Discrimination	3.11
+Film Viewing	2.75
+Passive Viewing	1.85

@@ -1,0 +1,7 @@
+Saccades	0.0785
+Recitation/Repetition.(Overt)	0.0513
+Reading (Overt)	0.0436
+Chewing/Swallowing	0.0286
+Imagined Movement	0.0285
+Reward Task	0.0206
+Flexion/Extension	0.0184

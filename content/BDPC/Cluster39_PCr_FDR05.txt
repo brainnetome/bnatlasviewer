@@ -1,0 +1,7 @@
+Word Generation (Covert)	0.0448
+Imagined Movement	0.0272
+Music.Comprehension/Production	0.0263
+Reading (Overt)	0.0252
+Sternberg Task	0.0183
+Recitation/Repetition.(Overt)	0.0177
+Recitation/Repetition.(Covert)	0.0131

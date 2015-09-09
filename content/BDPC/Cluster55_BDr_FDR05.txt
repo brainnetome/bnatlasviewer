@@ -1,0 +1,5 @@
+Action.Execution	0.1582
+Perception.Vision.Shape	0.0564
+Perception.Vision.Motion	0.0564
+Cognition.Space	0.0391
+Action.Imagination	0.0274

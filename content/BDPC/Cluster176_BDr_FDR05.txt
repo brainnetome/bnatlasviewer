@@ -1,0 +1,2 @@
+Emotion	0.2226
+Cognition	0.1452

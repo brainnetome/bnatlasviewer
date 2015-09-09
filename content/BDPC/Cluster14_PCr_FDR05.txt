@@ -1,0 +1,4 @@
+Face.Monitor/Discrimination	0.0989
+Subjective Emotional.Picture Discrimination	0.0685
+Episodic Recall	0.0665
+Theory of Mind Task	0.0523

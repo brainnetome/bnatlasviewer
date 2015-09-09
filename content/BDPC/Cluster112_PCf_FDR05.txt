@@ -1,0 +1,2 @@
+Semantic.Monitor/Discrimination	7.38
+Encoding	3.30

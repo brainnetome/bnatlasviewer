@@ -1,0 +1,6 @@
+Action.Motor Learning	3.14
+Cognition.Memory.Working	1.78
+Perception.Vision	2.16
+Action.Execution	3.55
+Cognition.Space	1.95
+Perception.Vision.Motion	1.46

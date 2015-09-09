@@ -1,0 +1,6 @@
+Passive Listening	4.53
+Phonological.Discrimination	2.42
+Semantic.Monitor/Discrimination	3.61
+Reading (Covert)	3.83
+Word Generation (Overt)	2.84
+Word Generation (Covert)	2.77

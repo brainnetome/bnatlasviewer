@@ -1,0 +1,8 @@
+Cognition.Space	4.24
+Interoception.Hunger	4.30
+Action.Observation	2.44
+Perception.Vision.Shape	2.35
+Perception.Vision.Motion	2.36
+Interoception.Sexuality	1.96
+Emotion.Disgust	4.82
+Perception.Vision	2.40

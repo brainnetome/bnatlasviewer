@@ -1,0 +1,6 @@
+n-back	0.0846
+Cued Explicit.Recognition	0.0723
+Go/No-Go	0.0353
+Delay Discounting Task	0.0186
+Flanker Task	0.0172
+Sternberg Task	0.0127

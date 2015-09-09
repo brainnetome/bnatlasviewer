@@ -1,0 +1,6 @@
+Action.Execution	1.59
+Perception.Somesthesis	2.25
+Cognition.Memory.Working	3.40
+Action.Motor Learning	1.87
+Cognition.Time	3.00
+Cognition.Space	1.44

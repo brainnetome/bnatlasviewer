@@ -1,0 +1,5 @@
+Face.Monitor/Discrimination	3.64
+Passive Viewing	2.96
+Cued Explicit.Recognition	2.77
+Paired Associate Recall	4.38
+Olfactory.Monitor/Discrimination	2.92

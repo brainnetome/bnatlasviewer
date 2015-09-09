@@ -1,0 +1,6 @@
+Action.Execution.Speech	5.47
+Cognition.Music	3.09
+Cognition.Language.Phonology	3.21
+Cognition.Language.Speech	3.27
+Perception.Audition	1.86
+Cognition.Language	3.06

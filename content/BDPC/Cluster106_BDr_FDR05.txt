@@ -1,0 +1,5 @@
+Cognition.Memory.Working	0.0695
+Perception.Vision.Shape	0.0649
+Perception.Vision	0.0408
+Cognition.Language	0.0154
+Action.Motor Learning	0.0110

@@ -1,0 +1,2 @@
+Cognition.Language.Semantics	0.2258
+Cognition.Memory.Explicit	0.1595

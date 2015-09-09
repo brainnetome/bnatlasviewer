@@ -1,0 +1,8 @@
+Reward Task	0.0511
+Task Switching	0.0390
+Word Generation (Overt)	0.0290
+Sternberg Task	0.0276
+Recitation/Repetition.(Overt)	0.0181
+Tone.Monitor/Discrimination	0.0169
+Passive Viewing	0.0125
+Word Generation (Covert)	0.0119

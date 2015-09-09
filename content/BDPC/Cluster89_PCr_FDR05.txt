@@ -1,0 +1,2 @@
+Semantic.Monitor/Discrimination	0.2527
+Reading (Covert)	0.0724

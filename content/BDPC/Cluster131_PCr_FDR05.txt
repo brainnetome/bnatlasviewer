@@ -1,0 +1,6 @@
+Grasping	0.0640
+Drawing	0.0415
+Imagined Movement	0.0381
+Pointing	0.0365
+Action Observation	0.0257
+Sequence Recall/Learning	0.0210

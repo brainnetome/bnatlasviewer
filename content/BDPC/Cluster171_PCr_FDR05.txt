@@ -1,0 +1,3 @@
+Pain.Monitor/Discrimination	0.1091
+Tactile.Monitor/Discrimination	0.0534
+Isometric Force	0.0120

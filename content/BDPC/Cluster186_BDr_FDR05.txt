@@ -1,0 +1,3 @@
+Emotion	0.1921
+Perception.Somesthesis.Pain	0.0460
+Action.Inhibition	0.0385

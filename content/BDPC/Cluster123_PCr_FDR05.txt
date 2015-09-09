@@ -1,0 +1,5 @@
+Semantic.Monitor/Discrimination	0.1610
+Film Viewing	0.0468
+Reading (Covert)	0.0448
+Pitch.Monitor/Discrimination	0.0448
+Transcranial Magnetic.Stimulation	0.0288

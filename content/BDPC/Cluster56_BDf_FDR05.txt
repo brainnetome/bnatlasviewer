@@ -1,0 +1,9 @@
+Action.Execution	2.49
+Cognition.Space	3.30
+Action.Imagination	3.00
+Cognition.Soma	2.72
+Action.Motor Learning	3.73
+Action.Observation	2.62
+Perception.Vision.Shape	3.82
+Perception.Vision.Motion	1.96
+Interoception	3.40

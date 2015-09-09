@@ -1,0 +1,4 @@
+Sternberg Task	2.90
+Delayed Match To Sample	3.06
+n-back	1.72
+Pain.Monitor/Discrimination	2.04

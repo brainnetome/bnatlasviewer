@@ -1,0 +1,5 @@
+Phonological.Discrimination	0.1524
+Reward Task	0.0733
+n-back	0.0585
+Semantic.Monitor/Discrimination	0.0464
+Word Stem Completion.(Overt)	0.0093

@@ -1,0 +1,5 @@
+Perception.Somesthesis.Pain	3.54
+Perception.Somesthesis	3.06
+Interoception.Sexuality	4.21
+Perception.Gustation	3.43
+Emotion.Disgust	2.96

@@ -1,0 +1,7 @@
+Finger Tapping	0.0801
+Flexion/Extension	0.0484
+Saccades	0.0375
+Recitation/Repetition.(Overt)	0.0288
+Tone.Monitor/Discrimination	0.0271
+Imagined Movement	0.0261
+Isometric Force	0.0083

@@ -1,0 +1,6 @@
+Visual Distractor/Visual.Attention	0.0669
+Passive Viewing	0.0583
+Counting/Calculation	0.0425
+Reading (Covert)	0.0310
+Visual Pursuit/Tracking	0.0267
+Action Observation	0.0147

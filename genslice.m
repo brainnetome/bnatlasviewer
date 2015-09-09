@@ -29,6 +29,10 @@ im=flipud(reshape(d(:,:,size(d,3)+1-ii),size(d,1),[])');
 save(sprintf([cachedir '2/%03d.mat'],ii),'im');
 end
 
+imwrite(mat2gray(zeros([181,217])),[outputdir 'mask-0-001.png']);
+imwrite(mat2gray(zeros([181,181])),[outputdir 'mask-1-001.png']);
+imwrite(mat2gray(zeros([217,181])),[outputdir 'mask-2-001.png']);
+
 %-------------------------------------------------------
 % background brain image
 %-------------------------------------------------------
@@ -77,6 +81,8 @@ imwrite(mat2gray(im2),[outputdir 'imgseq-z.png']);
 end
 
 end
+
+
 
 % imshow(im0,[]);
 % imshow(im1,[]);

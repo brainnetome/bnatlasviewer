@@ -38,5 +38,5 @@ for isoval=1:max(d(:))
 jsonstr=[jsonstr sprintf('GLOBAL_title2ind["%s"]=%d',labels{isoval},isoval-1) sprintf(';\n')];
 end
 
-fp=fopen([outputdir 'gv_center.json'],'wt');fprintf(fp,'%s',jsonstr);fclose(fp);
+fp=fopen([outputdir 'data_centers.json'],'wt');fprintf(fp,'%s',jsonstr);fclose(fp);
 

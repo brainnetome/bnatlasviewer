@@ -18,6 +18,7 @@ window.addEventListener("load",function()
 {
 	loadLabelMaps();
 	// loadBarCharts();
+	loadTreeViewData();
 
   document.getElementById("toggle-area-map").addEventListener("click",ToggleAreaMapHandler,false);
   document.getElementById("toggle-fiber").addEventListener("click",ToggleFiberHandler,false);
@@ -78,6 +79,17 @@ window.addEventListener("load",function()
 		var ctx = document.getElementById("behavior_barchart").getContext("2d");
 		window.myBar = new Chart(ctx).HorizontalBar(barChartData, {
 			responsive : true
+		});
+	}
+
+	function loadTreeViewData(){
+		$('#ajax').jstree({
+			'core' : {
+				'data' : {
+					"url" : "bnatlas_246.json",
+					"dataType" : "json" // needed only if you do not supply JSON headers
+				}
+			}
 		});
 	}
 
@@ -270,15 +282,17 @@ window.addEventListener("load",function()
 		var vlist=new Array;vlist[0]=[1,2];vlist[1]=[0,2];vlist[2]=[0,1];
 		var img=e.target;
 		var canvas=img.parentNode;
-		var offsetX=canvas.offsetLeft;
-		var offsetY=canvas.offsetTop;
+		var offsetX=parseInt(canvas.getBoundingClientRect().left);//canvas.offsetLeft;
+		var offsetY=parseInt(canvas.getBoundingClientRect().top);//canvas.offsetTop;
 		if (GLOBAL.area_map_flag){
 			// document.getElementById("label").innerHTML="";
 			return;
 		}else{
 			if (GLOBAL.drag.mousedown){
-				var posX=e.pageX-offsetX;
-				var posY=e.pageY-offsetY;
+				// var posX=e.pageX-offsetX;
+				// var posY=e.pageY-offsetY;
+				var posX=parseInt(e.clientX-offsetX);
+				var posY=parseInt(e.clientY-offsetY);
 				document.getElementById("label").innerHTML="start:"+posX+","+posY;
 				var idx=img.id.substr(8,1)=="x"?0:(img.id.substr(8,1)=="y"?1:2);
 				var v=vlist[idx];

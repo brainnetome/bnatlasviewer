@@ -3,7 +3,7 @@
 import os,sys,json
 
 # custom parameters
-datadir = 'BDPC_20150908'
+datadir = 'BDPC'
 typelist=['BDf_FDR05','PCf_FDR05']
 
 for typeidx in range(2):

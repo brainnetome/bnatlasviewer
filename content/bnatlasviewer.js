@@ -86,7 +86,7 @@ window.addEventListener("load",function()
 		$('#ajax').jstree({
 			'core' : {
 				'data' : {
-					"url" : "bnatlas_246.json",
+					"url" : "bnatlas_tree.json",
 					"dataType" : "json" // needed only if you do not supply JSON headers
 				}
 			}
@@ -155,7 +155,7 @@ window.addEventListener("load",function()
 				eval('BDf_FDR05='+xmlhttp.responseText);
 			}
 		}
-		xmlhttp.open("GET","data_behaviors.json",true);
+		xmlhttp.open("GET","BDf_FDR05.json",true);
 		xmlhttp.send();
 	}
 

@@ -50,7 +50,8 @@ window.addEventListener("load",function()
 				// initializeFiber('fib');
 				// initializeFiber('den');
 				// initializeFiber('fun');
-				initializeBehaviorBar();
+				initializeBehaviorBar('BDf_FDR05');
+				initializeBehaviorBar('PCf_FDR05');
 
 				Update();
 				document.getElementById("display-splash").style.display='none';
@@ -90,7 +91,18 @@ window.addEventListener("load",function()
 					"dataType" : "json" // needed only if you do not supply JSON headers
 				}
 			}
-		});
+		}).on("select_node.jstree", function (e, data) { 
+			var title = data.node.text;
+			if (typeof GLOBAL_title2center[title] === 'undefined'){return;}
+			centeringAreasByTitle(title);
+			Update();
+			DrawBehaviorBar(title,'BDf_FDR05');
+			DrawBehaviorBar(title,'PCf_FDR05');
+			highlightAreasByTitle(title);
+			document.getElementById("log2").innerHTML=data.node.text+','+data.node.id;
+			document.getElementById("log_area").innerHTML=data.node.data;
+			console.log(data);console.log(e);
+		});;
 	}
 
 	function ToggleFiberHandler(e){
@@ -144,7 +156,7 @@ window.addEventListener("load",function()
 		}
 	}
 
-	function initializeBehaviorBar()
+	function initializeBehaviorBar(BDPC_type)
 	{
 		var xmlhttp;
 		if (window.XMLHttpRequest){
@@ -152,10 +164,10 @@ window.addEventListener("load",function()
 		}
 		xmlhttp.onreadystatechange=function(){
 			if (xmlhttp.readyState==4 && xmlhttp.status==200){
-				eval('BDf_FDR05='+xmlhttp.responseText);
+				eval(BDPC_type+'='+xmlhttp.responseText);
 			}
 		}
-		xmlhttp.open("GET","BDf_FDR05.json",true);
+		xmlhttp.open("GET",BDPC_type+".json",true);
 		xmlhttp.send();
 	}
 
@@ -236,7 +248,8 @@ window.addEventListener("load",function()
 		// DrawFiber('den');
 		// DrawFiber('fun');
   	// document.getElementById("label").innerHTML=title;
-		DrawBehaviorBar(title);
+		DrawBehaviorBar(title,'BDf_FDR05');
+		DrawBehaviorBar(title,'PCf_FDR05');
 		highlightAreasByTitle(title);
   }
 
@@ -363,7 +376,7 @@ function viewFiberByTitle(title)
 {
 	var ind=GLOBAL_title2ind[title];
 	GLOBAL.fiber.id=ind+1;
-	document.getElementById('log2').innerHTML=title+','+GLOBAL.fiber.id;
+	document.getElementById("log2").innerHTML=title+','+GLOBAL.fiber.id;
 }
 
 function highlightAreasByTitle(title)
@@ -463,22 +476,29 @@ function DrawFiber(fibstr)
 	if (imgfib){ctx.drawImage(imgfib,ww*xloc,hh*yloc,ww,hh,0,0,ww,hh);}
 }
 
-function DrawBehaviorBar(title)
+function DrawBehaviorBar(title,BDPC_type)
 {
 	// console.log(BDf_FDR05[idx]);
 	var idx=GLOBAL_title2ind[title]+1;
 
-	var lut = BDf_FDR05[idx];
+	var lut = eval(BDPC_type+'[idx]');//BDf_FDR05[idx];
 	var labels = [];
 	var data = [];
-	var colors = {};
 	var datasets = [];
 
+	var colors = {};
 	colors['Int']='151,187,205';
 	colors['Emo']='220,220,220';
 	colors['Cog']='220,0,220';
 	colors['Act']='220,20,0';
 	colors['Per']='0,220,220';
+
+	var BDPC_title={};
+	BDPC_title['BDf_FDR05']='Behaviorial Domains';
+	BDPC_title['PCf_FDR05']='Paradigm Classes';
+	var BDPC_barcolor={};
+	BDPC_barcolor['BDf_FDR05']="#DD6501";
+	BDPC_barcolor['PCf_FDR05']="#014D65";
 
 	function sortByDictValue(dict){
 		var items=Object.keys(dict).map(function(key){return [key,dict[key]];});
@@ -503,27 +523,77 @@ function DrawBehaviorBar(title)
 		// };
 	}
 	
-	var barChartData = {
-		'labels' : labels,
-		'datasets' : [
-			{
-				'label': title+" - Behaviorial Domains (likelihood ratio)",
-				'fillColor' : "rgba("+colors['Act']+",0.5)",
-				'strokeColor' : "rgba("+colors['Act']+",0.8)",
-				'highlightFill' : "rgba("+colors['Act']+",0.75)",
-				'highlightStroke' : "rgba("+colors['Act']+",1)",
-				'data' : data
-			}
-		]
-	}
-	var ctx = document.getElementById("behavior_barchart").getContext("2d");
-	ctx.canvas.width = 200;
-	ctx.canvas.height = 80;
-	if (window.myBar){window.myBar.destroy();}
+	// var barChartData = {
+	// 	'labels' : labels,
+	// 	'datasets' : [
+	// 		{
+	// 			'label': title+" - "+BDPC_title[BDPC_type]+" (likelihood ratio)",
+	// 			'fillColor' : "rgba("+colors['Act']+",0.5)",
+	// 			'strokeColor' : "rgba("+colors['Act']+",0.8)",
+	// 			'highlightFill' : "rgba("+colors['Act']+",0.75)",
+	// 			'highlightStroke' : "rgba("+colors['Act']+",1)",
+	// 			'data' : data
+	// 		}
+	// 	]
+	// }
+	// var ctx = document.getElementById("barchart_"+BDPC_type).getContext("2d");
+	// ctx.canvas.width = 200;
+	// ctx.canvas.height = 80;
+	// if (window.myBar){window.myBar.destroy();}
 	// window.myBar = new Chart(ctx).HorizontalBar(barChartData, {
-	window.myBar = new Chart(ctx).HorizontalBar(barChartData, {
-		responsive : true,
-		multiTooltipTemplate: "<%= datasetLabel %> - <%= value %>"
+	// 	responsive : true,
+	// 	multiTooltipTemplate: "<%= datasetLabel %> - <%= value %>"
+	// });
+
+	var dataPoints = [];
+	for (var ii=0;ii<data.length;ii++){
+		dataPoints[ii]={y:data[ii],label:data[ii],indexLabel:labels[ii]};
+	}
+
+	var chart = new CanvasJS.Chart("barchart_"+BDPC_type, {
+		title:{
+			text:BDPC_title[BDPC_type]//+" (likelihood ratio)"
+		},
+    animationEnabled: false,
+		axisX:{
+			interval: 1,
+			gridThickness: 0,
+			labelFontSize: 14,
+			labelFontStyle: "normal",
+			labelFontWeight: "normal",
+			labelFontFamily: "Lucida Sans Unicode"
+		},
+		axisY: {
+      tickThickness: 0,
+      lineThickness: 0,
+      valueFormatString: " ",
+      gridThickness: 0                    
+    },
+		// axisY2:{
+		// 	// interlacedColor: "rgba(1,77,101,.2)",
+		// 	gridColor: "rgba(1,77,101,.1)"
+		// },
+
+		data: [{     
+			toolTipContent: 
+			"<span style='\"'color: {color};'\"'><strong>{indexLabel}</strong></span>"+
+ 		  "<span style='\"'font-size: 20px; color:peru '\"'><strong>{y}</strong></span>",
+      indexLabelPlacement: "inside",
+			indexLabelFontColor: "white",
+      indexLabelFontWeight: 600,
+      indexLabelFontFamily: "Verdana",
+			type: "bar",
+      name: "companies",
+			axisYType: "secondary",
+			color: BDPC_barcolor[BDPC_type],//"#014D65",
+			dataPoints: dataPoints
+			    // [
+					// {y: 73, label: "China"},{y: 132, label: "US" } // ...
+					// ]
+		}]
 	});
-	//document.getElementById("label").innerHTML = window.myBar.generateLegend();
+
+	chart.render();
+
+
 }

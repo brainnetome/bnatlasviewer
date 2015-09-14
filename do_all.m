@@ -23,11 +23,12 @@ gencenters([inputdir atlasfile],[inputdir namefile]);
 gencolors([inputdir namefile]);
 
 %% copy required files 
-copyfile('loading.gif', [outputdir 'loading.gif']);
+copyfile([inputdir 'loading.gif'], [outputdir 'loading.gif']);
 
 % javascript programs
 copyfile([inputdir 'jquery.min.js'], [outputdir 'jquery.min.js']);
 copyfile([inputdir 'jstree.min.js'], [outputdir 'jstree.min.js']);
+copyfile([inputdir 'canvasjs.min.js'], [outputdir 'canvasjs.min.js']);
 copyfile([inputdir 'css'], [outputdir 'css']);
 copyfile('Chart.HorizontalBar.js', [outputdir 'Chart.HorizontalBar.js']);
 copyfile('Chart.js', [outputdir 'Chart.js']);

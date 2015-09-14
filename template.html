@@ -2,12 +2,22 @@
 <html>
 <head>
   <title>Brainnetome Atlas</title>
+  <script type="text/javascript" src="data_centers.json"></script>
+	<script type="text/javascript" src="Chart.js"></script>
+	<script type="text/javascript" src="Chart.HorizontalBar.js"></script>
   <script type="text/javascript" src="bnatlasviewer.js"></script>
-  <script type="text/javascript" src="gv_center.json"></script>
+	<script type="text/javascript"  src="jquery.min.js"></script>
+	<script type="text/javascript"  src="jstree.min.js"></script>
+	<script type="text/javascript"  src="canvasjs.min.js"></script>
+  <link rel="stylesheet" href="css/themes/default/style.min.css" />
 </head>
 <body style="overflow:hidden;">
 
-<div style="float:left;">
+<div style="position:relative;float:left;padding:20px;width:240px;overflow:auto;height:680px;">
+	<div style="" id="ajax" class="demo"></div>
+</div>
+
+<div style="position:relative;float:left;">
   <div id="canvas-container" style="padding:20px;float:left;">
 	<div id="container-y" class="figure" 
 		 style="margin:5px;width:181px;height:181px;position:relative;float:left;">
@@ -45,11 +55,20 @@
 	  <button id="moreOpacity">+</button><span id="opacity"></span><br>
 	  <button id="toggle-fiber">show fiber</button><span id="fiber-status">probabilistic</span><br>
 	  <span id="label"></span>
+	  <span id="log"></span><br>
+	  <span id="log2"></span><br>
+	  <span id="log_area"></span>
 	</div>
 	<div style="padding:10px 0 0 0;clear:both;">
-	  <p id="log"></p><br>
-	  <p id="log2"></p><br>
-	  <span>Copyright (C) Brainnetome Center, CASIA</span>
+		<div id="barchart_BDf_FDR05" 
+style="padding:20px;margin-left:0px;height:200px;width:100%;position:relative;clear:both;float:left;">
+		</div>
+		<div id="barchart_PCf_FDR05" 
+style="padding:20px;margin-left:500px;height:200px;width:100%;">
+		</div>
+		<div style="margin:15px;position:relative;clear:both;float:left;">
+			<span>Copyright (C) Brainnetome Center, CASIA</span>
+		</div>
 	</div>
   </div>
   <div>
@@ -57,11 +76,9 @@
   		 style="opacity:1;position:absolute;left:20px;top:30px;padding:0px;border:0px;width:420px;">
   </div>
 </div>
-<div style="padding:20px;margin-left:480px;width:40%;">
-  <canvas id="behavior_barchart" height="450" width="600"></canvas>
-</div>
 
 <!--
+
 <div id="canvas-container-fiber" style="padding:20px;margin-left:450px;">
 	<div id="container-den" class="figure" style="margin:5px;width:240px;height:200px;position:relative;float:left;">
 		<canvas id="display-den" class="slice-display" width="240px" height="200px"></canvas>

@@ -47,9 +47,9 @@ window.addEventListener("load",function()
 				handler("display-x");
 				handler("display-y");
 				handler("display-z");
-				// initializeFiber('fib');
-				// initializeFiber('den');
-				// initializeFiber('fun');
+
+				loadFiberImages();
+
 				initializeBehaviorBar('BDf_FDR05');
 				initializeBehaviorBar('PCf_FDR05');
 
@@ -59,6 +59,26 @@ window.addEventListener("load",function()
 		}
 		xmlhttp.open("GET","labelmaps.txt",true);
 		xmlhttp.send();
+
+		var loadFiberImages = function(){
+			var xmlhttp;
+			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp=new XMLHttpRequest();
+			}else{// code for IE6, IE5
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange=function(){
+				if (xmlhttp.readyState==4 && xmlhttp.status==200){
+					document.getElementById("imglist").innerHTML=xmlhttp.responseText;
+
+					// initializeFiber('fib');
+					// initializeFiber('den');
+					initializeFiber('fun');
+				}
+			}
+			xmlhttp.open("GET","images/imglist.txt",true);
+			xmlhttp.send();
+		}
 	}
 
 	function loadBarCharts(){
@@ -95,6 +115,7 @@ window.addEventListener("load",function()
 			var title = data.node.text;
 			if (typeof GLOBAL_title2center[title] === 'undefined'){return;}
 			centeringAreasByTitle(title);
+			viewFiberByTitle(title);
 			Update();
 			DrawBehaviorBar(title,'BDf_FDR05');
 			DrawBehaviorBar(title,'PCf_FDR05');
@@ -228,8 +249,9 @@ window.addEventListener("load",function()
 
   function MouseOverAreaHandler(e)
   {
-  	var title=e.target.title;
-		viewFiberByTitle(title);
+  	// var title=e.target.title;
+		// viewFiberByTitle(title);
+
 		// DrawFiber('fib');
 		// DrawFiber('den');
 		// DrawFiber('fun');
@@ -246,7 +268,7 @@ window.addEventListener("load",function()
 		viewFiberByTitle(title);
 		// DrawFiber('fib');
 		// DrawFiber('den');
-		// DrawFiber('fun');
+		DrawFiber('fun');
   	// document.getElementById("label").innerHTML=title;
 		DrawBehaviorBar(title,'BDf_FDR05');
 		DrawBehaviorBar(title,'PCf_FDR05');
@@ -420,7 +442,7 @@ function Update()
 	}
 	// DrawFiber('fib');
 	// DrawFiber('den');
-	// DrawFiber('fun');
+	DrawFiber('fun');
 	document.getElementById("opacity").innerHTML="opacity:"+GLOBAL.opacity.toFixed(1);
 }
 

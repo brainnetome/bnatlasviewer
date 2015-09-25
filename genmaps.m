@@ -66,12 +66,12 @@ end
 % fprintf(fp,template,mapshtml);
 % fclose(fp);
 
-fp=fopen('template.html','rt');
-template=fread(fp,100000,'char=>char');
-fclose(fp);
-fp=fopen([outputdir 'bnatlas.html'],'wt');
-fprintf(fp,template,'');
-fclose(fp);
+% fp=fopen('template.html','rt');
+% template=fread(fp,100000,'char=>char');
+% fclose(fp);
+% fp=fopen([outputdir 'bnatlas.html'],'wt');
+% fprintf(fp,template,'');
+% fclose(fp);
 fp=fopen([outputdir 'labelmaps.txt'],'wt');
 fprintf(fp,mapshtml);
 fclose(fp);

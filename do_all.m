@@ -10,29 +10,31 @@ outputdir = 'output/';
 % atlasfile = 'aal.nii.gz';
 % namefile = 'aal.nii.txt';
 
-imagefile = 'mni152.nii.gz';
-atlasfile = 'bnatlas.nii.gz';
-namefile = 'bnatlas.nii.txt';
+imagefile = [inputdir 'mni152.nii.gz'];
+atlasfile = [inputdir 'bnatlas.nii.gz'];
+namefile = [inputdir 'bnatlas.nii.txt'];
 
 if exist(cachedir,'dir'),rmdir(cachedir,'s');end;mkdir(cachedir);
 if exist(outputdir,'dir'),rmdir(outputdir,'s');end;mkdir(outputdir);
 
-genslice([inputdir imagefile],[inputdir atlasfile]);
-genmaps([inputdir namefile]);
-gencenters([inputdir atlasfile],[inputdir namefile]);
-gencolors([inputdir namefile]);
+genslice(imagefile, atlasfile);
+genmaps(namefile);
+gencenters(atlasfile, namefile);
+gencolors(namefile);
+genprobmaps(namefile, fibdir, dendir, fundir, outdir)
 
 %% copy required files 
 copyfile([inputdir 'loading.gif'], [outputdir 'loading.gif']);
 
 % javascript programs
-copyfile([inputdir 'jquery.min.js'], [outputdir 'jquery.min.js']);
-copyfile([inputdir 'jstree.min.js'], [outputdir 'jstree.min.js']);
-copyfile([inputdir 'canvasjs.min.js'], [outputdir 'canvasjs.min.js']);
 copyfile([inputdir 'css'], [outputdir 'css']);
-copyfile('Chart.HorizontalBar.js', [outputdir 'Chart.HorizontalBar.js']);
-copyfile('Chart.js', [outputdir 'Chart.js']);
-copyfile('bnatlasviewer.js', [outputdir 'bnatlasviewer.js']);
+copyfile([inputdir 'js'], [outputdir 'js']);
+% copyfile([inputdir 'jquery.min.js'], [outputdir 'jquery.min.js']);
+% copyfile([inputdir 'jstree.min.js'], [outputdir 'jstree.min.js']);
+% copyfile([inputdir 'canvasjs.min.js'], [outputdir 'canvasjs.min.js']);
+% copyfile('Chart.HorizontalBar.js', [outputdir 'Chart.HorizontalBar.js']);
+% copyfile('Chart.js', [outputdir 'Chart.js']);
+% copyfile('bnatlasviewer.js', [outputdir 'bnatlasviewer.js']);
 
 % json data files
 copyfile([inputdir 'BDf_FDR05.json'], [outputdir 'BDf_FDR05.json']);

@@ -37,7 +37,7 @@ for row in reader:
     gidx=gyruses.index(gyrus)
     result[lidx]['children'][gidx]['children']=[]
   gidx=gyruses.index(gyrus)
-  result[lidx]['children'][gidx]['children'].append({'text':ID,'id':index,'area':area})
+  result[lidx]['children'][gidx]['children'].append({'text':ID,'id':index,'data':area})
   
   
 # print lobe,gyrus

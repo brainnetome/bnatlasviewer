@@ -7,73 +7,73 @@
 "children":[
 {
 "text":"SFG_L_7_1",
-"id":"1",
-"area":"A6m, rostromedial area 6"
+"data":"A6m, rostromedial area 6",
+"id":"1"
 },
 {
 "text":"SFG_R_7_1",
-"id":"2",
-"area":"A6m, rostromedial area 6"
+"data":"A6m, rostromedial area 6",
+"id":"2"
 },
 {
 "text":"SFG_L_7_2",
-"id":"3",
-"area":"A8ld, laterodorsal area 8"
+"data":"A8ld, laterodorsal area 8",
+"id":"3"
 },
 {
 "text":"SFG_R_7_2",
-"id":"4",
-"area":"A8ld, laterodorsal area 8"
+"data":"A8ld, laterodorsal area 8",
+"id":"4"
 },
 {
 "text":"SFG_L_7_3",
-"id":"5",
-"area":"A9l, lateral area 9"
+"data":"A9l, lateral area 9",
+"id":"5"
 },
 {
 "text":"SFG_R_7_3",
-"id":"6",
-"area":"A9l, lateral area 9"
+"data":"A9l, lateral area 9",
+"id":"6"
 },
 {
 "text":"SFG_L_7_4",
-"id":"7",
-"area":"A6ld, laterodorsal area 6"
+"data":"A6ld, laterodorsal area 6",
+"id":"7"
 },
 {
 "text":"SFG_R_7_4",
-"id":"8",
-"area":"A6ld, laterodorsal area 6"
+"data":"A6ld, laterodorsal area 6",
+"id":"8"
 },
 {
 "text":"SFG_L_7_5",
-"id":"9",
-"area":"A6m, caudomedial area 6"
+"data":"A6m, caudomedial area 6",
+"id":"9"
 },
 {
 "text":"SFG_R_7_5",
-"id":"10",
-"area":"A6m, caudomedial area 6"
+"data":"A6m, caudomedial area 6",
+"id":"10"
 },
 {
 "text":"SFG_L_7_6",
-"id":"11",
-"area":"A9m,medial area 9"
+"data":"A9m,medial area 9",
+"id":"11"
 },
 {
 "text":"SFG_R_7_6",
-"id":"12",
-"area":"A9m,medial area 9"
+"data":"A9m,medial area 9",
+"id":"12"
 },
 {
 "text":"SFG_L_7_7",
-"id":"13",
-"area":"A10m, medial area 10"
+"data":"A10m, medial area 10",
+"id":"13"
 },
 {
 "text":"SFG_R_7_7",
-"id":"14",
-"area":"A10m, medial area 10"
+"data":"A10m, medial area 10",
+"id":"14"
 }
 ]
 },
@@ -82,73 +82,73 @@
 "children":[
 {
 "text":"MFG_L_7_1",
-"id":"15",
-"area":"A9/46d, dorsal area 9/46"
+"data":"A9/46d, dorsal area 9/46",
+"id":"15"
 },
 {
 "text":"MFG_R_7_1",
-"id":"16",
-"area":"A9/46d, dorsal area 9/46"
+"data":"A9/46d, dorsal area 9/46",
+"id":"16"
 },
 {
 "text":"MFG_L_7_2",
-"id":"17",
-"area":"A8lv, lateroventral area 8"
+"data":"A8lv, lateroventral area 8",
+"id":"17"
 },
 {
 "text":"MFG_R_7_2",
-"id":"18",
-"area":"A8lv, lateroventral area 8"
+"data":"A8lv, lateroventral area 8",
+"id":"18"
 },
 {
 "text":"MFG_L_7_3",
-"id":"19",
-"area":"A10l, lateral area 10"
+"data":"A10l, lateral area 10",
+"id":"19"
 },
 {
 "text":"MFG_R_7_3",
-"id":"20",
-"area":"A10l, lateral area 10"
+"data":"A10l, lateral area 10",
+"id":"20"
 },
 {
 "text":"MFG_L_7_4",
-"id":"21",
-"area":"A46, area 46"
+"data":"A46, area 46",
+"id":"21"
 },
 {
 "text":"MFG_R_7_4",
-"id":"22",
-"area":"A46, area 46"
+"data":"A46, area 46",
+"id":"22"
 },
 {
 "text":"MFG_L_7_5",
-"id":"23",
-"area":"A9/46v, ventral area 9/46"
+"data":"A9/46v, ventral area 9/46",
+"id":"23"
 },
 {
 "text":"MFG_R_7_5",
-"id":"24",
-"area":"A9/46v, ventral area 9/46"
+"data":"A9/46v, ventral area 9/46",
+"id":"24"
 },
 {
 "text":"MFG_L_7_6",
-"id":"25",
-"area":"A6lv, lateroventral area 6"
+"data":"A6lv, lateroventral area 6",
+"id":"25"
 },
 {
 "text":"MFG_R_7_6",
-"id":"26",
-"area":"A6lv, lateroventral area 6"
+"data":"A6lv, lateroventral area 6",
+"id":"26"
 },
 {
 "text":"MFG_L_7_7",
-"id":"27",
-"area":"A10o, orbital area10"
+"data":"A10o, orbital area10",
+"id":"27"
 },
 {
 "text":"MFG_R_7_7",
-"id":"28",
-"area":"A10o, orbital area10"
+"data":"A10o, orbital area10",
+"id":"28"
 }
 ]
 },
@@ -157,63 +157,63 @@
 "children":[
 {
 "text":"IFG_L_6_1",
-"id":"29",
-"area":"A44d,dorsal area 44"
+"data":"A44d,dorsal area 44",
+"id":"29"
 },
 {
 "text":"IFG_R_6_1",
-"id":"30",
-"area":"A44d,dorsal area 44"
+"data":"A44d,dorsal area 44",
+"id":"30"
 },
 {
 "text":"IFG_L_6_2",
-"id":"31",
-"area":"IFS, inferior frontal sulcus"
+"data":"IFS, inferior frontal sulcus",
+"id":"31"
 },
 {
 "text":"IFG_R_6_2",
-"id":"32",
-"area":"IFS, inferior frontal sulcus"
+"data":"IFS, inferior frontal sulcus",
+"id":"32"
 },
 {
 "text":"IFG_L_6_3",
-"id":"33",
-"area":"A45c, caudal area 45"
+"data":"A45c, caudal area 45",
+"id":"33"
 },
 {
 "text":"IFG_R_6_3",
-"id":"34",
-"area":"A45c, caudal area 45"
+"data":"A45c, caudal area 45",
+"id":"34"
 },
 {
 "text":"IFG_L_6_4",
-"id":"35",
-"area":"A45r, rostral area 45"
+"data":"A45r, rostral area 45",
+"id":"35"
 },
 {
 "text":"IFG_R_6_4",
-"id":"36",
-"area":"A45r, rostral area 45"
+"data":"A45r, rostral area 45",
+"id":"36"
 },
 {
 "text":"IFG_L_6_5",
-"id":"37",
-"area":"A44op, opercular area 44"
+"data":"A44op, opercular area 44",
+"id":"37"
 },
 {
 "text":"IFG_R_6_5",
-"id":"38",
-"area":"A44op, opercular area 44"
+"data":"A44op, opercular area 44",
+"id":"38"
 },
 {
 "text":"IFG_L_6_6",
-"id":"39",
-"area":"A44v, ventral area 44"
+"data":"A44v, ventral area 44",
+"id":"39"
 },
 {
 "text":"IFG_R_6_6",
-"id":"40",
-"area":"A44v, ventral area 44"
+"data":"A44v, ventral area 44",
+"id":"40"
 }
 ]
 },
@@ -222,63 +222,63 @@
 "children":[
 {
 "text":"OrG_L_6_1",
-"id":"41",
-"area":"A14m, medial area 14"
+"data":"A14m, medial area 14",
+"id":"41"
 },
 {
 "text":"OrG_R_6_1",
-"id":"42",
-"area":"A14m, medial area 14"
+"data":"A14m, medial area 14",
+"id":"42"
 },
 {
 "text":"OrG_L_6_2",
-"id":"43",
-"area":"A12/47o, orbital area 12/47"
+"data":"A12/47o, orbital area 12/47",
+"id":"43"
 },
 {
 "text":"OrG_R_6_2",
-"id":"44",
-"area":"A12/47o, orbital area 12/47"
+"data":"A12/47o, orbital area 12/47",
+"id":"44"
 },
 {
 "text":"OrG_L_6_3",
-"id":"45",
-"area":"A11, area11"
+"data":"A11, area11",
+"id":"45"
 },
 {
 "text":"OrG_R_6_3",
-"id":"46",
-"area":"A11, area11"
+"data":"A11, area11",
+"id":"46"
 },
 {
 "text":"OrG_L_6_4",
-"id":"47",
-"area":"A11m, medial area 11"
+"data":"A11m, medial area 11",
+"id":"47"
 },
 {
 "text":"OrG_R_6_4",
-"id":"48",
-"area":"A11m, medial area 11"
+"data":"A11m, medial area 11",
+"id":"48"
 },
 {
 "text":"OrG_L_6_5",
-"id":"49",
-"area":"A13, area 13"
+"data":"A13, area 13",
+"id":"49"
 },
 {
 "text":"OrG_R_6_5",
-"id":"50",
-"area":"A13, area 13"
+"data":"A13, area 13",
+"id":"50"
 },
 {
 "text":"OrG_L_6_6",
-"id":"51",
-"area":"A12/47l, lateral area 12/47"
+"data":"A12/47l, lateral area 12/47",
+"id":"51"
 },
 {
 "text":"OrG_R_6_6",
-"id":"52",
-"area":"A12/47l, lateral area 12/47"
+"data":"A12/47l, lateral area 12/47",
+"id":"52"
 }
 ]
 },
@@ -287,63 +287,63 @@
 "children":[
 {
 "text":"PrG_L_6_1",
-"id":"53",
-"area":"A4hf, area 4"
+"data":"A4hf, area 4",
+"id":"53"
 },
 {
 "text":"PrG_R_6_1",
-"id":"54",
-"area":"A4hf, area 4"
+"data":"A4hf, area 4",
+"id":"54"
 },
 {
 "text":"PrG_L_6_2",
-"id":"55",
-"area":"A6ld, laterodorsal area 6"
+"data":"A6ld, laterodorsal area 6",
+"id":"55"
 },
 {
 "text":"PrG_R_6_2",
-"id":"56",
-"area":"A6ld, laterodorsal area 6"
+"data":"A6ld, laterodorsal area 6",
+"id":"56"
 },
 {
 "text":"PrG_L_6_3",
-"id":"57",
-"area":"A4ul, area 4"
+"data":"A4ul, area 4",
+"id":"57"
 },
 {
 "text":"PrG_R_6_3",
-"id":"58",
-"area":"A4ul, area 4"
+"data":"A4ul, area 4",
+"id":"58"
 },
 {
 "text":"PrG_L_6_4",
-"id":"59",
-"area":"A4t, area 4"
+"data":"A4t, area 4",
+"id":"59"
 },
 {
 "text":"PrG_R_6_4",
-"id":"60",
-"area":"A4t, area 4"
+"data":"A4t, area 4",
+"id":"60"
 },
 {
 "text":"PrG_L_6_5",
-"id":"61",
-"area":"A4tl, area 4"
+"data":"A4tl, area 4",
+"id":"61"
 },
 {
 "text":"PrG_R_6_5",
-"id":"62",
-"area":"A4tl, area 4"
+"data":"A4tl, area 4",
+"id":"62"
 },
 {
 "text":"PrG_L_6_6",
-"id":"63",
-"area":"A6lv, lateroventral area 6"
+"data":"A6lv, lateroventral area 6",
+"id":"63"
 },
 {
 "text":"PrG_R_6_6",
-"id":"64",
-"area":"A6lv, lateroventral area 6"
+"data":"A6lv, lateroventral area 6",
+"id":"64"
 }
 ]
 },
@@ -352,23 +352,23 @@
 "children":[
 {
 "text":"PCL_L_2_1",
-"id":"65",
-"area":"A1/2/3, area1/2/3"
+"data":"A1/2/3, area1/2/3",
+"id":"65"
 },
 {
 "text":"PCL_R_2_1",
-"id":"66",
-"area":"A1/2/3, area1/2/3"
+"data":"A1/2/3, area1/2/3",
+"id":"66"
 },
 {
 "text":"PCL_L_2_2",
-"id":"67",
-"area":"A4ll, area 4"
+"data":"A4ll, area 4",
+"id":"67"
 },
 {
 "text":"PCL_R_2_2",
-"id":"68",
-"area":"A4ll, area 4"
+"data":"A4ll, area 4",
+"id":"68"
 }
 ]
 }
@@ -382,63 +382,63 @@
 "children":[
 {
 "text":"STG_L_6_1",
-"id":"69",
-"area":"A38m, medial area 38"
+"data":"A38m, medial area 38",
+"id":"69"
 },
 {
 "text":"STG_R_6_1",
-"id":"70",
-"area":"A38m, medial area 38"
+"data":"A38m, medial area 38",
+"id":"70"
 },
 {
 "text":"STG_L_6_2",
-"id":"71",
-"area":"A42/41, area 41/42"
+"data":"A42/41, area 41/42",
+"id":"71"
 },
 {
 "text":"STG_R_6_2",
-"id":"72",
-"area":"A42/41, area 41/42"
+"data":"A42/41, area 41/42",
+"id":"72"
 },
 {
 "text":"STG_L_6_3",
-"id":"73",
-"area":"TE1.0 and TE1.2"
+"data":"TE1.0 and TE1.2",
+"id":"73"
 },
 {
 "text":"STG_R_6_3",
-"id":"74",
-"area":"TE1.0 and TE1.2"
+"data":"TE1.0 and TE1.2",
+"id":"74"
 },
 {
 "text":"STG_L_6_4",
-"id":"75",
-"area":"A22c, caudal area 22"
+"data":"A22c, caudal area 22",
+"id":"75"
 },
 {
 "text":"STG_R_6_4",
-"id":"76",
-"area":"A22c, caudal area 22"
+"data":"A22c, caudal area 22",
+"id":"76"
 },
 {
 "text":"STG_L_6_5",
-"id":"77",
-"area":"A38l, lateral area 38"
+"data":"A38l, lateral area 38",
+"id":"77"
 },
 {
 "text":"STG_R_6_5",
-"id":"78",
-"area":"A38l, lateral area 38"
+"data":"A38l, lateral area 38",
+"id":"78"
 },
 {
 "text":"STG_L_6_6",
-"id":"79",
-"area":"A22r, rostral area 22"
+"data":"A22r, rostral area 22",
+"id":"79"
 },
 {
 "text":"STG_R_6_6",
-"id":"80",
-"area":"A22r, rostral area 22"
+"data":"A22r, rostral area 22",
+"id":"80"
 }
 ]
 },
@@ -447,43 +447,43 @@
 "children":[
 {
 "text":"MTG_L_4_1",
-"id":"81",
-"area":"A21c, caudal area21"
+"data":"A21c, caudal area21",
+"id":"81"
 },
 {
 "text":"MTG_R_4_1",
-"id":"82",
-"area":"A21c, caudal area21"
+"data":"A21c, caudal area21",
+"id":"82"
 },
 {
 "text":"MTG_L_4_2",
-"id":"83",
-"area":"A21r, rostral area21"
+"data":"A21r, rostral area21",
+"id":"83"
 },
 {
 "text":"MTG_R_4_2",
-"id":"84",
-"area":"A21r, rostral area21"
+"data":"A21r, rostral area21",
+"id":"84"
 },
 {
 "text":"MTG_L_4_3",
-"id":"85",
-"area":"A37dl, dorsolateral  area37"
+"data":"A37dl, dorsolateral  area37",
+"id":"85"
 },
 {
 "text":"MTG_R_4_3",
-"id":"86",
-"area":"A37dl, dorsolateral  area37"
+"data":"A37dl, dorsolateral  area37",
+"id":"86"
 },
 {
 "text":"MTG_L_4_4",
-"id":"87",
-"area":"aSTS, anterior superior temporal sulcus"
+"data":"aSTS, anterior superior temporal sulcus",
+"id":"87"
 },
 {
 "text":"MTG_R_4_4",
-"id":"88",
-"area":"aSTS, anterior superior temporal sulcus"
+"data":"aSTS, anterior superior temporal sulcus",
+"id":"88"
 }
 ]
 },
@@ -492,73 +492,73 @@
 "children":[
 {
 "text":"ITG_L_7_1",
-"id":"89",
-"area":"A20iv, intermediate ventral area 20"
+"data":"A20iv, intermediate ventral area 20",
+"id":"89"
 },
 {
 "text":"ITG_R_7_1",
-"id":"90",
-"area":"A20iv, intermediate ventral area 20"
+"data":"A20iv, intermediate ventral area 20",
+"id":"90"
 },
 {
 "text":"ITG_L_7_2",
-"id":"91",
-"area":"A37l, lateral area 37"
+"data":"A37l, lateral area 37",
+"id":"91"
 },
 {
 "text":"ITG_R_7_2",
-"id":"92",
-"area":"A37l, lateral area 37"
+"data":"A37l, lateral area 37",
+"id":"92"
 },
 {
 "text":"ITG_L_7_3",
-"id":"93",
-"area":"A20r, rostral area 20"
+"data":"A20r, rostral area 20",
+"id":"93"
 },
 {
 "text":"ITG_R_7_3",
-"id":"94",
-"area":"A20r, rostral area 20"
+"data":"A20r, rostral area 20",
+"id":"94"
 },
 {
 "text":"ITG_L_7_4",
-"id":"95",
-"area":"A20il, intermediate lateral area 20"
+"data":"A20il, intermediate lateral area 20",
+"id":"95"
 },
 {
 "text":"ITG_R_7_4",
-"id":"96",
-"area":"A20il, intermediate lateral area 20"
+"data":"A20il, intermediate lateral area 20",
+"id":"96"
 },
 {
 "text":"ITG_L_7_5",
-"id":"97",
-"area":"A37ml, midlateral area37"
+"data":"A37ml, midlateral area37",
+"id":"97"
 },
 {
 "text":"ITG_R_7_5",
-"id":"98",
-"area":"A37ml, midlateral area37"
+"data":"A37ml, midlateral area37",
+"id":"98"
 },
 {
 "text":"ITG_L_7_6",
-"id":"99",
-"area":"A20cl, caudolateral of area 20"
+"data":"A20cl, caudolateral of area 20",
+"id":"99"
 },
 {
 "text":"ITG_R_7_6",
-"id":"100",
-"area":"A20cl, caudolateral of area 20"
+"data":"A20cl, caudolateral of area 20",
+"id":"100"
 },
 {
 "text":"ITG_L_7_7",
-"id":"101",
-"area":"A20cv, caudoventral of area 20"
+"data":"A20cv, caudoventral of area 20",
+"id":"101"
 },
 {
 "text":"ITG_R_7_7",
-"id":"102",
-"area":"A20cv, caudoventral of area 20"
+"data":"A20cv, caudoventral of area 20",
+"id":"102"
 }
 ]
 },
@@ -567,13 +567,13 @@
 "children":[
 {
 "text":"FuG_L_3_1",
-"id":"103",
-"area":"A20rv, rostroventral area 20"
+"data":"A20rv, rostroventral area 20",
+"id":"103"
 },
 {
 "text":"FuG_R_3_1",
-"id":"104",
-"area":"A20rv, rostroventral area 20"
+"data":"A20rv, rostroventral area 20",
+"id":"104"
 }
 ]
 },
@@ -582,13 +582,13 @@
 "children":[
 {
 "text":"FuG_L_3_2",
-"id":"105",
-"area":"A37lv, lateroventral area37"
+"data":"A37lv, lateroventral area37",
+"id":"105"
 },
 {
 "text":"FuG_R_3_2",
-"id":"106",
-"area":"A37lv, lateroventral area37"
+"data":"A37lv, lateroventral area37",
+"id":"106"
 }
 ]
 },
@@ -597,13 +597,13 @@
 "children":[
 {
 "text":"FuG_L_3_3",
-"id":"107",
-"area":"A37mv, medioventral area37"
+"data":"A37mv, medioventral area37",
+"id":"107"
 },
 {
 "text":"FuG_R_3_3",
-"id":"108",
-"area":"A37mv, medioventral area37"
+"data":"A37mv, medioventral area37",
+"id":"108"
 }
 ]
 },
@@ -612,63 +612,63 @@
 "children":[
 {
 "text":"PhG_L_6_1",
-"id":"109",
-"area":"A35/36r, rostral area 35/36"
+"data":"A35/36r, rostral area 35/36",
+"id":"109"
 },
 {
 "text":"PhG_R_6_1",
-"id":"110",
-"area":"A35/36r, rostral area 35/36"
+"data":"A35/36r, rostral area 35/36",
+"id":"110"
 },
 {
 "text":"PhG_L_6_2",
-"id":"111",
-"area":"A35/36c, caudal area 35/36"
+"data":"A35/36c, caudal area 35/36",
+"id":"111"
 },
 {
 "text":"PhG_R_6_2",
-"id":"112",
-"area":"A35/36c, caudal area 35/36"
+"data":"A35/36c, caudal area 35/36",
+"id":"112"
 },
 {
 "text":"PhG_L_6_3",
-"id":"113",
-"area":"TL, area TL (lateral PPHC)"
+"data":"TL, area TL (lateral PPHC)",
+"id":"113"
 },
 {
 "text":"PhG_R_6_3",
-"id":"114",
-"area":"TL, area TL (lateral PPHC)"
+"data":"TL, area TL (lateral PPHC)",
+"id":"114"
 },
 {
 "text":"PhG_L_6_4",
-"id":"115",
-"area":"A28/34, area 28/34 (EC, entorhinal cortex or)"
+"data":"A28/34, area 28/34 (EC, entorhinal cortex or)",
+"id":"115"
 },
 {
 "text":"PhG_R_6_4",
-"id":"116",
-"area":"A28/34, area 28/34 (EC, entorhinal cortex or)"
+"data":"A28/34, area 28/34 (EC, entorhinal cortex or)",
+"id":"116"
 },
 {
 "text":"PhG_L_6_5",
-"id":"117",
-"area":"TI, area TI(temporal agranular insular cortex)"
+"data":"TI, area TI(temporal agranular insular cortex)",
+"id":"117"
 },
 {
 "text":"PhG_R_6_5",
-"id":"118",
-"area":"TI, area TI(temporal agranular insular cortex)"
+"data":"TI, area TI(temporal agranular insular cortex)",
+"id":"118"
 },
 {
 "text":"PhG_L_6_6",
-"id":"119",
-"area":"TH, area TH (medial PPHC)"
+"data":"TH, area TH (medial PPHC)",
+"id":"119"
 },
 {
 "text":"PhG_R_6_6",
-"id":"120",
-"area":"TH, area TH (medial PPHC)"
+"data":"TH, area TH (medial PPHC)",
+"id":"120"
 }
 ]
 },
@@ -677,23 +677,23 @@
 "children":[
 {
 "text":"pSTS_L_2_1",
-"id":"121",
-"area":"rPSTS, rostroposterior sts"
+"data":"rPSTS, rostroposterior sts",
+"id":"121"
 },
 {
 "text":"pSTS_R_2_1",
-"id":"122",
-"area":"rPSTS, rostroposterior sts"
+"data":"rPSTS, rostroposterior sts",
+"id":"122"
 },
 {
 "text":"pSTS_L_2_2",
-"id":"123",
-"area":"cpSTS, caudoposterior superior temporal sulcus"
+"data":"cpSTS, caudoposterior superior temporal sulcus",
+"id":"123"
 },
 {
 "text":"pSTS_R_2_2",
-"id":"124",
-"area":"cpSTS, caudoposterior superior temporal sulcus"
+"data":"cpSTS, caudoposterior superior temporal sulcus",
+"id":"124"
 }
 ]
 }
@@ -707,53 +707,53 @@
 "children":[
 {
 "text":"SPL_L_5_1",
-"id":"125",
-"area":"A7r, rostral area 7"
+"data":"A7r, rostral area 7",
+"id":"125"
 },
 {
 "text":"SPL_R_5_1",
-"id":"126",
-"area":"A7r, rostral area 7"
+"data":"A7r, rostral area 7",
+"id":"126"
 },
 {
 "text":"SPL_L_5_2",
-"id":"127",
-"area":"A7c, caudal area 7"
+"data":"A7c, caudal area 7",
+"id":"127"
 },
 {
 "text":"SPL_R_5_2",
-"id":"128",
-"area":"A7c, caudal area 7"
+"data":"A7c, caudal area 7",
+"id":"128"
 },
 {
 "text":"SPL_L_5_3",
-"id":"129",
-"area":"A7pc, postcentral area 7"
+"data":"A7pc, postcentral area 7",
+"id":"129"
 },
 {
 "text":"SPL_R_5_3",
-"id":"130",
-"area":"A7pc, postcentral area 7"
+"data":"A7pc, postcentral area 7",
+"id":"130"
 },
 {
 "text":"SPL_L_5_4",
-"id":"131",
-"area":"A5l, lateral area 5"
+"data":"A5l, lateral area 5",
+"id":"131"
 },
 {
 "text":"SPL_R_5_4",
-"id":"132",
-"area":"A5l, lateral area 5"
+"data":"A5l, lateral area 5",
+"id":"132"
 },
 {
 "text":"SPL_L_5_5",
-"id":"133",
-"area":"A7ip, intraparietal area 7(hIP3)"
+"data":"A7ip, intraparietal area 7(hIP3)",
+"id":"133"
 },
 {
 "text":"SPL_R_5_5",
-"id":"134",
-"area":"A7ip, intraparietal area 7(hIP3)"
+"data":"A7ip, intraparietal area 7(hIP3)",
+"id":"134"
 }
 ]
 },
@@ -762,33 +762,33 @@
 "children":[
 {
 "text":"IPL_L_6_1",
-"id":"135",
-"area":"A39c, caudal area 39(PGp)"
+"data":"A39c, caudal area 39(PGp)",
+"id":"135"
 },
 {
 "text":"IPL_R_6_1",
-"id":"136",
-"area":"A39c, caudal area 39(PGp)"
+"data":"A39c, caudal area 39(PGp)",
+"id":"136"
 },
 {
 "text":"IPL_L_6_2",
-"id":"137",
-"area":"A39rd, rostrodorsal area 39(Hip3)"
+"data":"A39rd, rostrodorsal area 39(Hip3)",
+"id":"137"
 },
 {
 "text":"IPL_R_6_2",
-"id":"138",
-"area":"A39rd, rostrodorsal area 39(Hip3)"
+"data":"A39rd, rostrodorsal area 39(Hip3)",
+"id":"138"
 },
 {
 "text":"IPL_L_6_5",
-"id":"143",
-"area":"A39rv, rostroventral area 39(PGa)"
+"data":"A39rv, rostroventral area 39(PGa)",
+"id":"143"
 },
 {
 "text":"IPL_R_6_5",
-"id":"144",
-"area":"A39rv, rostroventral area 39(PGa)"
+"data":"A39rv, rostroventral area 39(PGa)",
+"id":"144"
 }
 ]
 },
@@ -797,33 +797,33 @@
 "children":[
 {
 "text":"IPL_L_6_3",
-"id":"139",
-"area":"A40rd, rostrodorsal area 40(PFt)"
+"data":"A40rd, rostrodorsal area 40(PFt)",
+"id":"139"
 },
 {
 "text":"IPL_R_6_3",
-"id":"140",
-"area":"A40rd, rostrodorsal area 40(PFt)"
+"data":"A40rd, rostrodorsal area 40(PFt)",
+"id":"140"
 },
 {
 "text":"IPL_L_6_4",
-"id":"141",
-"area":"A40c, caudal area 40(PFm)"
+"data":"A40c, caudal area 40(PFm)",
+"id":"141"
 },
 {
 "text":"IPL_R_6_4",
-"id":"142",
-"area":"A40c, caudal area 40(PFm)"
+"data":"A40c, caudal area 40(PFm)",
+"id":"142"
 },
 {
 "text":"IPL_L_6_6",
-"id":"145",
-"area":"A40rv, rostroventral area 40(PFop)"
+"data":"A40rv, rostroventral area 40(PFop)",
+"id":"145"
 },
 {
 "text":"IPL_R_6_6",
-"id":"146",
-"area":"A40rv, rostroventral area 40(PFop)"
+"data":"A40rv, rostroventral area 40(PFop)",
+"id":"146"
 }
 ]
 },
@@ -832,43 +832,43 @@
 "children":[
 {
 "text":"PCun_L_4_1",
-"id":"147",
-"area":"A7m, medial area 7(PEp)"
+"data":"A7m, medial area 7(PEp)",
+"id":"147"
 },
 {
 "text":"PCun_R_4_1",
-"id":"148",
-"area":"A7m, medial area 7(PEp)"
+"data":"A7m, medial area 7(PEp)",
+"id":"148"
 },
 {
 "text":"PCun_L_4_2",
-"id":"149",
-"area":"A5m, medial area 5(PEm)"
+"data":"A5m, medial area 5(PEm)",
+"id":"149"
 },
 {
 "text":"PCun_R_4_2",
-"id":"150",
-"area":"A5m, medial area 5(PEm)"
+"data":"A5m, medial area 5(PEm)",
+"id":"150"
 },
 {
 "text":"PCun_L_4_3",
-"id":"151",
-"area":"mPOS, meidal parietooccipital  sulcus(PEr) "
+"data":"mPOS, meidal parietooccipital  sulcus(PEr) ",
+"id":"151"
 },
 {
 "text":"PCun_R_4_3",
-"id":"152",
-"area":"mPOS, meidal parietooccipital  sulcus(PEr) "
+"data":"mPOS, meidal parietooccipital  sulcus(PEr) ",
+"id":"152"
 },
 {
 "text":"PCun_L_4_4",
-"id":"153",
-"area":"A31, area 31 (Lc1)"
+"data":"A31, area 31 (Lc1)",
+"id":"153"
 },
 {
 "text":"PCun_R_4_4",
-"id":"154",
-"area":"A31, area 31 (Lc1)"
+"data":"A31, area 31 (Lc1)",
+"id":"154"
 }
 ]
 },
@@ -877,43 +877,43 @@
 "children":[
 {
 "text":"PoG_L_4_1",
-"id":"155",
-"area":"A1/2/3ulhf, area 1/2/3"
+"data":"A1/2/3ulhf, area 1/2/3",
+"id":"155"
 },
 {
 "text":"PoG_R_4_1",
-"id":"156",
-"area":"A1/2/3ulhf, area 1/2/3"
+"data":"A1/2/3ulhf, area 1/2/3",
+"id":"156"
 },
 {
 "text":"PoG_L_4_2",
-"id":"157",
-"area":"A1/2/3tonIa, area 1/2/3"
+"data":"A1/2/3tonIa, area 1/2/3",
+"id":"157"
 },
 {
 "text":"PoG_R_4_2",
-"id":"158",
-"area":"A1/2/3tonIa, area 1/2/3"
+"data":"A1/2/3tonIa, area 1/2/3",
+"id":"158"
 },
 {
 "text":"PoG_L_4_3",
-"id":"159",
-"area":"A2, area 2"
+"data":"A2, area 2",
+"id":"159"
 },
 {
 "text":"PoG_R_4_3",
-"id":"160",
-"area":"A2, area 2"
+"data":"A2, area 2",
+"id":"160"
 },
 {
 "text":"PoG_L_4_4",
-"id":"161",
-"area":"A1/2/3tru, area1/2/3"
+"data":"A1/2/3tru, area1/2/3",
+"id":"161"
 },
 {
 "text":"PoG_R_4_4",
-"id":"162",
-"area":"A1/2/3tru, area1/2/3"
+"data":"A1/2/3tru, area1/2/3",
+"id":"162"
 }
 ]
 }
@@ -927,13 +927,13 @@
 "children":[
 {
 "text":"INS_L_6_1",
-"id":"163",
-"area":"G, hypergranular insular"
+"data":"G, hypergranular insular",
+"id":"163"
 },
 {
 "text":"INS_R_6_1",
-"id":"164",
-"area":"G, hypergranular insular"
+"data":"G, hypergranular insular",
+"id":"164"
 }
 ]
 },
@@ -942,13 +942,13 @@
 "children":[
 {
 "text":"INS_L_6_2",
-"id":"165",
-"area":"vIa, ventral agranular insular"
+"data":"vIa, ventral agranular insular",
+"id":"165"
 },
 {
 "text":"INS_R_6_2",
-"id":"166",
-"area":"vIa, ventral agranular insular"
+"data":"vIa, ventral agranular insular",
+"id":"166"
 }
 ]
 },
@@ -957,13 +957,13 @@
 "children":[
 {
 "text":"INS_L_6_3",
-"id":"167",
-"area":"dIa, dorsal agranular insular"
+"data":"dIa, dorsal agranular insular",
+"id":"167"
 },
 {
 "text":"INS_R_6_3",
-"id":"168",
-"area":"dIa, dorsal agranular insular"
+"data":"dIa, dorsal agranular insular",
+"id":"168"
 }
 ]
 },
@@ -972,13 +972,13 @@
 "children":[
 {
 "text":"INS_L_6_4",
-"id":"169",
-"area":"vId/vIg, ventral granular insular"
+"data":"vId/vIg, ventral granular insular",
+"id":"169"
 },
 {
 "text":"INS_R_6_4",
-"id":"170",
-"area":"vId/vIg, ventral granular insular"
+"data":"vId/vIg, ventral granular insular",
+"id":"170"
 }
 ]
 },
@@ -987,13 +987,13 @@
 "children":[
 {
 "text":"INS_L_6_5",
-"id":"171",
-"area":"dIg, dorsal granular insular"
+"data":"dIg, dorsal granular insular",
+"id":"171"
 },
 {
 "text":"INS_R_6_5",
-"id":"172",
-"area":"dIg, dorsal granular insular"
+"data":"dIg, dorsal granular insular",
+"id":"172"
 }
 ]
 },
@@ -1002,13 +1002,13 @@
 "children":[
 {
 "text":"INS_L_6_6",
-"id":"173",
-"area":"vId, ventral dysgranular insular"
+"data":"vId, ventral dysgranular insular",
+"id":"173"
 },
 {
 "text":"INS_R_6_6",
-"id":"174",
-"area":"vId, ventral dysgranular insular"
+"data":"vId, ventral dysgranular insular",
+"id":"174"
 }
 ]
 }
@@ -1022,73 +1022,73 @@
 "children":[
 {
 "text":"CG_L_7_1",
-"id":"175",
-"area":"A23d, dorsal area 23"
+"data":"A23d, dorsal area 23",
+"id":"175"
 },
 {
 "text":"CG_R_7_1",
-"id":"176",
-"area":"A23d, dorsal area 23"
+"data":"A23d, dorsal area 23",
+"id":"176"
 },
 {
 "text":"CG_L_7_2",
-"id":"177",
-"area":"A24r, rostral area 24"
+"data":"A24r, rostral area 24",
+"id":"177"
 },
 {
 "text":"CG_R_7_2",
-"id":"178",
-"area":"A24r, rostral area 24"
+"data":"A24r, rostral area 24",
+"id":"178"
 },
 {
 "text":"CG_L_7_3",
-"id":"179",
-"area":"A32p, pregenual area 32"
+"data":"A32p, pregenual area 32",
+"id":"179"
 },
 {
 "text":"CG_R_7_3",
-"id":"180",
-"area":"A32p, pregenual area 32"
+"data":"A32p, pregenual area 32",
+"id":"180"
 },
 {
 "text":"CG_L_7_4",
-"id":"181",
-"area":"A23v, ventral area 23"
+"data":"A23v, ventral area 23",
+"id":"181"
 },
 {
 "text":"CG_R_7_4",
-"id":"182",
-"area":"A23v, ventral area 23"
+"data":"A23v, ventral area 23",
+"id":"182"
 },
 {
 "text":"CG_L_7_5",
-"id":"183",
-"area":"A24c, caudal area 24"
+"data":"A24c, caudal area 24",
+"id":"183"
 },
 {
 "text":"CG_R_7_5",
-"id":"184",
-"area":"A24c, caudal area 24"
+"data":"A24c, caudal area 24",
+"id":"184"
 },
 {
 "text":"CG_L_7_6",
-"id":"185",
-"area":"A23c, caudal area 24"
+"data":"A23c, caudal area 24",
+"id":"185"
 },
 {
 "text":"CG_R_7_6",
-"id":"186",
-"area":"A23c, caudal area 24"
+"data":"A23c, caudal area 24",
+"id":"186"
 },
 {
 "text":"CG_L_7_7",
-"id":"187",
-"area":"A32sg, subgenual area 32"
+"data":"A32sg, subgenual area 32",
+"id":"187"
 },
 {
 "text":"CG_R_7_7",
-"id":"188",
-"area":"A32sg, subgenual area 32"
+"data":"A32sg, subgenual area 32",
+"id":"188"
 }
 ]
 }
@@ -1102,53 +1102,53 @@
 "children":[
 {
 "text":"Cun_L_5_1",
-"id":"189",
-"area":"cLinG, caudal lingual gyrus"
+"data":"cLinG, caudal lingual gyrus",
+"id":"189"
 },
 {
 "text":"Cun_R_5_1",
-"id":"190",
-"area":"cLinG, caudal lingual gyrus"
+"data":"cLinG, caudal lingual gyrus",
+"id":"190"
 },
 {
 "text":"Cun_L_5_2",
-"id":"191",
-"area":"rCenG, rostral ceneus gyrus"
+"data":"rCenG, rostral ceneus gyrus",
+"id":"191"
 },
 {
 "text":"Cun_R_5_2",
-"id":"192",
-"area":"rCenG, rostral ceneus gyrus"
+"data":"rCenG, rostral ceneus gyrus",
+"id":"192"
 },
 {
 "text":"Cun_L_5_3",
-"id":"193",
-"area":"CCenG, caudal ceneus gyrus"
+"data":"CCenG, caudal ceneus gyrus",
+"id":"193"
 },
 {
 "text":"Cun_R_5_3",
-"id":"194",
-"area":"CCenG, caudal ceneus gyrus"
+"data":"CCenG, caudal ceneus gyrus",
+"id":"194"
 },
 {
 "text":"Cun_L_5_4",
-"id":"195",
-"area":"rLinG, rostral lingual gyrus"
+"data":"rLinG, rostral lingual gyrus",
+"id":"195"
 },
 {
 "text":"Cun_R_5_4",
-"id":"196",
-"area":"rLinG, rostral lingual gyrus"
+"data":"rLinG, rostral lingual gyrus",
+"id":"196"
 },
 {
 "text":"Cun_L_5_5",
-"id":"197",
-"area":"lPOS, lateral parietooccipital sulcus"
+"data":"lPOS, lateral parietooccipital sulcus",
+"id":"197"
 },
 {
 "text":"Cun_R_5_5",
-"id":"198",
-"area":"lPOS, lateral parietooccipital sulcus"
+"data":"lPOS, lateral parietooccipital sulcus",
+"id":"198"
 }
 ]
 },
@@ -1157,43 +1157,43 @@
 "children":[
 {
 "text":"OcG_L_4_1",
-"id":"199",
-"area":"mOccG, middle occipital gyrus"
+"data":"mOccG, middle occipital gyrus",
+"id":"199"
 },
 {
 "text":"OcG_R_4_1",
-"id":"200",
-"area":"mOccG, middle occipital gyrus"
+"data":"mOccG, middle occipital gyrus",
+"id":"200"
 },
 {
 "text":"OcG_L_4_2",
-"id":"201",
-"area":"V5/MT, area V5/MT"
+"data":"V5/MT, area V5/MT",
+"id":"201"
 },
 {
 "text":"OcG_R_4_2",
-"id":"202",
-"area":"V5/MT, area V5/MT"
+"data":"V5/MT, area V5/MT",
+"id":"202"
 },
 {
 "text":"OcG_L_4_3",
-"id":"203",
-"area":"OPC, occipital polar cortex"
+"data":"OPC, occipital polar cortex",
+"id":"203"
 },
 {
 "text":"OcG_R_4_3",
-"id":"204",
-"area":"OPC, occipital polar cortex"
+"data":"OPC, occipital polar cortex",
+"id":"204"
 },
 {
 "text":"OcG_L_4_4",
-"id":"205",
-"area":"iOccG, inferior occipital gyrus"
+"data":"iOccG, inferior occipital gyrus",
+"id":"205"
 },
 {
 "text":"OcG_R_4_4",
-"id":"206",
-"area":"iOccG, inferior occipital gyrus"
+"data":"iOccG, inferior occipital gyrus",
+"id":"206"
 }
 ]
 },
@@ -1202,23 +1202,23 @@
 "children":[
 {
 "text":"sOcG_L_2_1",
-"id":"207",
-"area":"msOccG, medial superior occipital gyrus"
+"data":"msOccG, medial superior occipital gyrus",
+"id":"207"
 },
 {
 "text":"sOcG_R_2_1",
-"id":"208",
-"area":"msOccG, medial superior occipital gyrus"
+"data":"msOccG, medial superior occipital gyrus",
+"id":"208"
 },
 {
 "text":"sOcG_L_2_2",
-"id":"209",
-"area":"lsOccG, lateral superior occipital gyrus"
+"data":"lsOccG, lateral superior occipital gyrus",
+"id":"209"
 },
 {
 "text":"sOcG_R_2_2",
-"id":"210",
-"area":"lsOccG, lateral superior occipital gyrus"
+"data":"lsOccG, lateral superior occipital gyrus",
+"id":"210"
 }
 ]
 }
@@ -1232,23 +1232,23 @@
 "children":[
 {
 "text":"Amyg_L_2_1",
-"id":"211",
-"area":"mAmyg, medial amyg"
+"data":"mAmyg, medial amyg",
+"id":"211"
 },
 {
 "text":"Amyg_R_2_1",
-"id":"212",
-"area":"mAmyg, medial amyg"
+"data":"mAmyg, medial amyg",
+"id":"212"
 },
 {
 "text":"Amyg_L_2_2",
-"id":"213",
-"area":"lAmyg, lateral amyg"
+"data":"lAmyg, lateral amyg",
+"id":"213"
 },
 {
 "text":"Amyg_R_2_2",
-"id":"214",
-"area":"lAmyg, lateral amyg"
+"data":"lAmyg, lateral amyg",
+"id":"214"
 }
 ]
 },
@@ -1257,23 +1257,23 @@
 "children":[
 {
 "text":"Hipp_L_2_1",
-"id":"215",
-"area":"rHipp, rostral hipp"
+"data":"rHipp, rostral hipp",
+"id":"215"
 },
 {
 "text":"Hipp_R_2_1",
-"id":"216",
-"area":"rHipp, rostral hipp"
+"data":"rHipp, rostral hipp",
+"id":"216"
 },
 {
 "text":"Hipp_L_2_2",
-"id":"217",
-"area":"cHipp, caudal hipp"
+"data":"cHipp, caudal hipp",
+"id":"217"
 },
 {
 "text":"Hipp_R_2_2",
-"id":"218",
-"area":"cHipp, caudal hipp"
+"data":"cHipp, caudal hipp",
+"id":"218"
 }
 ]
 },
@@ -1282,23 +1282,23 @@
 "children":[
 {
 "text":"Str_L_6_1",
-"id":"219",
-"area":"vCa, ventral caudate"
+"data":"vCa, ventral caudate",
+"id":"219"
 },
 {
 "text":"Str_R_6_1",
-"id":"220",
-"area":"vCa, ventral caudate"
+"data":"vCa, ventral caudate",
+"id":"220"
 },
 {
 "text":"Str_L_6_3",
-"id":"223",
-"area":"NAC, nucleus accumbens"
+"data":"NAC, nucleus accumbens",
+"id":"223"
 },
 {
 "text":"Str_R_6_3",
-"id":"224",
-"area":"NAC, nucleus accumbens"
+"data":"NAC, nucleus accumbens",
+"id":"224"
 }
 ]
 },
@@ -1307,33 +1307,33 @@
 "children":[
 {
 "text":"Str_L_6_2",
-"id":"221",
-"area":"GP, globus pallidus"
+"data":"GP, globus pallidus",
+"id":"221"
 },
 {
 "text":"Str_R_6_2",
-"id":"222",
-"area":"GP, globus pallidus"
+"data":"GP, globus pallidus",
+"id":"222"
 },
 {
 "text":"Str_L_6_4",
-"id":"225",
-"area":"vmPu, ventromedial putamen"
+"data":"vmPu, ventromedial putamen",
+"id":"225"
 },
 {
 "text":"Str_R_6_4",
-"id":"226",
-"area":"vmPu, ventromedial putamen"
+"data":"vmPu, ventromedial putamen",
+"id":"226"
 },
 {
 "text":"Str_L_6_6",
-"id":"229",
-"area":"dlPu, dorsolateral putamen"
+"data":"dlPu, dorsolateral putamen",
+"id":"229"
 },
 {
 "text":"Str_R_6_6",
-"id":"230",
-"area":"dlPu, dorsolateral putamen"
+"data":"dlPu, dorsolateral putamen",
+"id":"230"
 }
 ]
 },
@@ -1342,13 +1342,13 @@
 "children":[
 {
 "text":"Str_L_6_5",
-"id":"227",
-"area":"dCa, dorsal caudate"
+"data":"dCa, dorsal caudate",
+"id":"227"
 },
 {
 "text":"Str_R_6_5",
-"id":"228",
-"area":"dCa, dorsal caudate"
+"data":"dCa, dorsal caudate",
+"id":"228"
 }
 ]
 },
@@ -1357,83 +1357,83 @@
 "children":[
 {
 "text":"Tha_L_8_1",
-"id":"231",
-"area":"mPFtha, medial Pre-frontal thalamus"
+"data":"mPFtha, medial Pre-frontal thalamus",
+"id":"231"
 },
 {
 "text":"Tha_R_8_1",
-"id":"232",
-"area":"mPFtha, medial Pre-frontal thalamus"
+"data":"mPFtha, medial Pre-frontal thalamus",
+"id":"232"
 },
 {
 "text":"Tha_L_8_2",
-"id":"233",
-"area":"mPMtha, pre-motor thalamus"
+"data":"mPMtha, pre-motor thalamus",
+"id":"233"
 },
 {
 "text":"Tha_R_8_2",
-"id":"234",
-"area":"mPMtha, pre-motor thalamus"
+"data":"mPMtha, pre-motor thalamus",
+"id":"234"
 },
 {
 "text":"Tha_L_8_3",
-"id":"235",
-"area":"Stha, sensory thalamus"
+"data":"Stha, sensory thalamus",
+"id":"235"
 },
 {
 "text":"Tha_R_8_3",
-"id":"236",
-"area":"Stha, sensory thalamus"
+"data":"Stha, sensory thalamus",
+"id":"236"
 },
 {
 "text":"Tha_L_8_4",
-"id":"237",
-"area":"rTtha, rostral Temporal thalamus"
+"data":"rTtha, rostral Temporal thalamus",
+"id":"237"
 },
 {
 "text":"Tha_R_8_4",
-"id":"238",
-"area":"rTtha, rostral Temporal thalamus"
+"data":"rTtha, rostral Temporal thalamus",
+"id":"238"
 },
 {
 "text":"Tha_L_8_5",
-"id":"239",
-"area":"PPtha, posterior parietal thalamus"
+"data":"PPtha, posterior parietal thalamus",
+"id":"239"
 },
 {
 "text":"Tha_R_8_5",
-"id":"240",
-"area":"PPtha, posterior parietal thalamus"
+"data":"PPtha, posterior parietal thalamus",
+"id":"240"
 },
 {
 "text":"Tha_L_8_6",
-"id":"241",
-"area":"Otha, occipital thalamus"
+"data":"Otha, occipital thalamus",
+"id":"241"
 },
 {
 "text":"Tha_R_8_6",
-"id":"242",
-"area":"Otha, occipital thalamus"
+"data":"Otha, occipital thalamus",
+"id":"242"
 },
 {
 "text":"Tha_L_8_7",
-"id":"243",
-"area":"cTtha, caudal Temporal thalamus"
+"data":"cTtha, caudal Temporal thalamus",
+"id":"243"
 },
 {
 "text":"Tha_R_8_7",
-"id":"244",
-"area":"cTtha, caudal Temporal thalamus"
+"data":"cTtha, caudal Temporal thalamus",
+"id":"244"
 },
 {
 "text":"Tha_L_8_8",
-"id":"245",
-"area":"lPFtha, lateral Pre-frontal thalamus"
+"data":"lPFtha, lateral Pre-frontal thalamus",
+"id":"245"
 },
 {
 "text":"Tha_R_8_8",
-"id":"246",
-"area":"lPFtha, lateral Pre-frontal thalamus"
+"data":"lPFtha, lateral Pre-frontal thalamus",
+"id":"246"
 }
 ]
 }

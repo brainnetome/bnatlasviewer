@@ -26,11 +26,15 @@ SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH FALSE)
 find_package(VTK REQUIRED)
 include(${VTK_USE_FILE})
 
+add_subdirectory(znzlib)
+add_subdirectory(niftiio)
+# add_subdirectory(vtkzlib)
+
 set( Srcs volrender.cpp)
 
+INCLUDE_DIRECTORIES(.  niftiio znzlib)
 add_executable(volrender ${Srcs} )
-  target_link_libraries(volrender 
-		${VTK_LIBRARIES})
+target_link_libraries(volrender ${VTK_LIBRARIES} niftiio znzlib )
 		# bnDTICommon bnHARDICommon bnDWICommon bnFiber bnVisualization bnUtility 
 		# cxcore colortable vtkDICOM 
 

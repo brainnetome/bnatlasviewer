@@ -37,10 +37,30 @@
 #include "vtkWindowToImageFilter.h"
 #include "vtkPNGWriter.h"
 
+#include "nifti1_io.h"
+
 #define VTI_FILETYPE 1
 #define MHA_FILETYPE 2
+#define NIFTI_FILETYPE 3
+
+int NIMDT2VTKDT(int datatype)
+{
+  int retval = 0;
+  switch (datatype){
+  case DT_UNSIGNED_CHAR:{retval = VTK_UNSIGNED_CHAR;break;}
+  case DT_UINT16:
+  case DT_INT16:        {retval = VTK_SHORT; break;}
+  case DT_FLOAT:        {retval = VTK_FLOAT; break;}
+  case DT_DOUBLE:       {retval = VTK_DOUBLE;break;}
+  case DT_UINT32:
+  case DT_INT32:        {retval = VTK_INT;break;}
+  default:{fprintf(stderr,"unknown nifti image data type");break;}
+  }
+  return retval;
+}
 
 void PrintUsage();
+vtkImageData * vtkGetImageData(nifti_image * nim,int idx);
 
 int main(int argc, char *argv[])
 {
@@ -83,6 +103,13 @@ int main(int argc, char *argv[])
 	{
       fileName = new char[strlen(argv[count+1])+1];
       fileType = MHA_FILETYPE;
+      sprintf( fileName, "%s", argv[count+1] );
+      count += 2;
+	}
+    else if ( !strcmp( argv[count], "-NIFTI" ) )
+	{
+      fileName = new char[strlen(argv[count+1])+1];
+      fileType = NIFTI_FILETYPE;
       sprintf( fileName, "%s", argv[count+1] );
       count += 2;
 	}
@@ -229,11 +256,19 @@ int main(int argc, char *argv[])
     input=metaReader->GetOutput();
     reader=metaReader;
   }
+  else if ( fileType == NIFTI_FILETYPE )
+  {
+    //vtkMetaImageReader *metaReader = vtkMetaImageReader::New();
+    input = vtkGetImageData(nifti_image_read(fileName,1),0);
+	reader = 0;
+  }
   else
   {
-    cout << "Error! Not VTI or MHA!" << endl;
+    cout << "Error! Not VTI or MHA or NIFTI!" << endl;
     exit(EXIT_FAILURE);
   }
+
+  if (reader){reader->Update();}
 
   // Verify that we actually have a volume
   int dim[3];
@@ -249,7 +284,8 @@ int main(int argc, char *argv[])
   vtkImageResample *resample = vtkImageResample::New();
   if ( reductionFactor < 1.0 )
   {
-    resample->SetInputConnection( reader->GetOutputPort() );
+    // resample->SetInputConnection( reader->GetOutputPort() );
+	resample->SetInputData( input );
     resample->SetAxisMagnificationFactor(0, reductionFactor);
     resample->SetAxisMagnificationFactor(1, reductionFactor);
     resample->SetAxisMagnificationFactor(2, reductionFactor);
@@ -265,7 +301,8 @@ int main(int argc, char *argv[])
   }
   else
   {
-    mapper->SetInputConnection( reader->GetOutputPort() );
+    // mapper->SetInputConnection( reader->GetOutputPort() );
+    mapper->SetInputData( input );
   }
 
   // Set the sample distance on the ray to be 1/2 the average spacing
@@ -487,15 +524,18 @@ int main(int argc, char *argv[])
 	if (fileName[i]=='/'){outimgslashloc=i;break;}
   }
   fprintf(stderr,"%s\n",fileName);
-  strncpy(foldername,fileName,outimgslashloc);
+  if (outimgslashloc>0){
+	strncpy(foldername,fileName,outimgslashloc);
+  }else{foldername[0]='\0';}
   for (angle=0;angle<360;angle+=10)
   {
 	sprintf(outimgname,"%s/%03d.png",foldername,angle);
 	fprintf(stderr,"%s\n",outimgname);
 	renderer->GetActiveCamera()->Azimuth(-10);
 	renderer->ResetCamera();
-	// renWin->Render();
-  
+	renWin->Render();
+
+#if 1
 	// Screenshot
 	vtkSmartPointer<vtkWindowToImageFilter> windowToImageFilter =
 	  vtkSmartPointer<vtkWindowToImageFilter>::New();
@@ -509,6 +549,7 @@ int main(int argc, char *argv[])
 	writer->SetFileName(outimgname);
 	writer->SetInputConnection(windowToImageFilter->GetOutputPort());
 	writer->Write();
+#endif
   }
 
   // start renderer
@@ -520,7 +561,7 @@ int main(int argc, char *argv[])
 
   volume->Delete();
   mapper->Delete();
-  reader->Delete();
+  if (reader){reader->Delete();}
   resample->Delete();
   renderer->Delete();
   style->Delete();
@@ -541,6 +582,7 @@ void PrintUsage()
   // cout << "  -DICOM <directory>" << endl;
   // cout << "  -VTI <filename>" << endl;
   cout << "  -MHA <filename>" << endl;
+  cout << "  -NIFTI <filename>" << endl;
   // cout << "  -DependentComponents" << endl;
   // cout << "  -Clip" << endl;
   // cout << "  -MIP <window> <level>" << endl;
@@ -578,3 +620,21 @@ void PrintUsage()
   cout << endl;
 }
 
+float bn_sign(float v){return ((v>0)?1.f:((v<0)?-1.f:0));}
+
+vtkImageData * vtkGetImageData(nifti_image * nim, int idx)
+{
+  if (!nim){fprintf(stderr,"invalid nifti_image input!");return 0;}
+  if (idx<0 || (idx>=nim->nt && nim->nt!=0)){fprintf(stderr,"time dimension error!");return 0;}
+  int tstep = nim->nbyper*nim->nx*nim->ny*nim->nz;
+  vtkImageData * input = vtkImageData::New();
+  input->SetDimensions(nim->nx,nim->ny,nim->nz);
+  input->SetSpacing(nim->dx*bn_sign(nim->qto_xyz.m[0][0]),
+					nim->dy*bn_sign(nim->qto_xyz.m[1][1]),
+					nim->dz*bn_sign(nim->qto_xyz.m[2][2]));
+  // input->SetOrigin(nim->qto_xyz.m[0][3], nim->qto_xyz.m[1][3], nim->qto_xyz.m[2][3]);
+  input->SetOrigin(nim->qoffset_x, nim->qoffset_y, nim->qoffset_z);
+  input->AllocateScalars(NIMDT2VTKDT(nim->datatype), 1);
+  memcpy(input->GetScalarPointer(),((unsigned char*)nim->data)+tstep*idx,tstep);
+  return input;
+}

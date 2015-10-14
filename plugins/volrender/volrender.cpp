@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
   char *dirname = NULL;
   double opacityWindow = 4096;
   double opacityLevel = 2048;
-  int blendType = 0;
+  int blendType = 6;
   int clip = 0;
   double reductionFactor = 1.0;
   double frameRate = 10.0;
@@ -334,6 +334,8 @@ int main(int argc, char *argv[])
   volume->SetProperty( property );
   volume->SetMapper( mapper );
 
+  float minval=-3000.f,maxval = 3000.f,addition=3000.f;
+
   // Depending on the blend type selected as a command line option,
   // adjust the transfer function
   switch ( blendType )
@@ -446,18 +448,18 @@ int main(int argc, char *argv[])
     // Use compositing and functions set to highlight red/green/blue regions
     // in RGB data. Not for use on single component data
   case 6:
-	opacityFun->AddPoint(0, 0.0);
-	opacityFun->AddPoint(5.0, 0.0);
-	opacityFun->AddPoint(30.0, 0.05);
-	opacityFun->AddPoint(31.0, 0.0);
-	opacityFun->AddPoint(90.0, 0.0);
-	opacityFun->AddPoint(100.0, 0.3);
-	opacityFun->AddPoint(110.0, 0.0);
-	opacityFun->AddPoint(190.0, 0.0);
-	opacityFun->AddPoint(200.0, 0.4);
-	opacityFun->AddPoint(210.0, 0.0);
-	opacityFun->AddPoint(245.0, 0.0);
-	opacityFun->AddPoint(255.0, 0.5);
+	opacityFun->AddPoint(0/maxval, 0.0);
+	opacityFun->AddPoint(5.0/maxval, 0.0);
+	opacityFun->AddPoint(30.0/maxval, 0.05);
+	opacityFun->AddPoint(31.0/maxval, 0.0);
+	opacityFun->AddPoint(90.0/maxval, 0.0);
+	opacityFun->AddPoint(100.0/maxval, 0.3);
+	opacityFun->AddPoint(110.0/maxval, 0.0);
+	opacityFun->AddPoint(190.0/maxval, 0.0);
+	opacityFun->AddPoint(200.0/maxval, 0.4);
+	opacityFun->AddPoint(210.0/maxval, 0.0);
+	opacityFun->AddPoint(245.0/maxval, 0.0);
+	opacityFun->AddPoint(255.0/maxval, 0.5);
 
 	mapper->SetBlendModeToComposite();
 	property->ShadeOff();
@@ -467,24 +469,24 @@ int main(int argc, char *argv[])
 	// Grayscale color map for negative
 	// Jet color map for positive
   case 7:
-	colorFun->AddRGBPoint( -3024, 1, 1, 1 );
-	colorFun->AddRGBPoint( -1,    1, 1, 1 );
+	colorFun->AddRGBPoint( (-3024+addition)/(maxval-minval), 1, 1, 1 );
+	colorFun->AddRGBPoint( (-1+addition)/(maxval-minval),    1, 1, 1 );
+	colorFun->AddRGBPoint( (1+addition)/(maxval-minval),    1, .5, .0 );
+	colorFun->AddRGBPoint( (3071+addition)/(maxval-minval), 1,  0,  0 );
 	// colorFun->AddRGBPoint( 1,    .0, .0, .5 );
 	// colorFun->AddRGBPoint( 1000, .0, .5, 1 );
 	// colorFun->AddRGBPoint( 2000, 1, .5,  0 );
-	colorFun->AddRGBPoint( 1,    1, .5, .0 );
-	colorFun->AddRGBPoint( 3071, 1,  0,  0 );
 
-	opacityFun->AddPoint(-3024, 0.0 );
-	opacityFun->AddPoint(-3000, 0.0 );
-	opacityFun->AddPoint(-2999, 0.09 );
-	opacityFun->AddPoint(-2044, 0.12 );
-	opacityFun->AddPoint(-2000, 0.0 );
-	opacityFun->AddPoint(-1,    0.0 );
-	opacityFun->AddPoint(1,    0.01 );
-	opacityFun->AddPoint(300,  .2 );
-	opacityFun->AddPoint(2000, .2 );
-	opacityFun->AddPoint(3071, .3 );
+	opacityFun->AddPoint( (-3024+addition)/(maxval-minval), 0.0 );
+	opacityFun->AddPoint( (-3000+addition)/(maxval-minval), 0.0 );
+	opacityFun->AddPoint( (-2999+addition)/(maxval-minval), 0.02 );
+	opacityFun->AddPoint( (-2044+addition)/(maxval-minval), 0.02 );
+	opacityFun->AddPoint( (-2000+addition)/(maxval-minval), 0.0 );
+	opacityFun->AddPoint( (-1+addition)/(maxval-minval),    0.0 );
+	opacityFun->AddPoint( (1+addition)/(maxval-minval),    0.01 );
+	opacityFun->AddPoint( (300+addition)/(maxval-minval),  .2 );
+	opacityFun->AddPoint( (2000+addition)/(maxval-minval), .2 );
+	opacityFun->AddPoint( (3071+addition)/(maxval-minval), .3 );
 
 	mapper->SetBlendModeToComposite();
 	property->ShadeOn();

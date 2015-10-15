@@ -104,13 +104,17 @@ window.addEventListener("load",function()
 	}
 
 	function loadTreeViewData(){
-		$('#ajax').jstree({
+		$('#plugins4').jstree({
 			'core' : {
 				'data' : {
 					"url" : "bnatlas_tree.json",
 					"dataType" : "json" // needed only if you do not supply JSON headers
 				}
-			}
+			},
+			"types" : {
+				"file" : {"icon" : "jstree-default jstree-file"}
+			},
+			"plugins" : [ "search","types" ]
 		}).on("select_node.jstree", function (e, data) { 
 			var title = data.node.text;
 			if (typeof GLOBAL_title2center[title] === 'undefined'){return;}
@@ -123,7 +127,15 @@ window.addEventListener("load",function()
 			document.getElementById("log2").innerHTML=data.node.text+','+data.node.id;
 			document.getElementById("log_area").innerHTML=data.node.data;
 			console.log(data);console.log(e);
-		});;
+		});
+		var to = false;
+		$('#plugins4_q').keyup(function () {
+			if(to) { clearTimeout(to); }
+			to = setTimeout(function () {
+				var v = $('#plugins4_q').val();
+				$('#plugins4').jstree(true).search(v);
+			}, 250);
+		});
 	}
 
 	function ToggleFiberHandler(e){

@@ -28,7 +28,7 @@ genprobmaps(namefile, fibdir, dendir, fundir, [outputdir 'images'])
 
 %% copy required files 
 copyfile([inputdir 'loading.gif'], [outputdir 'loading.gif']);
-copyfile(['./' 'template.html'], [outputdir 'bnatlas.html']);
+copyfile([inputdir 'bnatlas.html'], [outputdir 'bnatlas.html']);
 
 % javascript programs
 copyfile([inputdir 'css'], [outputdir 'css']);

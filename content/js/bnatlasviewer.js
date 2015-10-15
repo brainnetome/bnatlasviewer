@@ -72,7 +72,7 @@ window.addEventListener("load",function()
 					document.getElementById("imglist").innerHTML=xmlhttp.responseText;
 
 					// initializeFiber('fib');
-					// initializeFiber('den');
+					initializeFiber('den');
 					initializeFiber('fun');
 				}
 			}
@@ -267,7 +267,7 @@ window.addEventListener("load",function()
   	var title=e.target.title;
 		viewFiberByTitle(title);
 		// DrawFiber('fib');
-		// DrawFiber('den');
+		DrawFiber('den');
 		DrawFiber('fun');
   	// document.getElementById("label").innerHTML=title;
 		DrawBehaviorBar(title,'BDf_FDR05');
@@ -441,7 +441,7 @@ function Update()
 		DrawImage(canvas,img,idx);
 	}
 	// DrawFiber('fib');
-	// DrawFiber('den');
+	DrawFiber('den');
 	DrawFiber('fun');
 	document.getElementById("opacity").innerHTML="opacity:"+GLOBAL.opacity.toFixed(1);
 }

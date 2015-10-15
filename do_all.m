@@ -17,13 +17,13 @@ fibdir = [inputdir 'data/fib'];
 dendir = [inputdir 'data/den'];
 fundir = [inputdir 'data/fmri'];
 
-if exist(cachedir,'dir'),rmdir(cachedir,'s');end;mkdir(cachedir);
-if exist(outputdir,'dir'),rmdir(outputdir,'s');end;mkdir(outputdir);
+% if exist(cachedir,'dir'),rmdir(cachedir,'s');end;mkdir(cachedir);
+% if exist(outputdir,'dir'),rmdir(outputdir,'s');end;mkdir(outputdir);
 
-genslice(imagefile, atlasfile);
-genmaps(namefile);
-gencenters(atlasfile, namefile);
-gencolors(namefile);
+% genslice(imagefile, atlasfile);
+% genmaps(namefile);
+% gencenters(atlasfile, namefile);
+% gencolors(namefile);
 genprobmaps(namefile, fibdir, dendir, fundir, [outputdir 'images'])
 
 %% copy required files 

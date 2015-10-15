@@ -37,6 +37,9 @@
 #include "vtkWindowToImageFilter.h"
 #include "vtkPNGWriter.h"
 
+#include "vtkOBJReader.h"
+#include "vtkPolyDataMapper.h"
+
 #include "nifti1_io.h"
 
 #define VTI_FILETYPE 1
@@ -75,6 +78,7 @@ int main(int argc, char *argv[])
   double reductionFactor = 1.0;
   double frameRate = 10.0;
   char *fileName=0;
+  char *meshName=0;
   int fileType=0;
 
   bool independentComponents=true;
@@ -111,6 +115,12 @@ int main(int argc, char *argv[])
       fileName = new char[strlen(argv[count+1])+1];
       fileType = NIFTI_FILETYPE;
       sprintf( fileName, "%s", argv[count+1] );
+      count += 2;
+	}
+    else if ( !strcmp( argv[count], "-MESH" ) )
+	{
+      meshName = new char[strlen(argv[count+1])+1];
+      sprintf( meshName, "%s", argv[count+1] );
       count += 2;
 	}
     else if ( !strcmp( argv[count], "-Clip") )
@@ -269,6 +279,17 @@ int main(int argc, char *argv[])
   }
 
   if (reader){reader->Update();}
+
+  vtkSmartPointer<vtkOBJReader> meshReader = vtkSmartPointer<vtkOBJReader>::New();
+  vtkSmartPointer<vtkPolyDataMapper> meshMapper = vtkSmartPointer<vtkPolyDataMapper>::New();
+  vtkSmartPointer<vtkActor> meshActor = vtkSmartPointer<vtkActor>::New();
+  if (meshName){
+	meshReader->SetFileName(meshName);
+	meshReader->Update();
+	meshMapper->SetInputData(meshReader->GetOutput());
+	meshActor->SetMapper(meshMapper);
+	meshActor->GetProperty()->SetOpacity(.2);
+  }
 
   // Verify that we actually have a volume
   int dim[3];
@@ -479,8 +500,8 @@ int main(int argc, char *argv[])
 
 	opacityFun->AddPoint( (-3024+addition)/(maxval-minval), 0.0 );
 	opacityFun->AddPoint( (-3000+addition)/(maxval-minval), 0.0 );
-	opacityFun->AddPoint( (-2999+addition)/(maxval-minval), 0.02 );
-	opacityFun->AddPoint( (-2044+addition)/(maxval-minval), 0.02 );
+	opacityFun->AddPoint( (-2999+addition)/(maxval-minval), 0.0 );
+	opacityFun->AddPoint( (-2044+addition)/(maxval-minval), 0.0 );
 	opacityFun->AddPoint( (-2000+addition)/(maxval-minval), 0.0 );
 	opacityFun->AddPoint( (-1+addition)/(maxval-minval),    0.0 );
 	opacityFun->AddPoint( (1+addition)/(maxval-minval),    0.01 );
@@ -505,6 +526,10 @@ int main(int argc, char *argv[])
   // Set the default window size
   renWin->SetSize(600,600);
   // renWin->Render();
+
+  if (meshName){
+	renderer->AddActor(meshActor);
+  }
 
   // Add the volume to the scene
   renderer->AddVolume( volume );

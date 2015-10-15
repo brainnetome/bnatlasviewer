@@ -48,31 +48,25 @@ if length(labels{iter})==0,continue;end
 idx=iter;
 
 %% read all image into memory
-disp(sprintf('[%03d]: reading all images into memory',iter));
-% folder=sprintf('%s/%d/',dendir,idx);
-% for ii=1:angle_interval:360
-% den{floor(ii/angle_interval)+1}.im=...
-%     imresize(imread([folder sprintf('%03d.png',ii-1)]),2/3,'cubic');
-% assert((size(den{floor(ii/angle_interval)+1}.im,1)==nr)&& ...
-%        (size(den{floor(ii/angle_interval)+1}.im,2)==nc));
-% end
+disp(sprintf('[%03d:%s]: reading all images into memory',iter,labels{iter}));
+folder=sprintf('%s/%s_pm_norm/',dendir,labels{idx});
+if ~exist(folder,'dir'),disp([folder 'is missing.']);continue;end
+fprintf(fp_imglist,'<img id="display-den-img-%d" src="images/den-%03d.jpg">\n',idx,idx);
+for ii=1:angle_interval:360
+den{floor(ii/angle_interval)+1}.im=...
+    imresize(imread([folder sprintf('%03d.png',ii-1)]),2/3,'cubic');
+assert((size(den{floor(ii/angle_interval)+1}.im,1)==nr)&& ...
+       (size(den{floor(ii/angle_interval)+1}.im,2)==nc));
+end
 % folder=sprintf('%s/%d/',fibdir,idx);
 % for ii=1:angle_interval:360
 % fib{floor(ii/angle_interval)+1}.im=...
 %     imresize(imread([folder sprintf('%03d.png',ii-1)]),1/1,'cubic');
-% assert((size(fib{floor(ii/angle_interval)+1}.im,1)==nr)&& ...
+% assert((size(fib{floor(ii/angle_interval)+1}.im,1)==nr) && ...
 %        (size(fib{floor(ii/angle_interval)+1}.im,2)==nc));
 % end
 folder=sprintf('%s/%s_T_FDR_Cl_50/',fundir,labels{idx});
-
-% fprintf(fp_imglist,'<img id="display-den-img-%d" src="images/den-%03d.jpg">\n',idx,idx);
-% fprintf(fp_imglist,'<img id="display-fib-img-%d" src="images/fib-%03d.jpg">\n',idx,idx);
 fprintf(fp_imglist,'<img id="display-fun-img-%d" src="images/fun-%03d.jpg">\n',idx,idx);
-
-if exist(sprintf('%s/fun-%03d.jpg',outdir,idx),'file')
-  disp([sprintf('%s/fun-%03d.jpg',outdir,idx) ' already exist.']);continue;
-end
-
 if ~exist(folder,'dir'),disp([folder 'is missing.']);continue;end
 for ii=1:angle_interval:360
 fun{floor(ii/angle_interval)+1}.im=...
@@ -86,11 +80,11 @@ disp(sprintf('[%03d]: initializing density and fiber maps',iter));
 nnc=5;
 nnr=ceil(360./angle_interval/5.);
 
-% dencat=imconcat(den,nnr,nnc);
+dencat=imconcat(den,nnr,nnc);
 % fibcat=imconcat(fib,nnr,nnc);
 funcat=imconcat(fun,nnr,nnc);
 
-% imwrite(1-dencat(:,:,:)/255,sprintf('%s/den-%03d.jpg',outdir,idx));
+imwrite(1-dencat(:,:,:)/255,sprintf('%s/den-%03d.jpg',outdir,idx));
 % imwrite(1-fibcat(:,:,:)/255,sprintf('%s/fib-%03d.jpg',outdir,idx));
 imwrite(  funcat(:,:,:)/255,sprintf('%s/fun-%03d.jpg',outdir,idx));
 

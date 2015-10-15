@@ -531,8 +531,8 @@ function DrawBehaviorBar(title,BDPC_type)
 	BDPC_title['BDf_FDR05']='Behaviorial Domains';
 	BDPC_title['PCf_FDR05']='Paradigm Classes';
 	var BDPC_barcolor={};
-	BDPC_barcolor['BDf_FDR05']="#DD6501";
-	BDPC_barcolor['PCf_FDR05']="#014D65";
+	BDPC_barcolor['BDf_FDR05']='#888888';//"#DD6501";
+	BDPC_barcolor['PCf_FDR05']='#888888';//"#014D65";
 
 	function sortByDictValue(dict){
 		var items=Object.keys(dict).map(function(key){return [key,dict[key]];});
@@ -547,37 +547,7 @@ function DrawBehaviorBar(title,BDPC_type)
 	for (var ii=0;ii<lut.length;ii++){
 		labels[ii]=lut[ii][0];
 		data[ii]=lut[ii][1];
-		// datasets[ii]={
-		// 	'label': labels[ii],
-		// 	'fillColor' : "rgba("+colors[labels[ii].substr(0,3)]+",0.5)",
-		// 	'strokeColor' : "rgba("+colors[labels[ii].substr(0,3)]+",0.8)",
-		// 	'highlightFill' : "rgba("+colors[labels[ii].substr(0,3)]+",0.75)",
-		// 	'highlightStroke' : "rgba("+colors[labels[ii].substr(0,3)]+",1)",
-		// 	'data' : [data[ii]]
-		// };
 	}
-	
-	// var barChartData = {
-	// 	'labels' : labels,
-	// 	'datasets' : [
-	// 		{
-	// 			'label': title+" - "+BDPC_title[BDPC_type]+" (likelihood ratio)",
-	// 			'fillColor' : "rgba("+colors['Act']+",0.5)",
-	// 			'strokeColor' : "rgba("+colors['Act']+",0.8)",
-	// 			'highlightFill' : "rgba("+colors['Act']+",0.75)",
-	// 			'highlightStroke' : "rgba("+colors['Act']+",1)",
-	// 			'data' : data
-	// 		}
-	// 	]
-	// }
-	// var ctx = document.getElementById("barchart_"+BDPC_type).getContext("2d");
-	// ctx.canvas.width = 200;
-	// ctx.canvas.height = 80;
-	// if (window.myBar){window.myBar.destroy();}
-	// window.myBar = new Chart(ctx).HorizontalBar(barChartData, {
-	// 	responsive : true,
-	// 	multiTooltipTemplate: "<%= datasetLabel %> - <%= value %>"
-	// });
 
 	var dataPoints = [];
 	for (var ii=0;ii<data.length;ii++){
@@ -586,7 +556,12 @@ function DrawBehaviorBar(title,BDPC_type)
 
 	var chart = new CanvasJS.Chart("barchart_"+BDPC_type, {
 		title:{
+			fontFamily: "sans-serif",
 			text:BDPC_title[BDPC_type]//+" (likelihood ratio)"
+		},
+		toolTip:{
+			fontFamily: "sans-serif",
+			fontSize: 10,
 		},
     animationEnabled: false,
 		axisX:{
@@ -603,19 +578,16 @@ function DrawBehaviorBar(title,BDPC_type)
       valueFormatString: " ",
       gridThickness: 0                    
     },
-		// axisY2:{
-		// 	// interlacedColor: "rgba(1,77,101,.2)",
-		// 	gridColor: "rgba(1,77,101,.1)"
-		// },
-
 		data: [{     
 			toolTipContent: 
-			"<span style='\"'color: {color};'\"'><strong>{indexLabel}</strong></span>"+
- 		  "<span style='\"'font-size: 20px; color:peru '\"'><strong>{y}</strong></span>",
+			"<span style='\"'font-family:sans-serif color: {color};'\"'>{indexLabel}:</span>"+
+ 		  "<span style='\"'font-style:bold font-family:sans-serif color:peru '\"'>{y}</span>",
       indexLabelPlacement: "inside",
-			indexLabelFontColor: "white",
-      indexLabelFontWeight: 600,
-      indexLabelFontFamily: "Verdana",
+			indexLabelFontColor: "black",
+			indexLabelFontSize: "12",
+			indexLabelFontStyle: "bold",
+      // indexLabelFontWeight: 600,
+      indexLabelFontFamily: "sans-serif",
 			type: "bar",
       name: "companies",
 			axisYType: "secondary",

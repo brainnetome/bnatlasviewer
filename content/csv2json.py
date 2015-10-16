@@ -21,8 +21,8 @@ result=[]
 for row in reader:
   index=row['index']
   ID = row['id']
-  lobe = row['lobe'].capitalize()
-  gyrus = row['gyrus'].capitalize()
+  lobe = row['lobe']
+  gyrus = row['gyrus']
   area = row['area']
   if lobe not in lobes:
     lobes.append(lobe)
@@ -37,7 +37,7 @@ for row in reader:
     gidx=gyruses.index(gyrus)
     result[lidx]['children'][gidx]['children']=[]
   gidx=gyruses.index(gyrus)
-  result[lidx]['children'][gidx]['children'].append({'text':ID,'id':index,'area':area})
+  result[lidx]['children'][gidx]['children'].append({'text':ID,'id':index,'data':area,'type':'file'})
   
   
 # print lobe,gyrus

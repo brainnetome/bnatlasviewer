@@ -72,7 +72,7 @@ window.addEventListener("load",function()
 					document.getElementById("imglist").innerHTML=xmlhttp.responseText;
 
 					// initializeFiber('fib');
-					// initializeFiber('den');
+					initializeFiber('den');
 					initializeFiber('fun');
 				}
 			}
@@ -104,13 +104,17 @@ window.addEventListener("load",function()
 	}
 
 	function loadTreeViewData(){
-		$('#ajax').jstree({
+		$('#plugins4').jstree({
 			'core' : {
 				'data' : {
 					"url" : "bnatlas_tree.json",
 					"dataType" : "json" // needed only if you do not supply JSON headers
 				}
-			}
+			},
+			"types" : {
+				"file" : {"icon" : "jstree-default jstree-file"}
+			},
+			"plugins" : [ "search","types" ]
 		}).on("select_node.jstree", function (e, data) { 
 			var title = data.node.text;
 			if (typeof GLOBAL_title2center[title] === 'undefined'){return;}
@@ -123,7 +127,15 @@ window.addEventListener("load",function()
 			document.getElementById("log2").innerHTML=data.node.text+','+data.node.id;
 			document.getElementById("log_area").innerHTML=data.node.data;
 			console.log(data);console.log(e);
-		});;
+		});
+		var to = false;
+		$('#plugins4_q').keyup(function () {
+			if(to) { clearTimeout(to); }
+			to = setTimeout(function () {
+				var v = $('#plugins4_q').val();
+				$('#plugins4').jstree(true).search(v);
+			}, 250);
+		});
 	}
 
 	function ToggleFiberHandler(e){
@@ -267,7 +279,7 @@ window.addEventListener("load",function()
   	var title=e.target.title;
 		viewFiberByTitle(title);
 		// DrawFiber('fib');
-		// DrawFiber('den');
+		DrawFiber('den');
 		DrawFiber('fun');
   	// document.getElementById("label").innerHTML=title;
 		DrawBehaviorBar(title,'BDf_FDR05');
@@ -441,7 +453,7 @@ function Update()
 		DrawImage(canvas,img,idx);
 	}
 	// DrawFiber('fib');
-	// DrawFiber('den');
+	DrawFiber('den');
 	DrawFiber('fun');
 	document.getElementById("opacity").innerHTML="opacity:"+GLOBAL.opacity.toFixed(1);
 }
@@ -519,8 +531,8 @@ function DrawBehaviorBar(title,BDPC_type)
 	BDPC_title['BDf_FDR05']='Behaviorial Domains';
 	BDPC_title['PCf_FDR05']='Paradigm Classes';
 	var BDPC_barcolor={};
-	BDPC_barcolor['BDf_FDR05']="#DD6501";
-	BDPC_barcolor['PCf_FDR05']="#014D65";
+	BDPC_barcolor['BDf_FDR05']='#888888';//"#DD6501";
+	BDPC_barcolor['PCf_FDR05']='#888888';//"#014D65";
 
 	function sortByDictValue(dict){
 		var items=Object.keys(dict).map(function(key){return [key,dict[key]];});
@@ -535,37 +547,7 @@ function DrawBehaviorBar(title,BDPC_type)
 	for (var ii=0;ii<lut.length;ii++){
 		labels[ii]=lut[ii][0];
 		data[ii]=lut[ii][1];
-		// datasets[ii]={
-		// 	'label': labels[ii],
-		// 	'fillColor' : "rgba("+colors[labels[ii].substr(0,3)]+",0.5)",
-		// 	'strokeColor' : "rgba("+colors[labels[ii].substr(0,3)]+",0.8)",
-		// 	'highlightFill' : "rgba("+colors[labels[ii].substr(0,3)]+",0.75)",
-		// 	'highlightStroke' : "rgba("+colors[labels[ii].substr(0,3)]+",1)",
-		// 	'data' : [data[ii]]
-		// };
 	}
-	
-	// var barChartData = {
-	// 	'labels' : labels,
-	// 	'datasets' : [
-	// 		{
-	// 			'label': title+" - "+BDPC_title[BDPC_type]+" (likelihood ratio)",
-	// 			'fillColor' : "rgba("+colors['Act']+",0.5)",
-	// 			'strokeColor' : "rgba("+colors['Act']+",0.8)",
-	// 			'highlightFill' : "rgba("+colors['Act']+",0.75)",
-	// 			'highlightStroke' : "rgba("+colors['Act']+",1)",
-	// 			'data' : data
-	// 		}
-	// 	]
-	// }
-	// var ctx = document.getElementById("barchart_"+BDPC_type).getContext("2d");
-	// ctx.canvas.width = 200;
-	// ctx.canvas.height = 80;
-	// if (window.myBar){window.myBar.destroy();}
-	// window.myBar = new Chart(ctx).HorizontalBar(barChartData, {
-	// 	responsive : true,
-	// 	multiTooltipTemplate: "<%= datasetLabel %> - <%= value %>"
-	// });
 
 	var dataPoints = [];
 	for (var ii=0;ii<data.length;ii++){
@@ -574,7 +556,12 @@ function DrawBehaviorBar(title,BDPC_type)
 
 	var chart = new CanvasJS.Chart("barchart_"+BDPC_type, {
 		title:{
+			fontFamily: "sans-serif",
 			text:BDPC_title[BDPC_type]//+" (likelihood ratio)"
+		},
+		toolTip:{
+			fontFamily: "sans-serif",
+			fontSize: 10,
 		},
     animationEnabled: false,
 		axisX:{
@@ -591,19 +578,16 @@ function DrawBehaviorBar(title,BDPC_type)
       valueFormatString: " ",
       gridThickness: 0                    
     },
-		// axisY2:{
-		// 	// interlacedColor: "rgba(1,77,101,.2)",
-		// 	gridColor: "rgba(1,77,101,.1)"
-		// },
-
 		data: [{     
 			toolTipContent: 
-			"<span style='\"'color: {color};'\"'><strong>{indexLabel}</strong></span>"+
- 		  "<span style='\"'font-size: 20px; color:peru '\"'><strong>{y}</strong></span>",
+			"<span style='\"'font-family:sans-serif color: {color};'\"'>{indexLabel}:</span>"+
+ 		  "<span style='\"'font-style:bold font-family:sans-serif color:peru '\"'>{y}</span>",
       indexLabelPlacement: "inside",
-			indexLabelFontColor: "white",
-      indexLabelFontWeight: 600,
-      indexLabelFontFamily: "Verdana",
+			indexLabelFontColor: "black",
+			indexLabelFontSize: "12",
+			indexLabelFontStyle: "bold",
+      // indexLabelFontWeight: 600,
+      indexLabelFontFamily: "sans-serif",
 			type: "bar",
       name: "companies",
 			axisYType: "secondary",

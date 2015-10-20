@@ -19,88 +19,65 @@ window.addEventListener("load",function()
 	loadLabelMaps();
 	// loadBarCharts();
 	loadTreeViewData();
+	loadConnectogramData();
 
-  document.getElementById("toggle-area-map").addEventListener("click",ToggleAreaMapHandler,false);
-  document.getElementById("toggle-fiber").addEventListener("click",ToggleFiberHandler,false);
+	$("#connectogram-checkbox").click(function(){
+		if ($('#connectogram-checkbox').prop('checked')){
+			$("#atlas-checkbox").prop('checked',false);
+			$("#atlas-panel").hide();
+			$("#connectogram-panel").show();
+		}
+	});
+	$("#atlas-checkbox").click(function(){
+		if ($('#atlas-checkbox').prop('checked')){
+			$("#connectogram-checkbox").prop('checked',false);
+			$("#atlas-panel").show();
+			$("#connectogram-panel").hide();
+		}
+	});
+
+  $("#toggle-area-map").on("click",ToggleAreaMapHandler);
+  $("#toggle-fiber").on("click",ToggleFiberHandler);
 	
-  document.getElementById("lessOpacity").
-		addEventListener("click",function(){
-			GLOBAL.opacity=Math.min(1,Math.max(0,GLOBAL.opacity-0.1));Update();},false);
-  document.getElementById("moreOpacity").
-		addEventListener("click",function(){
-			GLOBAL.opacity=Math.min(1,Math.max(0,GLOBAL.opacity+0.1));Update();},false);
+  $("#lessOpacity").on("click",function(){
+			GLOBAL.opacity=Math.min(1,Math.max(0,GLOBAL.opacity-0.1));Update();
+	});
+  $("#moreOpacity").on("click",function(){
+			GLOBAL.opacity=Math.min(1,Math.max(0,GLOBAL.opacity+0.1));Update();
+	});
   
-	document.getElementById("status").innerHTML="status: "+(GLOBAL.area_map_flag?"on":"off");
+	$("#status").html("status: "+(GLOBAL.area_map_flag?"on":"off"));
 
   function loadLabelMaps()
 	{
-		var xmlhttp;
-		if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
-			xmlhttp=new XMLHttpRequest();
-		}else{// code for IE6, IE5
-			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-		}
-		xmlhttp.onreadystatechange=function(){
-			if (xmlhttp.readyState==4 && xmlhttp.status==200){
-				document.getElementById("map-container").innerHTML=xmlhttp.responseText;
+		$.ajax("labelmaps.txt").done(function(responseText){
+			$("#map-container").html(responseText);
 
-				handler("display-x");
-				handler("display-y");
-				handler("display-z");
+			handler("display-x");
+			handler("display-y");
+			handler("display-z");
 
-				loadFiberImages();
+			// load fiber images
+			$.ajax("images/imglist.txt").done(function(responseText2){
+				$("#imglist").html(responseText2);
+				initializeFiber('den');
+				initializeFiber('fun');
+			});
 
-				initializeBehaviorBar('BDf_FDR05');
-				initializeBehaviorBar('PCf_FDR05');
+			// initializeBehaviorBar('BDf_FDR05');
+			// initializeBehaviorBar('PCf_FDR05');
+			$.ajax("BDf_FDR05.json").done(function(data){BDf_FDR05 = data;});
+			$.ajax("PCf_FDR05.json").done(function(data){PCf_FDR05 = data;});
 
-				Update();
-				document.getElementById("display-splash").style.display='none';
-			}
-		}
-		xmlhttp.open("GET","labelmaps.txt",true);
-		xmlhttp.send();
-
-		var loadFiberImages = function(){
-			var xmlhttp;
-			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
-				xmlhttp=new XMLHttpRequest();
-			}else{// code for IE6, IE5
-				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-			}
-			xmlhttp.onreadystatechange=function(){
-				if (xmlhttp.readyState==4 && xmlhttp.status==200){
-					document.getElementById("imglist").innerHTML=xmlhttp.responseText;
-
-					// initializeFiber('fib');
-					initializeFiber('den');
-					initializeFiber('fun');
-				}
-			}
-			xmlhttp.open("GET","images/imglist.txt",true);
-			xmlhttp.send();
-		}
-	}
-
-	function loadBarCharts(){
-
-		var randomScalingFactor = function(){ return Math.round(Math.random()*60)};
-		var barChartData = {
-			labels : ["Action","Cognition","Emotion","Interoception","Perception"],
-			datasets : [
-				{
-					fillColor : "rgba(151,187,205,0.5)",
-					strokeColor : "rgba(151,187,205,0.8)",
-					highlightFill : "rgba(151,187,205,0.75)",
-					highlightStroke : "rgba(151,187,205,1)",
-					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),
-							randomScalingFactor(),randomScalingFactor()]
-				}
-			]
-		}
-		var ctx = document.getElementById("behavior_barchart").getContext("2d");
-		window.myBar = new Chart(ctx).HorizontalBar(barChartData, {
-			responsive : true
+			Update();
+			document.getElementById("display-splash").style.display='none';
 		});
+
+		// function initializeBehaviorBar(BDPC_type){
+		// 	$.ajax(BDPC_type+".json").done(function(responseText){
+		// 		eval(BDPC_type+'='+responseText);
+		// 	});
+		// }
 	}
 
 	function loadTreeViewData(){
@@ -126,7 +103,7 @@ window.addEventListener("load",function()
 			highlightAreasByTitle(title);
 			document.getElementById("log2").innerHTML=data.node.text+','+data.node.id;
 			document.getElementById("log_area").innerHTML=data.node.data;
-			console.log(data);console.log(e);
+			// console.log(data);console.log(e);
 		});
 		var to = false;
 		$('#plugins4_q').keyup(function () {
@@ -136,6 +113,30 @@ window.addEventListener("load",function()
 				$('#plugins4').jstree(true).search(v);
 			}, 250);
 		});
+	}
+
+	function loadConnectogramData(){
+		var url = 'images/connectogram/002.png';
+		$.ajax({ 
+			url : url, 
+			cache: true,
+			processData : false,
+		}).always(function(){
+			$("#display-cgram").attr("src", url).fadeIn();
+		});
+
+		// var img = $("<img />").attr('src', 'images/connectogram/001.png').on('load', function(data) {
+		// 		if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
+    //       //alert('broken image!');
+		// 		} else {
+    //       //$("#something").append(img);
+		// 			var canvas=document.getElementById("display-cgram");
+		// 			if (canvas.getContext){
+		// 				var ctx = canvas.getContext("2d");
+		// 				ctx.drawImage(img,0,0,3000,3000,0,0,640,640);
+		// 			}
+		// 		}
+		// 	});
 	}
 
 	function ToggleFiberHandler(e){
@@ -187,21 +188,6 @@ window.addEventListener("load",function()
 		function fibMouse_over(e){
 			//clearInterval(GLOBAL.fibtimer);
 		}
-	}
-
-	function initializeBehaviorBar(BDPC_type)
-	{
-		var xmlhttp;
-		if (window.XMLHttpRequest){
-			xmlhttp=new XMLHttpRequest();
-		}
-		xmlhttp.onreadystatechange=function(){
-			if (xmlhttp.readyState==4 && xmlhttp.status==200){
-				eval(BDPC_type+'='+xmlhttp.responseText);
-			}
-		}
-		xmlhttp.open("GET",BDPC_type+".json",true);
-		xmlhttp.send();
 	}
 
   // -------------------------------------------------------

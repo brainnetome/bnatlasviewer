@@ -1,1633 +1,2371 @@
 [
 {
-"text":"Frontal Lobe ",
-"children":[
+"text":"Frontal Lobe",
+"id":"Frontal Lobe",
+"parent":"#"
+},
 {
-"text":"SFG, Superior Frontal Gyrus  ",
-"children":[
+"text":"SFG, Superior Frontal Gyrus",
+"id":"SFG, Superior Frontal Gyrus",
+"parent":"Frontal Lobe"
+},
 {
 "text":"SFG_L_7_1",
-"data":"A8m, medial area 8",
+"data":{
+"alias":"A8m, medial area 8"
+},
 "id":"1",
+"parent":"SFG, Superior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"SFG_R_7_1",
-"data":"A8m, medial area 8",
+"data":{
+"alias":"A8m, medial area 8"
+},
 "id":"2",
+"parent":"SFG, Superior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"SFG_L_7_2",
-"data":"A8dl, dorsolateral area 8",
+"data":{
+"alias":"A8dl, dorsolateral area 8"
+},
 "id":"3",
+"parent":"SFG, Superior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"SFG_R_7_2",
-"data":"A8dl, dorsolateral area 8",
+"data":{
+"alias":"A8dl, dorsolateral area 8"
+},
 "id":"4",
+"parent":"SFG, Superior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"SFG_L_7_3",
-"data":"A9l, lateral area 9",
+"data":{
+"alias":"A9l, lateral area 9"
+},
 "id":"5",
+"parent":"SFG, Superior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"SFG_R_7_3",
-"data":"A9l, lateral area 9",
+"data":{
+"alias":"A9l, lateral area 9"
+},
 "id":"6",
+"parent":"SFG, Superior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"SFG_L_7_4",
-"data":"A6dl, dorsolateral area 6",
+"data":{
+"alias":"A6dl, dorsolateral area 6"
+},
 "id":"7",
+"parent":"SFG, Superior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"SFG_R_7_4",
-"data":"A6dl, dorsolateral area 6",
+"data":{
+"alias":"A6dl, dorsolateral area 6"
+},
 "id":"8",
+"parent":"SFG, Superior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"SFG_L_7_5",
-"data":"A6m, medial area 6",
+"data":{
+"alias":"A6m, medial area 6"
+},
 "id":"9",
+"parent":"SFG, Superior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"SFG_R_7_5",
-"data":"A6m, medial area 6",
+"data":{
+"alias":"A6m, medial area 6"
+},
 "id":"10",
+"parent":"SFG, Superior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"SFG_L_7_6",
-"data":"A9m,medial area 9",
+"data":{
+"alias":"A9m,medial area 9"
+},
 "id":"11",
+"parent":"SFG, Superior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"SFG_R_7_6",
-"data":"A9m,medial area 9",
+"data":{
+"alias":"A9m,medial area 9"
+},
 "id":"12",
+"parent":"SFG, Superior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"SFG_L_7_7",
-"data":"A10m, medial area 10",
+"data":{
+"alias":"A10m, medial area 10"
+},
 "id":"13",
+"parent":"SFG, Superior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"SFG_R_7_7",
-"data":"A10m, medial area 10",
+"data":{
+"alias":"A10m, medial area 10"
+},
 "id":"14",
+"parent":"SFG, Superior Frontal Gyrus",
 "type":"file"
-}
-]
 },
 {
-"text":"MFG, Middle Frontal Gyrus ",
-"children":[
+"text":"MFG, Middle Frontal Gyrus",
+"id":"MFG, Middle Frontal Gyrus",
+"parent":"Frontal Lobe"
+},
 {
 "text":"MFG_L_7_1",
-"data":"A9/46d, dorsal area 9/46",
+"data":{
+"alias":"A9/46d, dorsal area 9/46"
+},
 "id":"15",
+"parent":"MFG, Middle Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"MFG_R_7_1",
-"data":"A9/46d, dorsal area 9/46",
+"data":{
+"alias":"A9/46d, dorsal area 9/46"
+},
 "id":"16",
+"parent":"MFG, Middle Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"MFG_L_7_2",
-"data":"IFJ, inferior frontal junction",
+"data":{
+"alias":"IFJ, inferior frontal junction"
+},
 "id":"17",
+"parent":"MFG, Middle Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"MFG_R_7_2",
-"data":"IFJ, inferior frontal junction",
+"data":{
+"alias":"IFJ, inferior frontal junction"
+},
 "id":"18",
+"parent":"MFG, Middle Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"MFG_L_7_3",
-"data":"A46, area 46",
+"data":{
+"alias":"A46, area 46"
+},
 "id":"19",
+"parent":"MFG, Middle Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"MFG_R_7_3",
-"data":"A46, area 46",
+"data":{
+"alias":"A46, area 46"
+},
 "id":"20",
+"parent":"MFG, Middle Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"MFG_L_7_4",
-"data":"A9/46v, ventral area 9/46 ",
+"data":{
+"alias":"A9/46v, ventral area 9/46 "
+},
 "id":"21",
+"parent":"MFG, Middle Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"MFG_R_7_4",
-"data":"A9/46v, ventral area 9/46 ",
+"data":{
+"alias":"A9/46v, ventral area 9/46 "
+},
 "id":"22",
+"parent":"MFG, Middle Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"MFG_L_7_5",
-"data":"A8vl, ventrolateral area 8",
+"data":{
+"alias":"A8vl, ventrolateral area 8"
+},
 "id":"23",
+"parent":"MFG, Middle Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"MFG_R_7_5",
-"data":"A8vl, ventrolateral area 8",
+"data":{
+"alias":"A8vl, ventrolateral area 8"
+},
 "id":"24",
+"parent":"MFG, Middle Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"MFG_L_7_6",
-"data":"A6vl, ventrolateral area 6",
+"data":{
+"alias":"A6vl, ventrolateral area 6"
+},
 "id":"25",
+"parent":"MFG, Middle Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"MFG_R_7_6",
-"data":"A6vl, ventrolateral area 6",
+"data":{
+"alias":"A6vl, ventrolateral area 6"
+},
 "id":"26",
+"parent":"MFG, Middle Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"MFG_L_7_7",
-"data":"A10l, lateral area10",
+"data":{
+"alias":"A10l, lateral area10"
+},
 "id":"27",
+"parent":"MFG, Middle Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"MFG_R_7_7",
-"data":"A10l, lateral area10",
+"data":{
+"alias":"A10l, lateral area10"
+},
 "id":"28",
+"parent":"MFG, Middle Frontal Gyrus",
 "type":"file"
-}
-]
 },
 {
 "text":"IFG, Inferior Frontal Gyrus",
-"children":[
+"id":"IFG, Inferior Frontal Gyrus",
+"parent":"Frontal Lobe"
+},
 {
 "text":"IFG_L_6_1",
-"data":"A44d,dorsal area 44",
+"data":{
+"alias":"A44d,dorsal area 44"
+},
 "id":"29",
+"parent":"IFG, Inferior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"IFG_R_6_1",
-"data":"A44d,dorsal area 44",
+"data":{
+"alias":"A44d,dorsal area 44"
+},
 "id":"30",
+"parent":"IFG, Inferior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"IFG_L_6_2",
-"data":"IFS, inferior frontal sulcus",
+"data":{
+"alias":"IFS, inferior frontal sulcus"
+},
 "id":"31",
+"parent":"IFG, Inferior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"IFG_R_6_2",
-"data":"IFS, inferior frontal sulcus",
+"data":{
+"alias":"IFS, inferior frontal sulcus"
+},
 "id":"32",
+"parent":"IFG, Inferior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"IFG_L_6_3",
-"data":"A45c, caudal area 45",
+"data":{
+"alias":"A45c, caudal area 45"
+},
 "id":"33",
+"parent":"IFG, Inferior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"IFG_R_6_3",
-"data":"A45c, caudal area 45",
+"data":{
+"alias":"A45c, caudal area 45"
+},
 "id":"34",
+"parent":"IFG, Inferior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"IFG_L_6_4",
-"data":"A45r, rostral area 45",
+"data":{
+"alias":"A45r, rostral area 45"
+},
 "id":"35",
+"parent":"IFG, Inferior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"IFG_R_6_4",
-"data":"A45r, rostral area 45",
+"data":{
+"alias":"A45r, rostral area 45"
+},
 "id":"36",
+"parent":"IFG, Inferior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"IFG_L_6_5",
-"data":"A44op, opercular area 44",
+"data":{
+"alias":"A44op, opercular area 44"
+},
 "id":"37",
+"parent":"IFG, Inferior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"IFG_R_6_5",
-"data":"A44op, opercular area 44",
+"data":{
+"alias":"A44op, opercular area 44"
+},
 "id":"38",
+"parent":"IFG, Inferior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"IFG_L_6_6",
-"data":"A44v, ventral area 44",
+"data":{
+"alias":"A44v, ventral area 44"
+},
 "id":"39",
+"parent":"IFG, Inferior Frontal Gyrus",
 "type":"file"
 },
 {
 "text":"IFG_R_6_6",
-"data":"A44v, ventral area 44",
+"data":{
+"alias":"A44v, ventral area 44"
+},
 "id":"40",
+"parent":"IFG, Inferior Frontal Gyrus",
 "type":"file"
-}
-]
 },
 {
 "text":"OrG, Orbital Gyrus",
-"children":[
+"id":"OrG, Orbital Gyrus",
+"parent":"Frontal Lobe"
+},
 {
 "text":"OrG_L_6_1",
-"data":"A14m, medial area 14",
+"data":{
+"alias":"A14m, medial area 14"
+},
 "id":"41",
+"parent":"OrG, Orbital Gyrus",
 "type":"file"
 },
 {
 "text":"OrG_R_6_1",
-"data":"A14m, medial area 14",
+"data":{
+"alias":"A14m, medial area 14"
+},
 "id":"42",
+"parent":"OrG, Orbital Gyrus",
 "type":"file"
 },
 {
 "text":"OrG_L_6_2",
-"data":"A12/47o, orbital area 12/47",
+"data":{
+"alias":"A12/47o, orbital area 12/47"
+},
 "id":"43",
+"parent":"OrG, Orbital Gyrus",
 "type":"file"
 },
 {
 "text":"OrG_R_6_2",
-"data":"A12/47o, orbital area 12/47",
+"data":{
+"alias":"A12/47o, orbital area 12/47"
+},
 "id":"44",
+"parent":"OrG, Orbital Gyrus",
 "type":"file"
 },
 {
 "text":"OrG_L_6_3",
-"data":"A11l, lateral area 11",
+"data":{
+"alias":"A11l, lateral area 11"
+},
 "id":"45",
+"parent":"OrG, Orbital Gyrus",
 "type":"file"
 },
 {
 "text":"OrG_R_6_3",
-"data":"A11l, lateral area 11",
+"data":{
+"alias":"A11l, lateral area 11"
+},
 "id":"46",
+"parent":"OrG, Orbital Gyrus",
 "type":"file"
 },
 {
 "text":"OrG_L_6_4",
-"data":"A11m, medial area 11",
+"data":{
+"alias":"A11m, medial area 11"
+},
 "id":"47",
+"parent":"OrG, Orbital Gyrus",
 "type":"file"
 },
 {
 "text":"OrG_R_6_4",
-"data":"A11m, medial area 11",
+"data":{
+"alias":"A11m, medial area 11"
+},
 "id":"48",
+"parent":"OrG, Orbital Gyrus",
 "type":"file"
 },
 {
 "text":"OrG_L_6_5",
-"data":"A13, area 13",
+"data":{
+"alias":"A13, area 13"
+},
 "id":"49",
+"parent":"OrG, Orbital Gyrus",
 "type":"file"
 },
 {
 "text":"OrG_R_6_5",
-"data":"A13, area 13",
+"data":{
+"alias":"A13, area 13"
+},
 "id":"50",
+"parent":"OrG, Orbital Gyrus",
 "type":"file"
 },
 {
 "text":"OrG_L_6_6",
-"data":"A12/47l, lateral area 12/47",
+"data":{
+"alias":"A12/47l, lateral area 12/47"
+},
 "id":"51",
+"parent":"OrG, Orbital Gyrus",
 "type":"file"
 },
 {
 "text":"OrG_R_6_6",
-"data":"A12/47l, lateral area 12/47",
+"data":{
+"alias":"A12/47l, lateral area 12/47"
+},
 "id":"52",
+"parent":"OrG, Orbital Gyrus",
 "type":"file"
-}
-]
 },
 {
 "text":"PrG, Precentral Gyrus",
-"children":[
+"id":"PrG, Precentral Gyrus",
+"parent":"Frontal Lobe"
+},
 {
 "text":"PrG_L_6_1",
-"data":"A4hf, area 4(head and face region)",
+"data":{
+"alias":"A4hf, area 4(head and face region)"
+},
 "id":"53",
+"parent":"PrG, Precentral Gyrus",
 "type":"file"
 },
 {
 "text":"PrG_R_6_1",
-"data":"A4hf, area 4(head and face region)",
+"data":{
+"alias":"A4hf, area 4(head and face region)"
+},
 "id":"54",
+"parent":"PrG, Precentral Gyrus",
 "type":"file"
 },
 {
 "text":"PrG_L_6_2",
-"data":"A6cdl, caudal dorsolateral area 6",
+"data":{
+"alias":"A6cdl, caudal dorsolateral area 6"
+},
 "id":"55",
+"parent":"PrG, Precentral Gyrus",
 "type":"file"
 },
 {
 "text":"PrG_R_6_2",
-"data":"A6cdl, caudal dorsolateral area 6",
+"data":{
+"alias":"A6cdl, caudal dorsolateral area 6"
+},
 "id":"56",
+"parent":"PrG, Precentral Gyrus",
 "type":"file"
 },
 {
 "text":"PrG_L_6_3",
-"data":"A4ul, area 4(upper limb region)",
+"data":{
+"alias":"A4ul, area 4(upper limb region)"
+},
 "id":"57",
+"parent":"PrG, Precentral Gyrus",
 "type":"file"
 },
 {
 "text":"PrG_R_6_3",
-"data":"A4ul, area 4(upper limb region)",
+"data":{
+"alias":"A4ul, area 4(upper limb region)"
+},
 "id":"58",
+"parent":"PrG, Precentral Gyrus",
 "type":"file"
 },
 {
 "text":"PrG_L_6_4",
-"data":"A4t, area 4(trunk region)",
+"data":{
+"alias":"A4t, area 4(trunk region)"
+},
 "id":"59",
+"parent":"PrG, Precentral Gyrus",
 "type":"file"
 },
 {
 "text":"PrG_R_6_4",
-"data":"A4t, area 4(trunk region)",
+"data":{
+"alias":"A4t, area 4(trunk region)"
+},
 "id":"60",
+"parent":"PrG, Precentral Gyrus",
 "type":"file"
 },
 {
 "text":"PrG_L_6_5",
-"data":"A4tl, area 4(tongue and larynx region)",
+"data":{
+"alias":"A4tl, area 4(tongue and larynx region)"
+},
 "id":"61",
+"parent":"PrG, Precentral Gyrus",
 "type":"file"
 },
 {
 "text":"PrG_R_6_5",
-"data":"A4tl, area 4(tongue and larynx region)",
+"data":{
+"alias":"A4tl, area 4(tongue and larynx region)"
+},
 "id":"62",
+"parent":"PrG, Precentral Gyrus",
 "type":"file"
 },
 {
 "text":"PrG_L_6_6",
-"data":"A6cvl, caudal ventrolateral area 6",
+"data":{
+"alias":"A6cvl, caudal ventrolateral area 6"
+},
 "id":"63",
+"parent":"PrG, Precentral Gyrus",
 "type":"file"
 },
 {
 "text":"PrG_R_6_6",
-"data":"A6cvl, caudal ventrolateral area 6",
+"data":{
+"alias":"A6cvl, caudal ventrolateral area 6"
+},
 "id":"64",
+"parent":"PrG, Precentral Gyrus",
 "type":"file"
-}
-]
 },
 {
 "text":"PCL,Paracentral Lobule",
-"children":[
+"id":"PCL,Paracentral Lobule",
+"parent":"Frontal Lobe"
+},
 {
 "text":"PCL_L_2_1",
-"data":"A1/2/3ll, area1/2/3 (lower limb region)",
+"data":{
+"alias":"A1/2/3ll, area1/2/3 (lower limb region)"
+},
 "id":"65",
+"parent":"PCL,Paracentral Lobule",
 "type":"file"
 },
 {
 "text":"PCL_R_2_1",
-"data":"A1/2/3ll, area1/2/3 (lower limb region)",
+"data":{
+"alias":"A1/2/3ll, area1/2/3 (lower limb region)"
+},
 "id":"66",
+"parent":"PCL,Paracentral Lobule",
 "type":"file"
 },
 {
 "text":"PCL_L_2_2",
-"data":"A4ll, area 4, (lower limb region)",
+"data":{
+"alias":"A4ll, area 4, (lower limb region)"
+},
 "id":"67",
+"parent":"PCL,Paracentral Lobule",
 "type":"file"
 },
 {
 "text":"PCL_R_2_2",
-"data":"A4ll, area 4, (lower limb region)",
+"data":{
+"alias":"A4ll, area 4, (lower limb region)"
+},
 "id":"68",
+"parent":"PCL,Paracentral Lobule",
 "type":"file"
-}
-]
-}
-]
 },
 {
 "text":"Temporal Lobe",
-"children":[
+"id":"Temporal Lobe",
+"parent":"#"
+},
 {
 "text":"STG, Superior Temporal Gyrus",
-"children":[
+"id":"STG, Superior Temporal Gyrus",
+"parent":"Temporal Lobe"
+},
 {
 "text":"STG_L_6_1",
-"data":"A38m, medial area 38",
+"data":{
+"alias":"A38m, medial area 38"
+},
 "id":"69",
+"parent":"STG, Superior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"STG_R_6_1",
-"data":"A38m, medial area 38",
+"data":{
+"alias":"A38m, medial area 38"
+},
 "id":"70",
+"parent":"STG, Superior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"STG_L_6_2",
-"data":"A41/42, area 41/42",
+"data":{
+"alias":"A41/42, area 41/42"
+},
 "id":"71",
+"parent":"STG, Superior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"STG_R_6_2",
-"data":"A41/42, area 41/42",
+"data":{
+"alias":"A41/42, area 41/42"
+},
 "id":"72",
+"parent":"STG, Superior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"STG_L_6_3",
-"data":"TE1.0 and TE1.2",
+"data":{
+"alias":"TE1.0 and TE1.2"
+},
 "id":"73",
+"parent":"STG, Superior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"STG_R_6_3",
-"data":"TE1.0 and TE1.2",
+"data":{
+"alias":"TE1.0 and TE1.2"
+},
 "id":"74",
+"parent":"STG, Superior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"STG_L_6_4",
-"data":"A22c, caudal area 22",
+"data":{
+"alias":"A22c, caudal area 22"
+},
 "id":"75",
+"parent":"STG, Superior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"STG_R_6_4",
-"data":"A22c, caudal area 22",
+"data":{
+"alias":"A22c, caudal area 22"
+},
 "id":"76",
+"parent":"STG, Superior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"STG_L_6_5",
-"data":"A38l, lateral area 38",
+"data":{
+"alias":"A38l, lateral area 38"
+},
 "id":"77",
+"parent":"STG, Superior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"STG_R_6_5",
-"data":"A38l, lateral area 38",
+"data":{
+"alias":"A38l, lateral area 38"
+},
 "id":"78",
+"parent":"STG, Superior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"STG_L_6_6",
-"data":"A22r, rostral area 22",
+"data":{
+"alias":"A22r, rostral area 22"
+},
 "id":"79",
+"parent":"STG, Superior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"STG_R_6_6",
-"data":"A22r, rostral area 22",
+"data":{
+"alias":"A22r, rostral area 22"
+},
 "id":"80",
+"parent":"STG, Superior Temporal Gyrus",
 "type":"file"
-}
-]
 },
 {
 "text":"MTG, Middle Temporal Gyrus",
-"children":[
+"id":"MTG, Middle Temporal Gyrus",
+"parent":"Temporal Lobe"
+},
 {
 "text":"MTG_L_4_1",
-"data":"A21c, caudal area 21",
+"data":{
+"alias":"A21c, caudal area 21"
+},
 "id":"81",
+"parent":"MTG, Middle Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"MTG_R_4_1",
-"data":"A21c, caudal area 21",
+"data":{
+"alias":"A21c, caudal area 21"
+},
 "id":"82",
+"parent":"MTG, Middle Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"MTG_L_4_2",
-"data":"A21r, rostral area 21",
+"data":{
+"alias":"A21r, rostral area 21"
+},
 "id":"83",
+"parent":"MTG, Middle Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"MTG_R_4_2",
-"data":"A21r, rostral area 21",
+"data":{
+"alias":"A21r, rostral area 21"
+},
 "id":"84",
+"parent":"MTG, Middle Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"MTG_L_4_3",
-"data":"A37dl, dorsolateral area37",
+"data":{
+"alias":"A37dl, dorsolateral area37"
+},
 "id":"85",
+"parent":"MTG, Middle Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"MTG_R_4_3",
-"data":"A37dl, dorsolateral area37",
+"data":{
+"alias":"A37dl, dorsolateral area37"
+},
 "id":"86",
+"parent":"MTG, Middle Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"MTG_L_4_4",
-"data":"aSTS, anterior superior temporal sulcus",
+"data":{
+"alias":"aSTS, anterior superior temporal sulcus"
+},
 "id":"87",
+"parent":"MTG, Middle Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"MTG_R_4_4",
-"data":"aSTS, anterior superior temporal sulcus",
+"data":{
+"alias":"aSTS, anterior superior temporal sulcus"
+},
 "id":"88",
+"parent":"MTG, Middle Temporal Gyrus",
 "type":"file"
-}
-]
 },
 {
 "text":"ITG, Inferior Temporal Gyrus",
-"children":[
+"id":"ITG, Inferior Temporal Gyrus",
+"parent":"Temporal Lobe"
+},
 {
 "text":"ITG_L_7_1",
-"data":"A20iv, intermediate ventral area 20",
+"data":{
+"alias":"A20iv, intermediate ventral area 20"
+},
 "id":"89",
+"parent":"ITG, Inferior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"ITG_R_7_1",
-"data":"A20iv, intermediate ventral area 20",
+"data":{
+"alias":"A20iv, intermediate ventral area 20"
+},
 "id":"90",
+"parent":"ITG, Inferior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"ITG_L_7_2",
-"data":"A37vm, ventromedial area37",
+"data":{
+"alias":"A37vm, ventromedial area37"
+},
 "id":"91",
+"parent":"ITG, Inferior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"ITG_R_7_2",
-"data":"A37vm, ventromedial area37",
+"data":{
+"alias":"A37vm, ventromedial area37"
+},
 "id":"92",
+"parent":"ITG, Inferior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"ITG_L_7_3",
-"data":"A20r, rostral area 20",
+"data":{
+"alias":"A20r, rostral area 20"
+},
 "id":"93",
+"parent":"ITG, Inferior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"ITG_R_7_3",
-"data":"A20r, rostral area 20",
+"data":{
+"alias":"A20r, rostral area 20"
+},
 "id":"94",
+"parent":"ITG, Inferior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"ITG_L_7_4",
-"data":"A20il, intermediate lateral area 20",
+"data":{
+"alias":"A20il, intermediate lateral area 20"
+},
 "id":"95",
+"parent":"ITG, Inferior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"ITG_R_7_4",
-"data":"A20il, intermediate lateral area 20",
+"data":{
+"alias":"A20il, intermediate lateral area 20"
+},
 "id":"96",
+"parent":"ITG, Inferior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"ITG_L_7_5",
-"data":"A37vl, ventrolateral area 37",
+"data":{
+"alias":"A37vl, ventrolateral area 37"
+},
 "id":"97",
+"parent":"ITG, Inferior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"ITG_R_7_5",
-"data":"A37vl, ventrolateral area 37",
+"data":{
+"alias":"A37vl, ventrolateral area 37"
+},
 "id":"98",
+"parent":"ITG, Inferior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"ITG_L_7_6",
-"data":"A20cl, caudolateral of area 20",
+"data":{
+"alias":"A20cl, caudolateral of area 20"
+},
 "id":"99",
+"parent":"ITG, Inferior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"ITG_R_7_6",
-"data":"A20cl, caudolateral of area 20",
+"data":{
+"alias":"A20cl, caudolateral of area 20"
+},
 "id":"100",
+"parent":"ITG, Inferior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"ITG_L_7_7",
-"data":"A20cv, caudoventral of area 20",
+"data":{
+"alias":"A20cv, caudoventral of area 20"
+},
 "id":"101",
+"parent":"ITG, Inferior Temporal Gyrus",
 "type":"file"
 },
 {
 "text":"ITG_R_7_7",
-"data":"A20cv, caudoventral of area 20",
+"data":{
+"alias":"A20cv, caudoventral of area 20"
+},
 "id":"102",
+"parent":"ITG, Inferior Temporal Gyrus",
 "type":"file"
-}
-]
 },
 {
 "text":"FuG, Fusiform Gyrus",
-"children":[
+"id":"FuG, Fusiform Gyrus",
+"parent":"Temporal Lobe"
+},
 {
 "text":"FuG_L_3_1",
-"data":"A20rv, rostroventral area 20",
+"data":{
+"alias":"A20rv, rostroventral area 20"
+},
 "id":"103",
+"parent":"FuG, Fusiform Gyrus",
 "type":"file"
 },
 {
 "text":"FuG_R_3_1",
-"data":"A20rv, rostroventral area 20",
+"data":{
+"alias":"A20rv, rostroventral area 20"
+},
 "id":"104",
+"parent":"FuG, Fusiform Gyrus",
 "type":"file"
 },
 {
 "text":"FuG_L_3_2",
-"data":"A37vm, medioventral area37",
+"data":{
+"alias":"A37vm, medioventral area37"
+},
 "id":"105",
+"parent":"FuG, Fusiform Gyrus",
 "type":"file"
 },
 {
 "text":"FuG_R_3_2",
-"data":"A37vm, medioventral area37",
+"data":{
+"alias":"A37vm, medioventral area37"
+},
 "id":"106",
+"parent":"FuG, Fusiform Gyrus",
 "type":"file"
 },
 {
 "text":"FuG_L_3_3",
-"data":"A37vl, ventrolatral area37",
+"data":{
+"alias":"A37vl, ventrolatral area37"
+},
 "id":"107",
+"parent":"FuG, Fusiform Gyrus",
 "type":"file"
 },
 {
 "text":"FuG_R_3_3",
-"data":"A37vl, ventrolatral area37",
+"data":{
+"alias":"A37vl, ventrolatral area37"
+},
 "id":"108",
+"parent":"FuG, Fusiform Gyrus",
 "type":"file"
-}
-]
 },
 {
 "text":"PhG, Parahippocampal Gyrus",
-"children":[
+"id":"PhG, Parahippocampal Gyrus",
+"parent":"Temporal Lobe"
+},
 {
 "text":"PhG_L_6_1",
-"data":"A35/36r, rostral area 35/36",
+"data":{
+"alias":"A35/36r, rostral area 35/36"
+},
 "id":"109",
+"parent":"PhG, Parahippocampal Gyrus",
 "type":"file"
 },
 {
 "text":"PhG_R_6_1",
-"data":"A35/36r, rostral area 35/36",
+"data":{
+"alias":"A35/36r, rostral area 35/36"
+},
 "id":"110",
+"parent":"PhG, Parahippocampal Gyrus",
 "type":"file"
 },
 {
 "text":"PhG_L_6_2",
-"data":"A35/36c, caudal area 35/36",
+"data":{
+"alias":"A35/36c, caudal area 35/36"
+},
 "id":"111",
+"parent":"PhG, Parahippocampal Gyrus",
 "type":"file"
 },
 {
 "text":"PhG_R_6_2",
-"data":"A35/36c, caudal area 35/36",
+"data":{
+"alias":"A35/36c, caudal area 35/36"
+},
 "id":"112",
+"parent":"PhG, Parahippocampal Gyrus",
 "type":"file"
 },
 {
 "text":"PhG_L_6_3",
-"data":"TL, area TL (lateral PPHC, posterior parahippocampal gyrus)",
+"data":{
+"alias":"TL, area TL (lateral PPHC, posterior parahippocampal gyrus)"
+},
 "id":"113",
+"parent":"PhG, Parahippocampal Gyrus",
 "type":"file"
 },
 {
 "text":"PhG_R_6_3",
-"data":"TL, area TL (lateral PPHC, posterior parahippocampal gyrus)",
+"data":{
+"alias":"TL, area TL (lateral PPHC, posterior parahippocampal gyrus)"
+},
 "id":"114",
+"parent":"PhG, Parahippocampal Gyrus",
 "type":"file"
 },
 {
 "text":"PhG_L_6_4",
-"data":"A28/34, area 28/34 (EC, entorhinal cortex)",
+"data":{
+"alias":"A28/34, area 28/34 (EC, entorhinal cortex)"
+},
 "id":"115",
+"parent":"PhG, Parahippocampal Gyrus",
 "type":"file"
 },
 {
 "text":"PhG_R_6_4",
-"data":"A28/34, area 28/34 (EC, entorhinal cortex)",
+"data":{
+"alias":"A28/34, area 28/34 (EC, entorhinal cortex)"
+},
 "id":"116",
+"parent":"PhG, Parahippocampal Gyrus",
 "type":"file"
 },
 {
 "text":"PhG_L_6_5",
-"data":"TI, area TI(temporal agranular insular cortex)",
+"data":{
+"alias":"TI, area TI(temporal agranular insular cortex)"
+},
 "id":"117",
+"parent":"PhG, Parahippocampal Gyrus",
 "type":"file"
 },
 {
 "text":"PhG_R_6_5",
-"data":"TI, area TI(temporal agranular insular cortex)",
+"data":{
+"alias":"TI, area TI(temporal agranular insular cortex)"
+},
 "id":"118",
+"parent":"PhG, Parahippocampal Gyrus",
 "type":"file"
 },
 {
 "text":"PhG_L_6_6",
-"data":"TH, area TH (medial PPHC)",
+"data":{
+"alias":"TH, area TH (medial PPHC)"
+},
 "id":"119",
+"parent":"PhG, Parahippocampal Gyrus",
 "type":"file"
 },
 {
 "text":"PhG_R_6_6",
-"data":"TH, area TH (medial PPHC)",
+"data":{
+"alias":"TH, area TH (medial PPHC)"
+},
 "id":"120",
+"parent":"PhG, Parahippocampal Gyrus",
 "type":"file"
-}
-]
 },
 {
-"text":"Psts, Posterior Superior Temporal Sulcus ",
-"children":[
+"text":"Psts, Posterior Superior Temporal Sulcus",
+"id":"Psts, Posterior Superior Temporal Sulcus",
+"parent":"Temporal Lobe"
+},
 {
 "text":"pSTS_L_2_1",
-"data":"rpSTS, rostroposterior superior temporal sulcus",
+"data":{
+"alias":"rpSTS, rostroposterior superior temporal sulcus"
+},
 "id":"121",
+"parent":"Psts, Posterior Superior Temporal Sulcus",
 "type":"file"
 },
 {
 "text":"pSTS_R_2_1",
-"data":"rpSTS, rostroposterior superior temporal sulcus",
+"data":{
+"alias":"rpSTS, rostroposterior superior temporal sulcus"
+},
 "id":"122",
+"parent":"Psts, Posterior Superior Temporal Sulcus",
 "type":"file"
 },
 {
 "text":"pSTS_L_2_2",
-"data":"cpSTS, caudoposterior superior temporal sulcus",
+"data":{
+"alias":"cpSTS, caudoposterior superior temporal sulcus"
+},
 "id":"123",
+"parent":"Psts, Posterior Superior Temporal Sulcus",
 "type":"file"
 },
 {
 "text":"pSTS_R_2_2",
-"data":"cpSTS, caudoposterior superior temporal sulcus",
+"data":{
+"alias":"cpSTS, caudoposterior superior temporal sulcus"
+},
 "id":"124",
+"parent":"Psts, Posterior Superior Temporal Sulcus",
 "type":"file"
-}
-]
-}
-]
 },
 {
 "text":"Parietal Lobe",
-"children":[
+"id":"Parietal Lobe",
+"parent":"#"
+},
 {
 "text":"SPL, Superior Parietal Lobule",
-"children":[
+"id":"SPL, Superior Parietal Lobule",
+"parent":"Parietal Lobe"
+},
 {
 "text":"SPL_L_5_1",
-"data":"A7ip, intraparietal area 7(hIP3)",
+"data":{
+"alias":"A7ip, intraparietal area 7(hIP3)"
+},
 "id":"125",
+"parent":"SPL, Superior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"SPL_R_5_1",
-"data":"A7ip, intraparietal area 7(hIP3)",
+"data":{
+"alias":"A7ip, intraparietal area 7(hIP3)"
+},
 "id":"126",
+"parent":"SPL, Superior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"SPL_L_5_2",
-"data":"A7c, caudal area 7",
+"data":{
+"alias":"A7c, caudal area 7"
+},
 "id":"127",
+"parent":"SPL, Superior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"SPL_R_5_2",
-"data":"A7c, caudal area 7",
+"data":{
+"alias":"A7c, caudal area 7"
+},
 "id":"128",
+"parent":"SPL, Superior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"SPL_L_5_3",
-"data":"A7pc, postcentral area 7",
+"data":{
+"alias":"A7pc, postcentral area 7"
+},
 "id":"129",
+"parent":"SPL, Superior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"SPL_R_5_3",
-"data":"A7pc, postcentral area 7",
+"data":{
+"alias":"A7pc, postcentral area 7"
+},
 "id":"130",
+"parent":"SPL, Superior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"SPL_L_5_4",
-"data":"A5l, lateral area 5",
+"data":{
+"alias":"A5l, lateral area 5"
+},
 "id":"131",
+"parent":"SPL, Superior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"SPL_R_5_4",
-"data":"A5l, lateral area 5",
+"data":{
+"alias":"A5l, lateral area 5"
+},
 "id":"132",
+"parent":"SPL, Superior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"SPL_L_5_5",
-"data":"A7r, rostral area 7",
+"data":{
+"alias":"A7r, rostral area 7"
+},
 "id":"133",
+"parent":"SPL, Superior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"SPL_R_5_5",
-"data":"A7r, rostral area 7",
+"data":{
+"alias":"A7r, rostral area 7"
+},
 "id":"134",
+"parent":"SPL, Superior Parietal Lobule",
 "type":"file"
-}
-]
 },
 {
 "text":"IPL, Inferior Parietal Lobule",
-"children":[
+"id":"IPL, Inferior Parietal Lobule",
+"parent":"Parietal Lobe"
+},
 {
 "text":"IPL_L_6_1",
-"data":"A39c, caudal area 39(PGp)",
+"data":{
+"alias":"A39c, caudal area 39(PGp)"
+},
 "id":"135",
+"parent":"IPL, Inferior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"IPL_R_6_1",
-"data":"A39c, caudal area 39(PGp)",
+"data":{
+"alias":"A39c, caudal area 39(PGp)"
+},
 "id":"136",
+"parent":"IPL, Inferior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"IPL_L_6_2",
-"data":"A39rd, rostrodorsal area 39(Hip3)",
+"data":{
+"alias":"A39rd, rostrodorsal area 39(Hip3)"
+},
 "id":"137",
+"parent":"IPL, Inferior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"IPL_R_6_2",
-"data":"A39rd, rostrodorsal area 39(Hip3)",
+"data":{
+"alias":"A39rd, rostrodorsal area 39(Hip3)"
+},
 "id":"138",
+"parent":"IPL, Inferior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"IPL_L_6_3",
-"data":"A40rd, rostrodorsal area 40(PFt)",
+"data":{
+"alias":"A40rd, rostrodorsal area 40(PFt)"
+},
 "id":"139",
+"parent":"IPL, Inferior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"IPL_R_6_3",
-"data":"A40rd, rostrodorsal area 40(PFt)",
+"data":{
+"alias":"A40rd, rostrodorsal area 40(PFt)"
+},
 "id":"140",
+"parent":"IPL, Inferior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"IPL_L_6_4",
-"data":"A40c, caudal area 40(PFm)",
+"data":{
+"alias":"A40c, caudal area 40(PFm)"
+},
 "id":"141",
+"parent":"IPL, Inferior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"IPL_R_6_4",
-"data":"A40c, caudal area 40(PFm)",
+"data":{
+"alias":"A40c, caudal area 40(PFm)"
+},
 "id":"142",
+"parent":"IPL, Inferior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"IPL_L_6_5",
-"data":"A39rv, rostroventral area 39(PGa)",
+"data":{
+"alias":"A39rv, rostroventral area 39(PGa)"
+},
 "id":"143",
+"parent":"IPL, Inferior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"IPL_R_6_5",
-"data":"A39rv, rostroventral area 39(PGa)",
+"data":{
+"alias":"A39rv, rostroventral area 39(PGa)"
+},
 "id":"144",
+"parent":"IPL, Inferior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"IPL_L_6_6",
-"data":"A40rv, rostroventral area 40(PFop)",
+"data":{
+"alias":"A40rv, rostroventral area 40(PFop)"
+},
 "id":"145",
+"parent":"IPL, Inferior Parietal Lobule",
 "type":"file"
 },
 {
 "text":"IPL_R_6_6",
-"data":"A40rv, rostroventral area 40(PFop)",
+"data":{
+"alias":"A40rv, rostroventral area 40(PFop)"
+},
 "id":"146",
+"parent":"IPL, Inferior Parietal Lobule",
 "type":"file"
-}
-]
 },
 {
 "text":"Pcun, Precuneus",
-"children":[
+"id":"Pcun, Precuneus",
+"parent":"Parietal Lobe"
+},
 {
 "text":"Pcun_L_4_1",
-"data":"A7m, medial area 7(PEp)",
+"data":{
+"alias":"A7m, medial area 7(PEp)"
+},
 "id":"147",
+"parent":"Pcun, Precuneus",
 "type":"file"
 },
 {
 "text":"Pcun_R_4_1",
-"data":"A7m, medial area 7(PEp)",
+"data":{
+"alias":"A7m, medial area 7(PEp)"
+},
 "id":"148",
+"parent":"Pcun, Precuneus",
 "type":"file"
 },
 {
 "text":"Pcun_L_4_2",
-"data":"A5m, medial area 5(PEm)",
+"data":{
+"alias":"A5m, medial area 5(PEm)"
+},
 "id":"149",
+"parent":"Pcun, Precuneus",
 "type":"file"
 },
 {
 "text":"Pcun_R_4_2",
-"data":"A5m, medial area 5(PEm)",
+"data":{
+"alias":"A5m, medial area 5(PEm)"
+},
 "id":"150",
+"parent":"Pcun, Precuneus",
 "type":"file"
 },
 {
 "text":"Pcun_L_4_3",
-"data":"dmPOS, dorsomeidal parietooccipital  sulcus(PEr) ",
+"data":{
+"alias":"dmPOS, dorsomeidal parietooccipital  sulcus(PEr) "
+},
 "id":"151",
+"parent":"Pcun, Precuneus",
 "type":"file"
 },
 {
 "text":"Pcun_R_4_3",
-"data":"dmPOS, dorsomeidal parietooccipital  sulcus(PEr) ",
+"data":{
+"alias":"dmPOS, dorsomeidal parietooccipital  sulcus(PEr) "
+},
 "id":"152",
+"parent":"Pcun, Precuneus",
 "type":"file"
 },
 {
 "text":"Pcun_L_4_4",
-"data":"A31, area 31 (Lc1)",
+"data":{
+"alias":"A31, area 31 (Lc1)"
+},
 "id":"153",
+"parent":"Pcun, Precuneus",
 "type":"file"
 },
 {
 "text":"Pcun_R_4_4",
-"data":"A31, area 31 (Lc1)",
+"data":{
+"alias":"A31, area 31 (Lc1)"
+},
 "id":"154",
+"parent":"Pcun, Precuneus",
 "type":"file"
-}
-]
 },
 {
 "text":"PoG, Postcentral Gyrus",
-"children":[
+"id":"PoG, Postcentral Gyrus",
+"parent":"Parietal Lobe"
+},
 {
 "text":"PoG_L_4_1",
-"data":"A1/2/3ulhf, area 1/2/3(upper limb, head and face region)",
+"data":{
+"alias":"A1/2/3ulhf, area 1/2/3(upper limb, head and face region)"
+},
 "id":"155",
+"parent":"PoG, Postcentral Gyrus",
 "type":"file"
 },
 {
 "text":"PoG_R_4_1",
-"data":"A1/2/3ulhf, area 1/2/3(upper limb, head and face region)",
+"data":{
+"alias":"A1/2/3ulhf, area 1/2/3(upper limb, head and face region)"
+},
 "id":"156",
+"parent":"PoG, Postcentral Gyrus",
 "type":"file"
 },
 {
 "text":"PoG_L_4_2",
-"data":"A1/2/3tonIa, area 1/2/3(tongue and larynx region)",
+"data":{
+"alias":"A1/2/3tonIa, area 1/2/3(tongue and larynx region)"
+},
 "id":"157",
+"parent":"PoG, Postcentral Gyrus",
 "type":"file"
 },
 {
 "text":"PoG_R_4_2",
-"data":"A1/2/3tonIa, area 1/2/3(tongue and larynx region)",
+"data":{
+"alias":"A1/2/3tonIa, area 1/2/3(tongue and larynx region)"
+},
 "id":"158",
+"parent":"PoG, Postcentral Gyrus",
 "type":"file"
 },
 {
 "text":"PoG_L_4_3",
-"data":"A2, area 2",
+"data":{
+"alias":"A2, area 2"
+},
 "id":"159",
+"parent":"PoG, Postcentral Gyrus",
 "type":"file"
 },
 {
 "text":"PoG_R_4_3",
-"data":"A2, area 2",
+"data":{
+"alias":"A2, area 2"
+},
 "id":"160",
+"parent":"PoG, Postcentral Gyrus",
 "type":"file"
 },
 {
 "text":"PoG_L_4_4",
-"data":"A1/2/3tru, area1/2/3(trunk region)",
+"data":{
+"alias":"A1/2/3tru, area1/2/3(trunk region)"
+},
 "id":"161",
+"parent":"PoG, Postcentral Gyrus",
 "type":"file"
 },
 {
 "text":"PoG_R_4_4",
-"data":"A1/2/3tru, area1/2/3(trunk region)",
+"data":{
+"alias":"A1/2/3tru, area1/2/3(trunk region)"
+},
 "id":"162",
+"parent":"PoG, Postcentral Gyrus",
 "type":"file"
-}
-]
-}
-]
 },
 {
 "text":"Insular Lobe",
-"children":[
+"id":"Insular Lobe",
+"parent":"#"
+},
 {
 "text":"INS, Insular Gyrus",
-"children":[
+"id":"INS, Insular Gyrus",
+"parent":"Insular Lobe"
+},
 {
 "text":"INS_L_6_1",
-"data":"G, hypergranular insular",
+"data":{
+"alias":"G, hypergranular insular"
+},
 "id":"163",
+"parent":"INS, Insular Gyrus",
 "type":"file"
 },
 {
 "text":"INS_R_6_1",
-"data":"G, hypergranular insular",
+"data":{
+"alias":"G, hypergranular insular"
+},
 "id":"164",
+"parent":"INS, Insular Gyrus",
 "type":"file"
 },
 {
 "text":"INS_L_6_2",
-"data":"vIa, ventral agranular insular",
+"data":{
+"alias":"vIa, ventral agranular insular"
+},
 "id":"165",
+"parent":"INS, Insular Gyrus",
 "type":"file"
 },
 {
 "text":"INS_R_6_2",
-"data":"vIa, ventral agranular insular",
+"data":{
+"alias":"vIa, ventral agranular insular"
+},
 "id":"166",
+"parent":"INS, Insular Gyrus",
 "type":"file"
 },
 {
 "text":"INS_L_6_3",
-"data":"dIa, dorsal agranular insular",
+"data":{
+"alias":"dIa, dorsal agranular insular"
+},
 "id":"167",
+"parent":"INS, Insular Gyrus",
 "type":"file"
 },
 {
 "text":"INS_R_6_3",
-"data":"dIa, dorsal agranular insular",
+"data":{
+"alias":"dIa, dorsal agranular insular"
+},
 "id":"168",
+"parent":"INS, Insular Gyrus",
 "type":"file"
 },
 {
 "text":"INS_L_6_4",
-"data":"vId/vIg, ventral granular insular",
+"data":{
+"alias":"vId/vIg, ventral granular insular"
+},
 "id":"169",
+"parent":"INS, Insular Gyrus",
 "type":"file"
 },
 {
 "text":"INS_R_6_4",
-"data":"vId/vIg, ventral granular insular",
+"data":{
+"alias":"vId/vIg, ventral granular insular"
+},
 "id":"170",
+"parent":"INS, Insular Gyrus",
 "type":"file"
 },
 {
 "text":"INS_L_6_5",
-"data":"dIg, dorsal granular insular",
+"data":{
+"alias":"dIg, dorsal granular insular"
+},
 "id":"171",
+"parent":"INS, Insular Gyrus",
 "type":"file"
 },
 {
 "text":"INS_R_6_5",
-"data":"dIg, dorsal granular insular",
+"data":{
+"alias":"dIg, dorsal granular insular"
+},
 "id":"172",
+"parent":"INS, Insular Gyrus",
 "type":"file"
 },
 {
 "text":"INS_L_6_6",
-"data":"dId, dorsal dysgranular insular",
+"data":{
+"alias":"dId, dorsal dysgranular insular"
+},
 "id":"173",
+"parent":"INS, Insular Gyrus",
 "type":"file"
 },
 {
 "text":"INS_R_6_6",
-"data":"dId, dorsal dysgranular insular",
+"data":{
+"alias":"dId, dorsal dysgranular insular"
+},
 "id":"174",
+"parent":"INS, Insular Gyrus",
 "type":"file"
-}
-]
-}
-]
 },
 {
 "text":"Limbic Lobe",
-"children":[
+"id":"Limbic Lobe",
+"parent":"#"
+},
 {
 "text":"CG, Cingulate Gyrus",
-"children":[
+"id":"CG, Cingulate Gyrus",
+"parent":"Limbic Lobe"
+},
 {
 "text":"CG_L_7_1",
-"data":"A23d, dorsal area 23",
+"data":{
+"alias":"A23d, dorsal area 23"
+},
 "id":"175",
+"parent":"CG, Cingulate Gyrus",
 "type":"file"
 },
 {
 "text":"CG_R_7_1",
-"data":"A23d, dorsal area 23",
+"data":{
+"alias":"A23d, dorsal area 23"
+},
 "id":"176",
+"parent":"CG, Cingulate Gyrus",
 "type":"file"
 },
 {
 "text":"CG_L_7_2",
-"data":"A24rv, rostroventral area 24",
+"data":{
+"alias":"A24rv, rostroventral area 24"
+},
 "id":"177",
+"parent":"CG, Cingulate Gyrus",
 "type":"file"
 },
 {
 "text":"CG_R_7_2",
-"data":"A24rv, rostroventral area 24",
+"data":{
+"alias":"A24rv, rostroventral area 24"
+},
 "id":"178",
+"parent":"CG, Cingulate Gyrus",
 "type":"file"
 },
 {
 "text":"CG_L_7_3",
-"data":"A32p, pregenual area 32",
+"data":{
+"alias":"A32p, pregenual area 32"
+},
 "id":"179",
+"parent":"CG, Cingulate Gyrus",
 "type":"file"
 },
 {
 "text":"CG_R_7_3",
-"data":"A32p, pregenual area 32",
+"data":{
+"alias":"A32p, pregenual area 32"
+},
 "id":"180",
+"parent":"CG, Cingulate Gyrus",
 "type":"file"
 },
 {
 "text":"CG_L_7_4",
-"data":"A23v, ventral area 23",
+"data":{
+"alias":"A23v, ventral area 23"
+},
 "id":"181",
+"parent":"CG, Cingulate Gyrus",
 "type":"file"
 },
 {
 "text":"CG_R_7_4",
-"data":"A23v, ventral area 23",
+"data":{
+"alias":"A23v, ventral area 23"
+},
 "id":"182",
+"parent":"CG, Cingulate Gyrus",
 "type":"file"
 },
 {
 "text":"CG_L_7_5",
-"data":"A24cd, caudodorsal area 24",
+"data":{
+"alias":"A24cd, caudodorsal area 24"
+},
 "id":"183",
+"parent":"CG, Cingulate Gyrus",
 "type":"file"
 },
 {
 "text":"CG_R_7_5",
-"data":"A24cd, caudodorsal area 24",
+"data":{
+"alias":"A24cd, caudodorsal area 24"
+},
 "id":"184",
+"parent":"CG, Cingulate Gyrus",
 "type":"file"
 },
 {
 "text":"CG_L_7_6",
-"data":"A23c, caudal area 24",
+"data":{
+"alias":"A23c, caudal area 24"
+},
 "id":"185",
+"parent":"CG, Cingulate Gyrus",
 "type":"file"
 },
 {
 "text":"CG_R_7_6",
-"data":"A23c, caudal area 24",
+"data":{
+"alias":"A23c, caudal area 24"
+},
 "id":"186",
+"parent":"CG, Cingulate Gyrus",
 "type":"file"
 },
 {
 "text":"CG_L_7_7",
-"data":"A32sg, subgenual area 32",
+"data":{
+"alias":"A32sg, subgenual area 32"
+},
 "id":"187",
+"parent":"CG, Cingulate Gyrus",
 "type":"file"
 },
 {
 "text":"CG_R_7_7",
-"data":"A32sg, subgenual area 32",
+"data":{
+"alias":"A32sg, subgenual area 32"
+},
 "id":"188",
+"parent":"CG, Cingulate Gyrus",
 "type":"file"
-}
-]
-}
-]
 },
 {
 "text":"Occipital Lobe",
-"children":[
+"id":"Occipital Lobe",
+"parent":"#"
+},
 {
 "text":"Cun, Cuneus",
-"children":[
+"id":"Cun, Cuneus",
+"parent":"Occipital Lobe"
+},
 {
 "text":"Cun_L_5_1",
-"data":"cLinG, caudal lingual gyrus",
+"data":{
+"alias":"cLinG, caudal lingual gyrus"
+},
 "id":"189",
+"parent":"Cun, Cuneus",
 "type":"file"
 },
 {
 "text":"Cun_R_5_1",
-"data":"cLinG, caudal lingual gyrus",
+"data":{
+"alias":"cLinG, caudal lingual gyrus"
+},
 "id":"190",
+"parent":"Cun, Cuneus",
 "type":"file"
 },
 {
 "text":"Cun_L_5_2",
-"data":"rCunG, rostral cuneus gyrus",
+"data":{
+"alias":"rCunG, rostral cuneus gyrus"
+},
 "id":"191",
+"parent":"Cun, Cuneus",
 "type":"file"
 },
 {
 "text":"Cun_R_5_2",
-"data":"rCunG, rostral cuneus gyrus",
+"data":{
+"alias":"rCunG, rostral cuneus gyrus"
+},
 "id":"192",
+"parent":"Cun, Cuneus",
 "type":"file"
 },
 {
 "text":"Cun_L_5_3",
-"data":"cCunG, caudal cuneus gyrus",
+"data":{
+"alias":"cCunG, caudal cuneus gyrus"
+},
 "id":"193",
+"parent":"Cun, Cuneus",
 "type":"file"
 },
 {
 "text":"Cun_R_5_3",
-"data":"cCunG, caudal cuneus gyrus",
+"data":{
+"alias":"cCunG, caudal cuneus gyrus"
+},
 "id":"194",
+"parent":"Cun, Cuneus",
 "type":"file"
 },
 {
 "text":"Cun_L_5_4",
-"data":"rLinG, rostral lingual gyrus",
+"data":{
+"alias":"rLinG, rostral lingual gyrus"
+},
 "id":"195",
+"parent":"Cun, Cuneus",
 "type":"file"
 },
 {
 "text":"Cun_R_5_4",
-"data":"rLinG, rostral lingual gyrus",
+"data":{
+"alias":"rLinG, rostral lingual gyrus"
+},
 "id":"196",
+"parent":"Cun, Cuneus",
 "type":"file"
 },
 {
 "text":"Cun_L_5_5",
-"data":"vmPOS,ventomeial parietooccipital sulcus",
+"data":{
+"alias":"vmPOS,ventomeial parietooccipital sulcus"
+},
 "id":"197",
+"parent":"Cun, Cuneus",
 "type":"file"
 },
 {
 "text":"Cun_R_5_5",
-"data":"vmPOS,ventomeial parietooccipital sulcus",
+"data":{
+"alias":"vmPOS,ventomeial parietooccipital sulcus"
+},
 "id":"198",
+"parent":"Cun, Cuneus",
 "type":"file"
-}
-]
 },
 {
 "text":"OcG, Occipital Gyrus",
-"children":[
+"id":"OcG, Occipital Gyrus",
+"parent":"Occipital Lobe"
+},
 {
 "text":"OcG_L_4_1",
-"data":"mOccG, middle occipital gyrus",
+"data":{
+"alias":"mOccG, middle occipital gyrus"
+},
 "id":"199",
+"parent":"OcG, Occipital Gyrus",
 "type":"file"
 },
 {
 "text":"OcG_R_4_1",
-"data":"mOccG, middle occipital gyrus",
+"data":{
+"alias":"mOccG, middle occipital gyrus"
+},
 "id":"200",
+"parent":"OcG, Occipital Gyrus",
 "type":"file"
 },
 {
 "text":"OcG_L_4_2",
-"data":"V5/MT, area V5/MT",
+"data":{
+"alias":"V5/MT, area V5/MT"
+},
 "id":"201",
+"parent":"OcG, Occipital Gyrus",
 "type":"file"
 },
 {
 "text":"OcG_R_4_2",
-"data":"V5/MT, area V5/MT",
+"data":{
+"alias":"V5/MT, area V5/MT"
+},
 "id":"202",
+"parent":"OcG, Occipital Gyrus",
 "type":"file"
 },
 {
 "text":"OcG_L_4_3",
-"data":"OPC, occipital polar cortex",
+"data":{
+"alias":"OPC, occipital polar cortex"
+},
 "id":"203",
+"parent":"OcG, Occipital Gyrus",
 "type":"file"
 },
 {
 "text":"OcG_R_4_3",
-"data":"OPC, occipital polar cortex",
+"data":{
+"alias":"OPC, occipital polar cortex"
+},
 "id":"204",
+"parent":"OcG, Occipital Gyrus",
 "type":"file"
 },
 {
 "text":"OcG_L_4_4",
-"data":"iOccG, inferior occipital gyrus",
+"data":{
+"alias":"iOccG, inferior occipital gyrus"
+},
 "id":"205",
+"parent":"OcG, Occipital Gyrus",
 "type":"file"
 },
 {
 "text":"OcG_R_4_4",
-"data":"iOccG, inferior occipital gyrus",
+"data":{
+"alias":"iOccG, inferior occipital gyrus"
+},
 "id":"206",
+"parent":"OcG, Occipital Gyrus",
 "type":"file"
 },
 {
 "text":"sOcG_L_2_1",
-"data":"msOccG, medial superior occipital gyrus",
+"data":{
+"alias":"msOccG, medial superior occipital gyrus"
+},
 "id":"207",
+"parent":"OcG, Occipital Gyrus",
 "type":"file"
 },
 {
 "text":"sOcG_R_2_1",
-"data":"msOccG, medial superior occipital gyrus",
+"data":{
+"alias":"msOccG, medial superior occipital gyrus"
+},
 "id":"208",
+"parent":"OcG, Occipital Gyrus",
 "type":"file"
 },
 {
 "text":"sOcG_L_2_2",
-"data":"lsOccG, lateral superior occipital gyrus",
+"data":{
+"alias":"lsOccG, lateral superior occipital gyrus"
+},
 "id":"209",
+"parent":"OcG, Occipital Gyrus",
 "type":"file"
 },
 {
 "text":"sOcG_R_2_2",
-"data":"lsOccG, lateral superior occipital gyrus",
+"data":{
+"alias":"lsOccG, lateral superior occipital gyrus"
+},
 "id":"210",
+"parent":"OcG, Occipital Gyrus",
 "type":"file"
-}
-]
-}
-]
 },
 {
 "text":"Subcortical Nuclei",
-"children":[
+"id":"Subcortical Nuclei",
+"parent":"#"
+},
 {
 "text":"Amyg, Amygdala",
-"children":[
+"id":"Amyg, Amygdala",
+"parent":"Subcortical Nuclei"
+},
 {
 "text":"Amyg_L_2_1",
-"data":"mAmyg, medial amyg",
+"data":{
+"alias":"mAmyg, medial amyg"
+},
 "id":"211",
+"parent":"Amyg, Amygdala",
 "type":"file"
 },
 {
 "text":"Amyg_R_2_1",
-"data":"mAmyg, medial amyg",
+"data":{
+"alias":"mAmyg, medial amyg"
+},
 "id":"212",
+"parent":"Amyg, Amygdala",
 "type":"file"
 },
 {
 "text":"Amyg_L_2_2",
-"data":"lAmyg, lateral amyg",
+"data":{
+"alias":"lAmyg, lateral amyg"
+},
 "id":"213",
+"parent":"Amyg, Amygdala",
 "type":"file"
 },
 {
 "text":"Amyg_R_2_2",
-"data":"lAmyg, lateral amyg",
+"data":{
+"alias":"lAmyg, lateral amyg"
+},
 "id":"214",
+"parent":"Amyg, Amygdala",
 "type":"file"
-}
-]
 },
 {
 "text":"Hipp, Hippocampus",
-"children":[
+"id":"Hipp, Hippocampus",
+"parent":"Subcortical Nuclei"
+},
 {
 "text":"Hipp_L_2_1",
-"data":"rHipp, rostral hipp",
+"data":{
+"alias":"rHipp, rostral hipp"
+},
 "id":"215",
+"parent":"Hipp, Hippocampus",
 "type":"file"
 },
 {
 "text":"Hipp_R_2_1",
-"data":"rHipp, rostral hipp",
+"data":{
+"alias":"rHipp, rostral hipp"
+},
 "id":"216",
+"parent":"Hipp, Hippocampus",
 "type":"file"
 },
 {
 "text":"Hipp_L_2_2",
-"data":"cHipp, caudal hipp",
+"data":{
+"alias":"cHipp, caudal hipp"
+},
 "id":"217",
+"parent":"Hipp, Hippocampus",
 "type":"file"
 },
 {
 "text":"Hipp_R_2_2",
-"data":"cHipp, caudal hipp",
+"data":{
+"alias":"cHipp, caudal hipp"
+},
 "id":"218",
+"parent":"Hipp, Hippocampus",
 "type":"file"
-}
-]
 },
 {
 "text":"Str, Striatum",
-"children":[
+"id":"Str, Striatum",
+"parent":"Subcortical Nuclei"
+},
 {
 "text":"Str_L_6_1",
-"data":"vCa, ventral caudate",
+"data":{
+"alias":"vCa, ventral caudate"
+},
 "id":"219",
+"parent":"Str, Striatum",
 "type":"file"
 },
 {
 "text":"Str_R_6_1",
-"data":"vCa, ventral caudate",
+"data":{
+"alias":"vCa, ventral caudate"
+},
 "id":"220",
+"parent":"Str, Striatum",
 "type":"file"
 },
 {
 "text":"Str_L_6_2",
-"data":"GP, globus pallidus",
+"data":{
+"alias":"GP, globus pallidus"
+},
 "id":"221",
+"parent":"Str, Striatum",
 "type":"file"
 },
 {
 "text":"Str_R_6_2",
-"data":"GP, globus pallidus",
+"data":{
+"alias":"GP, globus pallidus"
+},
 "id":"222",
+"parent":"Str, Striatum",
 "type":"file"
 },
 {
 "text":"Str_L_6_3",
-"data":"NAC, nucleus accumbens",
+"data":{
+"alias":"NAC, nucleus accumbens"
+},
 "id":"223",
+"parent":"Str, Striatum",
 "type":"file"
 },
 {
 "text":"Str_R_6_3",
-"data":"NAC, nucleus accumbens",
+"data":{
+"alias":"NAC, nucleus accumbens"
+},
 "id":"224",
+"parent":"Str, Striatum",
 "type":"file"
 },
 {
 "text":"Str_L_6_4",
-"data":"vmPu, ventromedial putamen",
+"data":{
+"alias":"vmPu, ventromedial putamen"
+},
 "id":"225",
+"parent":"Str, Striatum",
 "type":"file"
 },
 {
 "text":"Str_R_6_4",
-"data":"vmPu, ventromedial putamen",
+"data":{
+"alias":"vmPu, ventromedial putamen"
+},
 "id":"226",
+"parent":"Str, Striatum",
 "type":"file"
 },
 {
 "text":"Str_L_6_5",
-"data":"dCa, dorsal caudate",
+"data":{
+"alias":"dCa, dorsal caudate"
+},
 "id":"227",
+"parent":"Str, Striatum",
 "type":"file"
 },
 {
 "text":"Str_R_6_5",
-"data":"dCa, dorsal caudate",
+"data":{
+"alias":"dCa, dorsal caudate"
+},
 "id":"228",
+"parent":"Str, Striatum",
 "type":"file"
 },
 {
 "text":"Str_L_6_6",
-"data":"dlPu, dorsolateral putamen",
+"data":{
+"alias":"dlPu, dorsolateral putamen"
+},
 "id":"229",
+"parent":"Str, Striatum",
 "type":"file"
 },
 {
 "text":"Str_R_6_6",
-"data":"dlPu, dorsolateral putamen",
+"data":{
+"alias":"dlPu, dorsolateral putamen"
+},
 "id":"230",
+"parent":"Str, Striatum",
 "type":"file"
-}
-]
 },
 {
 "text":"Tha, Thalamus",
-"children":[
+"id":"Tha, Thalamus",
+"parent":"Subcortical Nuclei"
+},
 {
 "text":"Tha_L_8_1",
-"data":"mPFtha, medial Pre-frontal thalamus",
+"data":{
+"alias":"mPFtha, medial Pre-frontal thalamus"
+},
 "id":"231",
+"parent":"Tha, Thalamus",
 "type":"file"
 },
 {
 "text":"Tha_R_8_1",
-"data":"mPFtha, medial Pre-frontal thalamus",
+"data":{
+"alias":"mPFtha, medial Pre-frontal thalamus"
+},
 "id":"232",
+"parent":"Tha, Thalamus",
 "type":"file"
 },
 {
 "text":"Tha_L_8_2",
-"data":"mPMtha, pre-motor thalamus",
+"data":{
+"alias":"mPMtha, pre-motor thalamus"
+},
 "id":"233",
+"parent":"Tha, Thalamus",
 "type":"file"
 },
 {
 "text":"Tha_R_8_2",
-"data":"mPMtha, pre-motor thalamus",
+"data":{
+"alias":"mPMtha, pre-motor thalamus"
+},
 "id":"234",
+"parent":"Tha, Thalamus",
 "type":"file"
 },
 {
 "text":"Tha_L_8_3",
-"data":"Stha, sensory thalamus",
+"data":{
+"alias":"Stha, sensory thalamus"
+},
 "id":"235",
+"parent":"Tha, Thalamus",
 "type":"file"
 },
 {
 "text":"Tha_R_8_3",
-"data":"Stha, sensory thalamus",
+"data":{
+"alias":"Stha, sensory thalamus"
+},
 "id":"236",
+"parent":"Tha, Thalamus",
 "type":"file"
 },
 {
 "text":"Tha_L_8_4",
-"data":"rTtha, rostral Temporal thalamus",
+"data":{
+"alias":"rTtha, rostral Temporal thalamus"
+},
 "id":"237",
+"parent":"Tha, Thalamus",
 "type":"file"
 },
 {
 "text":"Tha_R_8_4",
-"data":"rTtha, rostral Temporal thalamus",
+"data":{
+"alias":"rTtha, rostral Temporal thalamus"
+},
 "id":"238",
+"parent":"Tha, Thalamus",
 "type":"file"
 },
 {
 "text":"Tha_L_8_5",
-"data":"PPtha, posterior parietal thalamus",
+"data":{
+"alias":"PPtha, posterior parietal thalamus"
+},
 "id":"239",
+"parent":"Tha, Thalamus",
 "type":"file"
 },
 {
 "text":"Tha_R_8_5",
-"data":"PPtha, posterior parietal thalamus",
+"data":{
+"alias":"PPtha, posterior parietal thalamus"
+},
 "id":"240",
+"parent":"Tha, Thalamus",
 "type":"file"
 },
 {
 "text":"Tha_L_8_6",
-"data":"Otha, occipital thalamus",
+"data":{
+"alias":"Otha, occipital thalamus"
+},
 "id":"241",
+"parent":"Tha, Thalamus",
 "type":"file"
 },
 {
 "text":"Tha_R_8_6",
-"data":"Otha, occipital thalamus",
+"data":{
+"alias":"Otha, occipital thalamus"
+},
 "id":"242",
+"parent":"Tha, Thalamus",
 "type":"file"
 },
 {
 "text":"Tha_L_8_7",
-"data":"cTtha, caudal Temporal thalamus",
+"data":{
+"alias":"cTtha, caudal Temporal thalamus"
+},
 "id":"243",
+"parent":"Tha, Thalamus",
 "type":"file"
 },
 {
 "text":"Tha_R_8_7",
-"data":"cTtha, caudal Temporal thalamus",
+"data":{
+"alias":"cTtha, caudal Temporal thalamus"
+},
 "id":"244",
+"parent":"Tha, Thalamus",
 "type":"file"
 },
 {
 "text":"Tha_L_8_8",
-"data":"lPFtha, lateral Pre-frontal thalamus",
+"data":{
+"alias":"lPFtha, lateral Pre-frontal thalamus"
+},
 "id":"245",
+"parent":"Tha, Thalamus",
 "type":"file"
 },
 {
 "text":"Tha_R_8_8",
-"data":"lPFtha, lateral Pre-frontal thalamus",
+"data":{
+"alias":"lPFtha, lateral Pre-frontal thalamus"
+},
 "id":"246",
+"parent":"Tha, Thalamus",
 "type":"file"
-}
-]
-}
-]
 }
 ]

@@ -64,20 +64,12 @@ window.addEventListener("load",function()
 				initializeFiber('fun');
 			});
 
-			// initializeBehaviorBar('BDf_FDR05');
-			// initializeBehaviorBar('PCf_FDR05');
 			$.ajax("BDf_FDR05.json").done(function(data){BDf_FDR05 = data;});
 			$.ajax("PCf_FDR05.json").done(function(data){PCf_FDR05 = data;});
 
 			Update();
 			document.getElementById("display-splash").style.display='none';
 		});
-
-		// function initializeBehaviorBar(BDPC_type){
-		// 	$.ajax(BDPC_type+".json").done(function(responseText){
-		// 		eval(BDPC_type+'='+responseText);
-		// 	});
-		// }
 	}
 
 	function loadTreeViewData(){

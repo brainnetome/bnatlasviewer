@@ -48,6 +48,8 @@ window.addEventListener("load",function()
   
 	$("#status").html("status: "+(GLOBAL.area_map_flag?"on":"off"));
 
+	
+
   function loadLabelMaps()
 	{
 		$.ajax("labelmaps.txt").done(function(responseText){
@@ -57,15 +59,16 @@ window.addEventListener("load",function()
 			handler("display-y");
 			handler("display-z");
 
+			$.ajax("BDf_FDR05.json").done(function(data){BDf_FDR05 = data;});
+			$.ajax("PCf_FDR05.json").done(function(data){PCf_FDR05 = data;});
+
 			// load fiber images
 			$.ajax("images/imglist.txt").done(function(responseText2){
 				$("#imglist").html(responseText2);
 				initializeFiber('den');
 				initializeFiber('fun');
+				$('#plugins4').jstree('select_node','1');
 			});
-
-			$.ajax("BDf_FDR05.json").done(function(data){BDf_FDR05 = data;});
-			$.ajax("PCf_FDR05.json").done(function(data){PCf_FDR05 = data;});
 
 			Update();
 			document.getElementById("display-splash").style.display='none';
@@ -73,7 +76,8 @@ window.addEventListener("load",function()
 	}
 
 	function loadTreeViewData(){
-		$('#plugins4').jstree({
+		var $treeview = $('#plugins4');
+		$treeview.jstree({
 			'core' : {
 				'data' : {
 					"url" : "bnatlas_tree.json",
@@ -94,9 +98,13 @@ window.addEventListener("load",function()
 			DrawBehaviorBar(title,'PCf_FDR05');
 			highlightAreasByTitle(title);
 			document.getElementById("log2").innerHTML=data.node.text+','+data.node.id;
-			document.getElementById("log_area").innerHTML=data.node.data;
+			document.getElementById("log_area").innerHTML=data.node.data['alias'];
 			// console.log(data);console.log(e);
+		}).on('loaded.jstree', function() {
+			$treeview.jstree('open_node','Frontal Lobe');
+			$treeview.jstree('open_node','SFG, Superior Frontal Gyrus');
 		});
+		//$.jstree.reference('#plugins4').select_node("Frontal Lobe");
 		var to = false;
 		$('#plugins4_q').keyup(function () {
 			if(to) { clearTimeout(to); }
@@ -109,26 +117,28 @@ window.addEventListener("load",function()
 
 	function loadConnectogramData(){
 		var url = 'images/connectogram/002.png';
-		$.ajax({ 
-			url : url, 
-			cache: true,
-			processData : false,
-		}).always(function(){
-			$("#display-cgram").attr("src", url).fadeIn();
-		});
+		// $.ajax({ 
+		// 	url : url, 
+		// 	cache: true,
+		// 	processData : false,
+		// }).always(function(){
+		// 	$("#display-cgram-img").attr("src", url);
+		// 	var canvas=document.getElementById("display-cgram");
+		// 	var img=document.getElementById(canvas.id+"-img");
+		// 	if (canvas.getContext){
+		// 		var ctx = canvas.getContext("2d");
+		// 		ctx.drawImage(img,0,0,3000,3000,0,0,640,640);
+		// 	}
+		// });
 
-		// var img = $("<img />").attr('src', 'images/connectogram/001.png').on('load', function(data) {
-		// 		if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
-    //       //alert('broken image!');
-		// 		} else {
-    //       //$("#something").append(img);
-		// 			var canvas=document.getElementById("display-cgram");
-		// 			if (canvas.getContext){
-		// 				var ctx = canvas.getContext("2d");
-		// 				ctx.drawImage(img,0,0,3000,3000,0,0,640,640);
-		// 			}
-		// 		}
-		// 	});
+		var img = new Image();img.src = url;
+		var canvas=document.getElementById("display-cgram");
+		if (canvas.getContext){
+			var ctx = canvas.getContext("2d");
+			img.onload = function(){
+				ctx.drawImage(img,0,0,3000,3000,0,0,640,640);
+			}
+		}
 	}
 
 	function ToggleFiberHandler(e){
@@ -425,15 +435,21 @@ function highlightAreasByTitle(title)
 
 function Update()
 {
-	for (var idx=0;idx<3;idx++){
-		var canvas=document.getElementById("display-"+GLOBAL.num2dim[idx]);
-		var img=document.getElementById("display-"+GLOBAL.num2dim[idx]+"-img");
-		DrawImage(canvas,img,idx);
+	if ($('#atlas-checkbox').prop('checked')){
+		for (var idx=0;idx<3;idx++){
+			var canvas=document.getElementById("display-"+GLOBAL.num2dim[idx]);
+			var img=document.getElementById("display-"+GLOBAL.num2dim[idx]+"-img");
+			DrawImage(canvas,img,idx);
+		}
+		// DrawFiber('fib');
+		DrawFiber('den');
+		DrawFiber('fun');
+		// DrawBehaviorBar(title,'BDf_FDR05');
+		// DrawBehaviorBar(title,'PCf_FDR05');
+		document.getElementById("opacity").innerHTML="opacity:"+GLOBAL.opacity.toFixed(1);
+	}else{
+		// DrawConnectogram(title);
 	}
-	// DrawFiber('fib');
-	DrawFiber('den');
-	DrawFiber('fun');
-	document.getElementById("opacity").innerHTML="opacity:"+GLOBAL.opacity.toFixed(1);
 }
 
 function DrawImage(canvas,img,idx)

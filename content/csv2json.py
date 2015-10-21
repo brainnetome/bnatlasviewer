@@ -1,8 +1,8 @@
 
-import csv
-import json
 from pprint import pprint
 
+import csv
+import json
 
 csvfile = open('bnatlas_tree.csv', 'r')
 jsonfile = open('bnatlas_tree.json', 'w')
@@ -14,9 +14,6 @@ lobes=[]
 gyruses=[]
 result=[]
 
-# for row in reader:
-#   json.dump(row, jsonfile)
-#   jsonfile.write(',\n')
 
 for row in reader:
   index=row['index']

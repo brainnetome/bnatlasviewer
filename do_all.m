@@ -24,20 +24,20 @@ fundir = [inputdir 'data/fmri'];
 % genmaps(namefile);
 % gencenters(atlasfile, namefile);
 % gencolors(namefile);
-genprobmaps(namefile, fibdir, dendir, fundir, [outputdir 'images'])
+genprobmaps(namefile, fibdir, dendir, fundir, [outputdir 'images/bnatlasviewer'])
 
 %% copy required files 
-copyfile([inputdir 'loading.gif'], [outputdir 'loading.gif']);
+copyfile([inputdir 'loading.gif'], [outputdir 'images/bnatlasviewer/loading.gif']);
 copyfile([inputdir 'bnatlas.html'], [outputdir 'bnatlas.html']);
 
 % javascript programs
 copyfile([inputdir 'css'], [outputdir 'css']);
-copyfile([inputdir 'js'], [outputdir 'js']);
+copyfile([inputdir 'js'], [outputdir 'js/bnatlasviewer']);
 
 % json data files
-copyfile([inputdir 'BDf_FDR05.json'], [outputdir 'BDf_FDR05.json']);
-copyfile([inputdir 'PCf_FDR05.json'], [outputdir 'PCf_FDR05.json']);
-copyfile([inputdir 'bnatlas_tree.json'], [outputdir 'bnatlas_tree.json']);
+copyfile([inputdir 'BDf_FDR05.json'], [outputdir 'bnatlasviewer/BDf_FDR05.json']);
+copyfile([inputdir 'PCf_FDR05.json'], [outputdir 'bnatlasviewer/PCf_FDR05.json']);
+copyfile([inputdir 'bnatlas_tree.json'], [outputdir 'bnatlasviewer/bnatlas_tree.json']);
 
 %% create package
 % system(['tar zcvf static-final-$(date +%F).tar.gz ' ...

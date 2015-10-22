@@ -9,6 +9,8 @@ var GLOBAL={
 			down:false,startloc:{x:-1,y:-1},startangle:-1
 		}
 	},
+	treedata:{},
+	regionCount:246,
 	// fibtimer:window.setInterval(function(){
 	// 	GLOBAL.fiber.angle=(GLOBAL.fiber.angle+10)%360;Update();
 	// },500)
@@ -19,92 +21,67 @@ window.addEventListener("load",function()
 	loadLabelMaps();
 	// loadBarCharts();
 	loadTreeViewData();
+	// loadConnectogramData();
 
-  document.getElementById("toggle-area-map").addEventListener("click",ToggleAreaMapHandler,false);
-  document.getElementById("toggle-fiber").addEventListener("click",ToggleFiberHandler,false);
+	$("#connectogram-checkbox").click(function(){
+		if ($('#connectogram-checkbox').prop('checked')){
+			$("#atlas-checkbox").prop('checked',false);
+			$("#atlas-panel").hide();
+			$("#connectogram-panel").show();
+		}
+	});
+	$("#atlas-checkbox").click(function(){
+		if ($('#atlas-checkbox').prop('checked')){
+			$("#connectogram-checkbox").prop('checked',false);
+			$("#atlas-panel").show();
+			$("#connectogram-panel").hide();
+		}
+	});
+
+  $("#toggle-area-map").on("click",ToggleAreaMapHandler);
+  $("#toggle-fiber").on("click",ToggleFiberHandler);
 	
-  document.getElementById("lessOpacity").
-		addEventListener("click",function(){
-			GLOBAL.opacity=Math.min(1,Math.max(0,GLOBAL.opacity-0.1));Update();},false);
-  document.getElementById("moreOpacity").
-		addEventListener("click",function(){
-			GLOBAL.opacity=Math.min(1,Math.max(0,GLOBAL.opacity+0.1));Update();},false);
+  $("#lessOpacity").on("click",function(){
+			GLOBAL.opacity=Math.min(1,Math.max(0,GLOBAL.opacity-0.1));Update();
+	});
+  $("#moreOpacity").on("click",function(){
+			GLOBAL.opacity=Math.min(1,Math.max(0,GLOBAL.opacity+0.1));Update();
+	});
   
-	document.getElementById("status").innerHTML="status: "+(GLOBAL.area_map_flag?"on":"off");
+	$("#status").html("status: "+(GLOBAL.area_map_flag?"on":"off"));
+
+	String.prototype.padLeft = function (length, character) { 
+    return new Array(length - this.length + 1).join(character || '0') + this; 
+	}
 
   function loadLabelMaps()
 	{
-		var xmlhttp;
-		if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
-			xmlhttp=new XMLHttpRequest();
-		}else{// code for IE6, IE5
-			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-		}
-		xmlhttp.onreadystatechange=function(){
-			if (xmlhttp.readyState==4 && xmlhttp.status==200){
-				document.getElementById("map-container").innerHTML=xmlhttp.responseText;
+		$.ajax("labelmaps.txt").done(function(responseText){
+			$("#map-container").html(responseText);
 
-				handler("display-x");
-				handler("display-y");
-				handler("display-z");
+			handler("display-x");
+			handler("display-y");
+			handler("display-z");
 
-				loadFiberImages();
+			$.ajax("BDf_FDR05.json").done(function(data){BDf_FDR05 = data;});
+			$.ajax("PCf_FDR05.json").done(function(data){PCf_FDR05 = data;});
 
-				initializeBehaviorBar('BDf_FDR05');
-				initializeBehaviorBar('PCf_FDR05');
+			// load fiber images
+			$.ajax("images/imglist.txt").done(function(responseText2){
+				$("#imglist").html(responseText2);
+				initializeFiber('den');
+				initializeFiber('fun');
+				$('#plugins4').jstree('select_node','1');
+			});
 
-				Update();
-				document.getElementById("display-splash").style.display='none';
-			}
-		}
-		xmlhttp.open("GET","labelmaps.txt",true);
-		xmlhttp.send();
-
-		var loadFiberImages = function(){
-			var xmlhttp;
-			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
-				xmlhttp=new XMLHttpRequest();
-			}else{// code for IE6, IE5
-				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-			}
-			xmlhttp.onreadystatechange=function(){
-				if (xmlhttp.readyState==4 && xmlhttp.status==200){
-					document.getElementById("imglist").innerHTML=xmlhttp.responseText;
-
-					// initializeFiber('fib');
-					initializeFiber('den');
-					initializeFiber('fun');
-				}
-			}
-			xmlhttp.open("GET","images/imglist.txt",true);
-			xmlhttp.send();
-		}
-	}
-
-	function loadBarCharts(){
-
-		var randomScalingFactor = function(){ return Math.round(Math.random()*60)};
-		var barChartData = {
-			labels : ["Action","Cognition","Emotion","Interoception","Perception"],
-			datasets : [
-				{
-					fillColor : "rgba(151,187,205,0.5)",
-					strokeColor : "rgba(151,187,205,0.8)",
-					highlightFill : "rgba(151,187,205,0.75)",
-					highlightStroke : "rgba(151,187,205,1)",
-					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),
-							randomScalingFactor(),randomScalingFactor()]
-				}
-			]
-		}
-		var ctx = document.getElementById("behavior_barchart").getContext("2d");
-		window.myBar = new Chart(ctx).HorizontalBar(barChartData, {
-			responsive : true
+			Update();
+			document.getElementById("display-splash").style.display='none';
 		});
 	}
 
 	function loadTreeViewData(){
-		$('#plugins4').jstree({
+		var $treeview = $('#plugins4');
+		$treeview.jstree({
 			'core' : {
 				'data' : {
 					"url" : "bnatlas_tree.json",
@@ -121,13 +98,22 @@ window.addEventListener("load",function()
 			centeringAreasByTitle(title);
 			viewFiberByTitle(title);
 			Update();
+			DrawConnectogram(title);
 			DrawBehaviorBar(title,'BDf_FDR05');
 			DrawBehaviorBar(title,'PCf_FDR05');
 			highlightAreasByTitle(title);
 			document.getElementById("log2").innerHTML=data.node.text+','+data.node.id;
-			document.getElementById("log_area").innerHTML=data.node.data;
-			console.log(data);console.log(e);
-		});
+			document.getElementById("log_area").innerHTML=data.node.data['alias'];
+			// console.log(data);console.log(e);
+		}).on('loaded.jstree', function() {
+			$treeview.jstree('open_node','Frontal Lobe');
+			$treeview.jstree('open_node','SFG, Superior Frontal Gyrus');
+		});// .on('model.jstree',function(e,nodes){
+		// 	GLOBAL.treedata = nodes;
+		// 	console.log(e);
+		// 	console.log(nodes);
+		// });
+		//$.jstree.reference('#plugins4').select_node("Frontal Lobe");
 		var to = false;
 		$('#plugins4_q').keyup(function () {
 			if(to) { clearTimeout(to); }
@@ -187,21 +173,6 @@ window.addEventListener("load",function()
 		function fibMouse_over(e){
 			//clearInterval(GLOBAL.fibtimer);
 		}
-	}
-
-	function initializeBehaviorBar(BDPC_type)
-	{
-		var xmlhttp;
-		if (window.XMLHttpRequest){
-			xmlhttp=new XMLHttpRequest();
-		}
-		xmlhttp.onreadystatechange=function(){
-			if (xmlhttp.readyState==4 && xmlhttp.status==200){
-				eval(BDPC_type+'='+xmlhttp.responseText);
-			}
-		}
-		xmlhttp.open("GET",BDPC_type+".json",true);
-		xmlhttp.send();
 	}
 
   // -------------------------------------------------------
@@ -447,15 +418,21 @@ function highlightAreasByTitle(title)
 
 function Update()
 {
-	for (var idx=0;idx<3;idx++){
-		var canvas=document.getElementById("display-"+GLOBAL.num2dim[idx]);
-		var img=document.getElementById("display-"+GLOBAL.num2dim[idx]+"-img");
-		DrawImage(canvas,img,idx);
+	if ($('#atlas-checkbox').prop('checked')){
+		for (var idx=0;idx<3;idx++){
+			var canvas=document.getElementById("display-"+GLOBAL.num2dim[idx]);
+			var img=document.getElementById("display-"+GLOBAL.num2dim[idx]+"-img");
+			DrawImage(canvas,img,idx);
+		}
+		// DrawFiber('fib');
+		DrawFiber('den');
+		DrawFiber('fun');
+		// DrawBehaviorBar(title,'BDf_FDR05');
+		// DrawBehaviorBar(title,'PCf_FDR05');
+		document.getElementById("opacity").innerHTML="opacity:"+GLOBAL.opacity.toFixed(1);
+	}else{
+		// DrawConnectogram(title);
 	}
-	// DrawFiber('fib');
-	DrawFiber('den');
-	DrawFiber('fun');
-	document.getElementById("opacity").innerHTML="opacity:"+GLOBAL.opacity.toFixed(1);
 }
 
 function DrawImage(canvas,img,idx)
@@ -508,6 +485,98 @@ function DrawFiber(fibstr)
 	var yloc=Math.floor(Math.floor((GLOBAL.fiber.angle%360)/10)/5);
 	//console.log(imgfib+','+ww*xloc+','+hh*yloc+','+ww+','+hh+','+0+','+0+','+ww+','+hh);
 	if (imgfib){ctx.drawImage(imgfib,ww*xloc,hh*yloc,ww,hh,0,0,ww,hh);}
+}
+
+function DrawConnectogram(title){
+	var ind = GLOBAL_title2ind[title]+1;
+	var url = 'images/connectogram/'+ind.toString().padLeft(3)+'.svg';
+	// $.ajax({ 
+	// 	url : url, 
+	// 	cache: true,
+	// 	processData : false,
+	// }).always(function(){
+	// 	$("#display-cgram-img").attr("src", url);
+	// });
+
+	var img = new Image();img.src = url;
+	var canvas=document.getElementById("display-cgram");
+	// canvas.style.display='none';
+	// $("#display-cgram-img").show();
+	// var ww = canvas.width;
+	// var hh = canvas.height;
+	if (canvas.getContext){
+		var ctx = canvas.getContext("2d");
+		img.onload = function(){
+			// ctx.drawImage(img,0,0,3000,3000,0,0,640,640);
+			ctx.clearRect(0,0,3000,3000);
+			ctx.drawImage(img,0,0,3000,3000);
+			ctx.font = "80px sans-serif";
+			ctx.clearRect(0,0,3000,200);
+			var $treeview = $('#plugins4');
+			var node = $treeview.jstree('get_node',ind.toString())
+			ctx.fillText(node.data['alias'], 100, 100);
+		}
+	}
+	
+	canvas.onclick=function(event){
+		var canvas = document.getElementById("display-cgram");
+		var $treeview = $('#plugins4');
+		var ctx = canvas.getContext("2d");
+		var offsetX=parseInt(canvas.getBoundingClientRect().left);
+		var offsetY=parseInt(canvas.getBoundingClientRect().top);
+		var scaleX = parseFloat(canvas.width)/parseFloat(canvas.style.width);
+		var scaleY = parseFloat(canvas.height)/parseFloat(canvas.style.height);
+		var posX=parseInt(event.clientX-offsetX)*scaleX;
+		var posY=parseInt(event.clientY-offsetY)*scaleY;
+		var regionCount = GLOBAL.regionCount;
+		
+		for (var idx=1;idx<=regionCount;idx++){
+			var node = $treeview.jstree('get_node',idx.toString())
+			var path = node.data['cgram'];
+			ctx.beginPath();
+			ctx.moveTo(path[0],path[1]);
+			for (var k=2;k<path.length;k+=2){ctx.lineTo(path[k],path[k+1]);}
+			ctx.closePath();
+			if (ctx.isPointInPath(posX,posY)){
+				console.log(node.id);
+				$treeview.jstree('close_all');
+				$treeview.jstree('deselect_all');
+				$treeview.jstree('select_node',node.id);
+				break;
+			}
+		}
+	};
+
+	canvas.onmousemove=function(event){
+		var canvas = document.getElementById("display-cgram");
+		var $treeview = $('#plugins4');
+		var ctx = canvas.getContext("2d");
+		var offsetX=parseInt(canvas.getBoundingClientRect().left);
+		var offsetY=parseInt(canvas.getBoundingClientRect().top);
+		var scaleX = parseFloat(canvas.width)/parseFloat(canvas.style.width);
+		var scaleY = parseFloat(canvas.height)/parseFloat(canvas.style.height);
+		var posX=parseInt(event.clientX-offsetX)*scaleX;
+		var posY=parseInt(event.clientY-offsetY)*scaleY;
+		var regionCount = GLOBAL.regionCount;
+		var idx=0
+		
+		for (idx=1;idx<=regionCount;idx++){
+			var node = $treeview.jstree('get_node',idx.toString())
+			var path = node.data['cgram'];
+			ctx.beginPath();
+			ctx.moveTo(path[0],path[1]);
+			for (var k=2;k<path.length;k+=2){ctx.lineTo(path[k],path[k+1]);}
+			ctx.closePath();
+			if (ctx.isPointInPath(posX,posY)){
+				ctx.font = "80px sans-serif";
+				ctx.clearRect(0,0,3000,200);
+				ctx.fillText(node.data['alias'], 100, 100);
+				break;
+			}
+		}
+		if (idx>regionCount){ctx.clearRect(0,0,3000,200);}
+	};
+	
 }
 
 function DrawBehaviorBar(title,BDPC_type)

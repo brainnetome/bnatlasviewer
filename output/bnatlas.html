@@ -3,8 +3,6 @@
 <head>
   <title>Brainnetome Atlas</title>
   <script type="text/javascript" src="data_centers.json"></script>
-	<script type="text/javascript" src="js/Chart.js"></script>
-	<script type="text/javascript" src="js/Chart.HorizontalBar.js"></script>
   <script type="text/javascript" src="js/bnatlasviewer.js"></script>
 	<script type="text/javascript"  src="js/jquery.min.js"></script>
 	<script type="text/javascript"  src="js/jstree.min.js"></script>
@@ -15,13 +13,26 @@
 </head>
 <body style="overflow:hidden;">
 
+<!-- LEFT: atlas treeview -->
 <div style="position:relative;float:left;padding:10px;width:220px;overflow:auto;height:680px;">
 	<input type="text" id="plugins4_q" value="" class="input" 
 				 style="margin:0em auto 1em auto; display:block; padding:4px; border-radius:4px;">
 	<div style="" id="plugins4" class="demo"></div>
 </div>
 
+<!-- RIGHT: atlas treeview -->
 <div style="position:relative;float:left;padding:0px;">
+
+<!-- panel switch -->
+<div id="panel-switch" style="position:relative;float:left;padding:0px 0px 0px 20px;">
+	<input id="atlas-checkbox" type="checkbox" checked /><span>Atlas</span>
+	<input id="connectogram-checkbox" type="checkbox" /><span>Connnectogram</span>
+</div>
+
+<!-- panel overlap layer -->
+<div style="position:relative;clear:both;float:left;">
+
+<div id="atlas-panel" style="position:relative;float:left;padding:0px;">
   <div id="canvas-container" style="padding:20px;float:left;">
 	<div id="container-y" class="figure" 
 		 style="margin:5px;width:181px;height:181px;position:relative;float:left;">
@@ -61,7 +72,7 @@
 	  <span id="label"></span>
 	  <span id="log"></span><br>
 	  <span id="log2"></span><br>
-	  <span id="log_area"></span>
+	  <p id="log_area" style="font-style:italic;width:200px;"></p>
 	</div>
 	<div id="map-container"></div>
   </div>
@@ -91,15 +102,28 @@ style="padding:0px;margin-left:0px;height:200px;width:50%;position:relative;clea
 		<div id="barchart_PCf_FDR05" 
 style="padding:0px;margin-left:300px;height:200px;width:50%;">
 		</div>
-		<div style="margin:15px;position:relative;clear:both;float:left;">
-			<span>Copyright (C) Brainnetome Center, CASIA</span>
-		</div>
 	</div>
 
 	<!-- splash screen -->
   <div>
 	<img id="display-splash" src="loading.gif"
   		 style="opacity:1;position:absolute;left:20px;top:30px;padding:0px;border:0px;width:420px;">
+  </div>
+</div> 
+
+<!-- connectogram diaplay -->
+<div id="connectogram-panel" style="position:relative;float:left;padding:0px;display:none;">
+	<canvas id="display-cgram" width="3000px" height="3000px" style="width:640px;height:640px;"></canvas>
+	<!-- <img id="display-cgram-img" src="images/connectogram/001.png" -->
+	<!-- 		 style="width:640px;"> -->
+	<!-- position:relative;left:0px;top:0px;padding:0px;border:0px;display:none; -->
+</div>
+
+</div> <!-- panel overlap layer -->
+
+  <!-- copyright notice -->
+  <div style="margin:15px;position:relative;clear:both;float:left;">
+	  <span>Copyright (C) Brainnetome Center, CASIA</span>
   </div>
 </div>
 

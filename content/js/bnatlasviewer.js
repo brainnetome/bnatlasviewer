@@ -9,6 +9,8 @@ var GLOBAL={
 			down:false,startloc:{x:-1,y:-1},startangle:-1
 		}
 	},
+	treedata:{},
+	regionCount:246,
 	// fibtimer:window.setInterval(function(){
 	// 	GLOBAL.fiber.angle=(GLOBAL.fiber.angle+10)%360;Update();
 	// },500)
@@ -19,7 +21,7 @@ window.addEventListener("load",function()
 	loadLabelMaps();
 	// loadBarCharts();
 	loadTreeViewData();
-	loadConnectogramData();
+	// loadConnectogramData();
 
 	$("#connectogram-checkbox").click(function(){
 		if ($('#connectogram-checkbox').prop('checked')){
@@ -48,7 +50,9 @@ window.addEventListener("load",function()
   
 	$("#status").html("status: "+(GLOBAL.area_map_flag?"on":"off"));
 
-	
+	String.prototype.padLeft = function (length, character) { 
+    return new Array(length - this.length + 1).join(character || '0') + this; 
+	}
 
   function loadLabelMaps()
 	{
@@ -94,6 +98,7 @@ window.addEventListener("load",function()
 			centeringAreasByTitle(title);
 			viewFiberByTitle(title);
 			Update();
+			DrawConnectogram(title);
 			DrawBehaviorBar(title,'BDf_FDR05');
 			DrawBehaviorBar(title,'PCf_FDR05');
 			highlightAreasByTitle(title);
@@ -103,7 +108,11 @@ window.addEventListener("load",function()
 		}).on('loaded.jstree', function() {
 			$treeview.jstree('open_node','Frontal Lobe');
 			$treeview.jstree('open_node','SFG, Superior Frontal Gyrus');
-		});
+		});// .on('model.jstree',function(e,nodes){
+		// 	GLOBAL.treedata = nodes;
+		// 	console.log(e);
+		// 	console.log(nodes);
+		// });
 		//$.jstree.reference('#plugins4').select_node("Frontal Lobe");
 		var to = false;
 		$('#plugins4_q').keyup(function () {
@@ -113,32 +122,6 @@ window.addEventListener("load",function()
 				$('#plugins4').jstree(true).search(v);
 			}, 250);
 		});
-	}
-
-	function loadConnectogramData(){
-		var url = 'images/connectogram/002.png';
-		// $.ajax({ 
-		// 	url : url, 
-		// 	cache: true,
-		// 	processData : false,
-		// }).always(function(){
-		// 	$("#display-cgram-img").attr("src", url);
-		// 	var canvas=document.getElementById("display-cgram");
-		// 	var img=document.getElementById(canvas.id+"-img");
-		// 	if (canvas.getContext){
-		// 		var ctx = canvas.getContext("2d");
-		// 		ctx.drawImage(img,0,0,3000,3000,0,0,640,640);
-		// 	}
-		// });
-
-		var img = new Image();img.src = url;
-		var canvas=document.getElementById("display-cgram");
-		if (canvas.getContext){
-			var ctx = canvas.getContext("2d");
-			img.onload = function(){
-				ctx.drawImage(img,0,0,3000,3000,0,0,640,640);
-			}
-		}
 	}
 
 	function ToggleFiberHandler(e){
@@ -502,6 +485,62 @@ function DrawFiber(fibstr)
 	var yloc=Math.floor(Math.floor((GLOBAL.fiber.angle%360)/10)/5);
 	//console.log(imgfib+','+ww*xloc+','+hh*yloc+','+ww+','+hh+','+0+','+0+','+ww+','+hh);
 	if (imgfib){ctx.drawImage(imgfib,ww*xloc,hh*yloc,ww,hh,0,0,ww,hh);}
+}
+
+function DrawConnectogram(title){
+	var ind = GLOBAL_title2ind[title]+1;
+	var url = 'images/connectogram/'+ind.toString().padLeft(3)+'.svg';
+	// $.ajax({ 
+	// 	url : url, 
+	// 	cache: true,
+	// 	processData : false,
+	// }).always(function(){
+	// 	$("#display-cgram-img").attr("src", url);
+	// });
+
+	var img = new Image();img.src = url;
+	var canvas=document.getElementById("display-cgram");
+	// canvas.style.display='none';
+	// $("#display-cgram-img").show();
+	// var ww = canvas.width;
+	// var hh = canvas.height;
+	if (canvas.getContext){
+		var ctx = canvas.getContext("2d");
+		img.onload = function(){
+			// ctx.drawImage(img,0,0,3000,3000,0,0,640,640);
+			ctx.clearRect(0,0,3000,3000);
+			ctx.drawImage(img,0,0,3000,3000);
+		}
+	}
+	
+	canvas.onclick=function(event){
+		var canvas = document.getElementById("display-cgram");
+		var $treeview = $('#plugins4');
+		var ctx = canvas.getContext("2d");
+		var offsetX=parseInt(canvas.getBoundingClientRect().left);
+		var offsetY=parseInt(canvas.getBoundingClientRect().top);
+		var scaleX = parseFloat(canvas.width)/parseFloat(canvas.style.width);
+		var scaleY = parseFloat(canvas.height)/parseFloat(canvas.style.height);
+		var posX=parseInt(event.clientX-offsetX)*scaleX;
+		var posY=parseInt(event.clientY-offsetY)*scaleY;
+		var regionCount = GLOBAL.regionCount;
+		
+		for (var idx=1;idx<=regionCount;idx++){
+			var node = $treeview.jstree('get_node',idx.toString())
+			var path = node.data['cgram'];
+			ctx.beginPath();
+			ctx.moveTo(path[0],path[1]);
+			for (var k=2;k<path.length;k+=2){ctx.lineTo(path[k],path[k+1]);}
+			ctx.closePath();
+			if (ctx.isPointInPath(posX,posY)){
+				console.log(node.id);
+				$treeview.jstree('close_all');
+				$treeview.jstree('deselect_all');
+				$treeview.jstree('select_node',node.id);
+				break;
+			}
+		}
+	};
 }
 
 function DrawBehaviorBar(title,BDPC_type)

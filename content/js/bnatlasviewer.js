@@ -510,6 +510,11 @@ function DrawConnectogram(title){
 			// ctx.drawImage(img,0,0,3000,3000,0,0,640,640);
 			ctx.clearRect(0,0,3000,3000);
 			ctx.drawImage(img,0,0,3000,3000);
+			ctx.font = "80px sans-serif";
+			ctx.clearRect(0,0,3000,200);
+			var $treeview = $('#plugins4');
+			var node = $treeview.jstree('get_node',ind.toString())
+			ctx.fillText(node.data['alias'], 100, 100);
 		}
 	}
 	
@@ -541,6 +546,37 @@ function DrawConnectogram(title){
 			}
 		}
 	};
+
+	canvas.onmousemove=function(event){
+		var canvas = document.getElementById("display-cgram");
+		var $treeview = $('#plugins4');
+		var ctx = canvas.getContext("2d");
+		var offsetX=parseInt(canvas.getBoundingClientRect().left);
+		var offsetY=parseInt(canvas.getBoundingClientRect().top);
+		var scaleX = parseFloat(canvas.width)/parseFloat(canvas.style.width);
+		var scaleY = parseFloat(canvas.height)/parseFloat(canvas.style.height);
+		var posX=parseInt(event.clientX-offsetX)*scaleX;
+		var posY=parseInt(event.clientY-offsetY)*scaleY;
+		var regionCount = GLOBAL.regionCount;
+		var idx=0
+		
+		for (idx=1;idx<=regionCount;idx++){
+			var node = $treeview.jstree('get_node',idx.toString())
+			var path = node.data['cgram'];
+			ctx.beginPath();
+			ctx.moveTo(path[0],path[1]);
+			for (var k=2;k<path.length;k+=2){ctx.lineTo(path[k],path[k+1]);}
+			ctx.closePath();
+			if (ctx.isPointInPath(posX,posY)){
+				ctx.font = "80px sans-serif";
+				ctx.clearRect(0,0,3000,200);
+				ctx.fillText(node.data['alias'], 100, 100);
+				break;
+			}
+		}
+		if (idx>regionCount){ctx.clearRect(0,0,3000,200);}
+	};
+	
 }
 
 function DrawBehaviorBar(title,BDPC_type)

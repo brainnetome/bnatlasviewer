@@ -63,13 +63,13 @@ window.addEventListener("load",function()
 			handler("display-y");
 			handler("display-z");
 
-			$.ajax("BDf_FDR05.json").done(function(data){BDf_FDR05 = data;});
-			$.ajax("PCf_FDR05.json").done(function(data){PCf_FDR05 = data;});
+			$.ajax("js/bnatlasviewer/BDf_FDR05.json").done(function(data){BDf_FDR05 = data;});
+			$.ajax("js/bnatlasviewer/PCf_FDR05.json").done(function(data){PCf_FDR05 = data;});
 
 			// load fiber images
 			$.ajax("images/imglist.txt").done(function(responseText2){
 				$("#imglist").html(responseText2);
-				initializeFiber('den');
+				initializeFiber('fib');
 				initializeFiber('fun');
 				$('#plugins4').jstree('select_node','1');
 			});
@@ -84,7 +84,7 @@ window.addEventListener("load",function()
 		$treeview.jstree({
 			'core' : {
 				'data' : {
-					"url" : "bnatlas_tree.json",
+					"url" : "js/bnatlasviewer/bnatlas_tree.json",
 					"dataType" : "json" // needed only if you do not supply JSON headers
 				}
 			},
@@ -248,14 +248,20 @@ window.addEventListener("load",function()
 		MouseOutAreaHandler(e);
 		
   	var title=e.target.title;
-		viewFiberByTitle(title);
-		// DrawFiber('fib');
-		DrawFiber('den');
-		DrawFiber('fun');
-  	// document.getElementById("label").innerHTML=title;
-		DrawBehaviorBar(title,'BDf_FDR05');
-		DrawBehaviorBar(title,'PCf_FDR05');
-		highlightAreasByTitle(title);
+		// viewFiberByTitle(title);
+		// // DrawFiber('fib');
+		// DrawFiber('den');
+		// DrawFiber('fun');
+		// DrawBehaviorBar(title,'BDf_FDR05');
+		// DrawBehaviorBar(title,'PCf_FDR05');
+		// highlightAreasByTitle(title);
+
+		var idx=GLOBAL_title2ind[title];
+		console.log(idx+1);
+		var $treeview = $('#plugins4');
+		$treeview.jstree('close_all');
+		$treeview.jstree('deselect_all');
+		$treeview.jstree('select_node',idx+1);
   }
 
   function MouseOutAreaHandler(e)
@@ -418,7 +424,8 @@ function highlightAreasByTitle(title)
 
 function Update()
 {
-	if ($('#atlas-checkbox').prop('checked')){
+	//if ($('#atlas-checkbox').prop('checked'))
+	{
 		for (var idx=0;idx<3;idx++){
 			var canvas=document.getElementById("display-"+GLOBAL.num2dim[idx]);
 			var img=document.getElementById("display-"+GLOBAL.num2dim[idx]+"-img");
@@ -430,7 +437,7 @@ function Update()
 		// DrawBehaviorBar(title,'BDf_FDR05');
 		// DrawBehaviorBar(title,'PCf_FDR05');
 		document.getElementById("opacity").innerHTML="opacity:"+GLOBAL.opacity.toFixed(1);
-	}else{
+		// }else{
 		// DrawConnectogram(title);
 	}
 }
@@ -506,15 +513,18 @@ function DrawConnectogram(title){
 	// var hh = canvas.height;
 	if (canvas.getContext){
 		var ctx = canvas.getContext("2d");
+		var node = $('#plugins4').jstree('get_node',ind.toString());
 		img.onload = function(){
 			// ctx.drawImage(img,0,0,3000,3000,0,0,640,640);
 			ctx.clearRect(0,0,3000,3000);
+			ctx.fillStyle = "#555";
+			ctx.fillRect(0, 0, 3000, 3000);
 			ctx.drawImage(img,0,0,3000,3000);
+			ctx.fillStyle = "#555";
+			ctx.fillRect(0,0,3000,120);
 			ctx.font = "80px sans-serif";
-			ctx.clearRect(0,0,3000,200);
-			var $treeview = $('#plugins4');
-			var node = $treeview.jstree('get_node',ind.toString())
-			ctx.fillText(node.data['alias'], 100, 100);
+			ctx.fillStyle = "#fff";
+			ctx.fillText('['+node.id+']:'+node.data['alias'], 40, 80);
 		}
 	}
 	
@@ -569,12 +579,14 @@ function DrawConnectogram(title){
 			ctx.closePath();
 			if (ctx.isPointInPath(posX,posY)){
 				ctx.font = "80px sans-serif";
-				ctx.clearRect(0,0,3000,200);
-				ctx.fillText(node.data['alias'], 100, 100);
+				ctx.fillStyle = "#555";
+				ctx.fillRect(0,0,3000,120);
+				ctx.fillStyle = "#fff";
+				ctx.fillText('['+node.id+']:'+node.data['alias'], 40, 80);
 				break;
 			}
 		}
-		if (idx>regionCount){ctx.clearRect(0,0,3000,200);}
+		if (idx>regionCount){ctx.fillStyle = "#555";ctx.fillRect(0,0,3000,120);}
 	};
 	
 }

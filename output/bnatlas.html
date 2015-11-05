@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>Brainnetome Atlas</title>
-  <script type="text/javascript" src="data_centers.json"></script>
-  <script type="text/javascript" src="js/bnatlasviewer.js"></script>
-	<script type="text/javascript"  src="js/jquery.min.js"></script>
-	<script type="text/javascript"  src="js/jstree.min.js"></script>
-	<script type="text/javascript"  src="js/canvasjs.min.js"></script>
+  <script type="text/javascript" src="js/bnatlasviewer/data_centers.json"></script>
+  <script type="text/javascript" src="js/bnatlasviewer/bnatlasviewer.js"></script>
+	<script type="text/javascript"  src="js/bnatlasviewer/jquery.min.js"></script>
+	<script type="text/javascript"  src="js/bnatlasviewer/jstree.min.js"></script>
+	<script type="text/javascript"  src="js/bnatlasviewer/canvasjs.min.js"></script>
   <link rel="stylesheet" href="css/themes/default/style.min.css" />
 	<style type="text/css">
 		.jstree-default{font-family:sans-serif;font-size:10pt;};</style>
@@ -37,31 +37,31 @@
 	<div id="container-y" class="figure" 
 		 style="margin:5px;width:181px;height:181px;position:relative;float:left;">
 	  <canvas id="display-y" class="slice-display"></canvas>
-  	  <img id="display-y-img-phony" src="mask-1-001.png" usemap="#map-1-90"
+  	  <img id="display-y-img-phony" src="images/mask-1-001.png" usemap="#map-1-90"
 		   style="opacity:0;position:absolute;left:0px;top:0px;padding:0px;border:0px;">
 	  <div style="display:none;margin:0px;width:181px;height:181px;">
-		<img id="display-y-img" src="imgseq-y.png">
-		<img id="display-y-img-bg" src="imgseq-y-bg.png">
+		<img id="display-y-img" src="images/imgseq-y.png">
+		<img id="display-y-img-bg" src="images/imgseq-y-bg.png">
 	  </div>
 	</div>
 	<div id="container-x" class="figure" 
 		 style="margin:5px;width:217px;height:181px;position:relative;margin-left:195px;">
   	  <canvas id="display-x" class="slice-display"></canvas>
-  	  <img id="display-x-img-phony" src="mask-0-001.png" usemap="#map-0-90"
+  	  <img id="display-x-img-phony" src="images/mask-0-001.png" usemap="#map-0-90"
 		   style="opacity:0;position:absolute;left:0px;top:0px;padding:0px;border:0px;">
   	  <div style="display:none;margin:0px;width:217px;height:181px;">
-  		<img id="display-x-img" src="imgseq-x.png">
-  		<img id="display-x-img-bg" src="imgseq-x-bg.png">
+  		<img id="display-x-img" src="images/imgseq-x.png">
+  		<img id="display-x-img-bg" src="images/imgseq-x-bg.png">
   	  </div>
 	</div>
 	<div id="container-z" class="figure" 
 		 style="margin:5px;width:181px;height:217px;position:relative;clear:both;float:left;">
   	  <canvas id="display-z" class="slice-display"></canvas>
-  	  <img id="display-z-img-phony" src="mask-2-001.png" usemap="#map-2-90"
+  	  <img id="display-z-img-phony" src="images/mask-2-001.png" usemap="#map-2-90"
 		   style="opacity:0;position:absolute;left:0px;top:0px;padding:0px;border:0px;">
    	  <div style="display:none;margin:0px;width:181px;height:217px;">
-  		<img id="display-z-img" src="imgseq-z.png">
-  		<img id="display-z-img-bg" src="imgseq-z-bg.png">
+  		<img id="display-z-img" src="images/imgseq-z.png">
+  		<img id="display-z-img-bg" src="images/imgseq-z-bg.png">
   	  </div>
 	</div>
 	<div style="padding-top:20px;margin-left:195px;">
@@ -106,14 +106,15 @@ style="padding:0px;margin-left:300px;height:200px;width:50%;">
 
 	<!-- splash screen -->
   <div>
-	<img id="display-splash" src="loading.gif"
+	<img id="display-splash" src="images/loading.gif"
   		 style="opacity:1;position:absolute;left:20px;top:30px;padding:0px;border:0px;width:420px;">
   </div>
 </div> 
 
 <!-- connectogram diaplay -->
-<div id="connectogram-panel" style="position:relative;float:left;padding:0px;display:none;">
-	<canvas id="display-cgram" width="3000px" height="3000px" style="width:640px;height:640px;"></canvas>
+<div id="connectogram-panel" 
+		 style="position:relative;float:left;padding:10px 10px 1px 22px;display:none;">
+	<canvas id="display-cgram" width="3000px" height="3000px" style="width:680px;height:680px;"></canvas>
 	<!-- <img id="display-cgram-img" src="images/connectogram/001.png" -->
 	<!-- 		 style="width:640px;"> -->
 	<!-- position:relative;left:0px;top:0px;padding:0px;border:0px;display:none; -->

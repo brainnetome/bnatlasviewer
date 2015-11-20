@@ -3692,12 +3692,12 @@
 "parent":"#"
 },
 {
-"text":"Cun, Cuneus",
-"id":"Cun, Cuneus",
+"text":"MVOcC, MedioVentral Occipital Cortex",
+"id":"MVOcC, MedioVentral Occipital Cortex",
 "parent":"Occipital Lobe"
 },
 {
-"text":"Cun_L_5_1",
+"text":"MVOcC_L_5_1",
 "data":{
 "alias":"cLinG, caudal lingual gyrus",
 "cgram":[
@@ -3712,11 +3712,11 @@
 ]
 },
 "id":"189",
-"parent":"Cun, Cuneus",
+"parent":"MVOcC, MedioVentral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"Cun_R_5_1",
+"text":"MVOcC_R_5_1",
 "data":{
 "alias":"cLinG, caudal lingual gyrus",
 "cgram":[
@@ -3731,11 +3731,11 @@
 ]
 },
 "id":"190",
-"parent":"Cun, Cuneus",
+"parent":"MVOcC, MedioVentral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"Cun_L_5_2",
+"text":"MVOcC_L_5_2",
 "data":{
 "alias":"rCunG, rostral cuneus gyrus",
 "cgram":[
@@ -3750,11 +3750,11 @@
 ]
 },
 "id":"191",
-"parent":"Cun, Cuneus",
+"parent":"MVOcC, MedioVentral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"Cun_R_5_2",
+"text":"MVOcC_R_5_2",
 "data":{
 "alias":"rCunG, rostral cuneus gyrus",
 "cgram":[
@@ -3769,11 +3769,11 @@
 ]
 },
 "id":"192",
-"parent":"Cun, Cuneus",
+"parent":"MVOcC, MedioVentral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"Cun_L_5_3",
+"text":"MVOcC_L_5_3",
 "data":{
 "alias":"cCunG, caudal cuneus gyrus",
 "cgram":[
@@ -3788,11 +3788,11 @@
 ]
 },
 "id":"193",
-"parent":"Cun, Cuneus",
+"parent":"MVOcC, MedioVentral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"Cun_R_5_3",
+"text":"MVOcC_R_5_3",
 "data":{
 "alias":"cCunG, caudal cuneus gyrus",
 "cgram":[
@@ -3807,11 +3807,11 @@
 ]
 },
 "id":"194",
-"parent":"Cun, Cuneus",
+"parent":"MVOcC, MedioVentral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"Cun_L_5_4",
+"text":"MVOcC_L_5_4",
 "data":{
 "alias":"rLinG, rostral lingual gyrus",
 "cgram":[
@@ -3826,11 +3826,11 @@
 ]
 },
 "id":"195",
-"parent":"Cun, Cuneus",
+"parent":"MVOcC, MedioVentral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"Cun_R_5_4",
+"text":"MVOcC_R_5_4",
 "data":{
 "alias":"rLinG, rostral lingual gyrus",
 "cgram":[
@@ -3845,11 +3845,11 @@
 ]
 },
 "id":"196",
-"parent":"Cun, Cuneus",
+"parent":"MVOcC, MedioVentral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"Cun_L_5_5",
+"text":"MVOcC_L_5_5",
 "data":{
 "alias":"vmPOS,ventomeial parietooccipital sulcus",
 "cgram":[
@@ -3864,11 +3864,11 @@
 ]
 },
 "id":"197",
-"parent":"Cun, Cuneus",
+"parent":"MVOcC, MedioVentral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"Cun_R_5_5",
+"text":"MVOcC_R_5_5",
 "data":{
 "alias":"vmPOS,ventomeial parietooccipital sulcus",
 "cgram":[
@@ -3883,16 +3883,16 @@
 ]
 },
 "id":"198",
-"parent":"Cun, Cuneus",
+"parent":"MVOcC, MedioVentral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"OcG, Occipital Gyrus",
-"id":"OcG, Occipital Gyrus",
+"text":"LOcC, Lateral Occipital Cortex",
+"id":"LOcC, Lateral Occipital Cortex",
 "parent":"Occipital Lobe"
 },
 {
-"text":"OcG_L_4_1",
+"text":"LOcC_L_4_1",
 "data":{
 "alias":"mOccG, middle occipital gyrus",
 "cgram":[
@@ -3907,11 +3907,11 @@
 ]
 },
 "id":"199",
-"parent":"OcG, Occipital Gyrus",
+"parent":"LOcC, Lateral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"OcG_R_4_1",
+"text":"LOcC_R_4_1",
 "data":{
 "alias":"mOccG, middle occipital gyrus",
 "cgram":[
@@ -3926,13 +3926,13 @@
 ]
 },
 "id":"200",
-"parent":"OcG, Occipital Gyrus",
+"parent":"LOcC, Lateral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"OcG_L_4_2",
+"text":"LOcC_L_4_2",
 "data":{
-"alias":"V5/MT, area V5/MT",
+"alias":"V5/MT+, area V5/MT+",
 "cgram":[
 863,
 2464,
@@ -3945,13 +3945,13 @@
 ]
 },
 "id":"201",
-"parent":"OcG, Occipital Gyrus",
+"parent":"LOcC, Lateral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"OcG_R_4_2",
+"text":"LOcC_R_4_2",
 "data":{
-"alias":"V5/MT, area V5/MT",
+"alias":"V5/MT+, area V5/MT+",
 "cgram":[
 2131,
 2467,
@@ -3964,11 +3964,11 @@
 ]
 },
 "id":"202",
-"parent":"OcG, Occipital Gyrus",
+"parent":"LOcC, Lateral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"OcG_L_4_3",
+"text":"LOcC_L_4_3",
 "data":{
 "alias":"OPC, occipital polar cortex",
 "cgram":[
@@ -3983,11 +3983,11 @@
 ]
 },
 "id":"203",
-"parent":"OcG, Occipital Gyrus",
+"parent":"LOcC, Lateral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"OcG_R_4_3",
+"text":"LOcC_R_4_3",
 "data":{
 "alias":"OPC, occipital polar cortex",
 "cgram":[
@@ -4002,11 +4002,11 @@
 ]
 },
 "id":"204",
-"parent":"OcG, Occipital Gyrus",
+"parent":"LOcC, Lateral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"OcG_L_4_4",
+"text":"LOcC_L_4_4",
 "data":{
 "alias":"iOccG, inferior occipital gyrus",
 "cgram":[
@@ -4021,11 +4021,11 @@
 ]
 },
 "id":"205",
-"parent":"OcG, Occipital Gyrus",
+"parent":"LOcC, Lateral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"OcG_R_4_4",
+"text":"LOcC_R_4_4",
 "data":{
 "alias":"iOccG, inferior occipital gyrus",
 "cgram":[
@@ -4040,11 +4040,11 @@
 ]
 },
 "id":"206",
-"parent":"OcG, Occipital Gyrus",
+"parent":"LOcC, Lateral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"sOcG_L_2_1",
+"text":"LOcG_L_2_1",
 "data":{
 "alias":"msOccG, medial superior occipital gyrus",
 "cgram":[
@@ -4059,11 +4059,11 @@
 ]
 },
 "id":"207",
-"parent":"OcG, Occipital Gyrus",
+"parent":"LOcC, Lateral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"sOcG_R_2_1",
+"text":"LOcG_R_2_1",
 "data":{
 "alias":"msOccG, medial superior occipital gyrus",
 "cgram":[
@@ -4078,11 +4078,11 @@
 ]
 },
 "id":"208",
-"parent":"OcG, Occipital Gyrus",
+"parent":"LOcC, Lateral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"sOcG_L_2_2",
+"text":"LOcG_L_2_2",
 "data":{
 "alias":"lsOccG, lateral superior occipital gyrus",
 "cgram":[
@@ -4097,11 +4097,11 @@
 ]
 },
 "id":"209",
-"parent":"OcG, Occipital Gyrus",
+"parent":"LOcC, Lateral Occipital Cortex",
 "type":"file"
 },
 {
-"text":"sOcG_R_2_2",
+"text":"LOcG_R_2_2",
 "data":{
 "alias":"lsOccG, lateral superior occipital gyrus",
 "cgram":[
@@ -4116,7 +4116,7 @@
 ]
 },
 "id":"210",
-"parent":"OcG, Occipital Gyrus",
+"parent":"LOcC, Lateral Occipital Cortex",
 "type":"file"
 },
 {
@@ -4287,12 +4287,12 @@
 "type":"file"
 },
 {
-"text":"Str, Striatum",
-"id":"Str, Striatum",
+"text":"BG, Basal Ganglia",
+"id":"BG, Basal Ganglia",
 "parent":"Subcortical Nuclei"
 },
 {
-"text":"Str_L_6_1",
+"text":"BG_L_6_1",
 "data":{
 "alias":"vCa, ventral caudate",
 "cgram":[
@@ -4307,11 +4307,11 @@
 ]
 },
 "id":"219",
-"parent":"Str, Striatum",
+"parent":"BG, Basal Ganglia",
 "type":"file"
 },
 {
-"text":"Str_R_6_1",
+"text":"BG_R_6_1",
 "data":{
 "alias":"vCa, ventral caudate",
 "cgram":[
@@ -4326,11 +4326,11 @@
 ]
 },
 "id":"220",
-"parent":"Str, Striatum",
+"parent":"BG, Basal Ganglia",
 "type":"file"
 },
 {
-"text":"Str_L_6_2",
+"text":"BG_L_6_2",
 "data":{
 "alias":"GP, globus pallidus",
 "cgram":[
@@ -4345,11 +4345,11 @@
 ]
 },
 "id":"221",
-"parent":"Str, Striatum",
+"parent":"BG, Basal Ganglia",
 "type":"file"
 },
 {
-"text":"Str_R_6_2",
+"text":"BG_R_6_2",
 "data":{
 "alias":"GP, globus pallidus",
 "cgram":[
@@ -4364,11 +4364,11 @@
 ]
 },
 "id":"222",
-"parent":"Str, Striatum",
+"parent":"BG, Basal Ganglia",
 "type":"file"
 },
 {
-"text":"Str_L_6_3",
+"text":"BG_L_6_3",
 "data":{
 "alias":"NAC, nucleus accumbens",
 "cgram":[
@@ -4383,11 +4383,11 @@
 ]
 },
 "id":"223",
-"parent":"Str, Striatum",
+"parent":"BG, Basal Ganglia",
 "type":"file"
 },
 {
-"text":"Str_R_6_3",
+"text":"BG_R_6_3",
 "data":{
 "alias":"NAC, nucleus accumbens",
 "cgram":[
@@ -4402,11 +4402,11 @@
 ]
 },
 "id":"224",
-"parent":"Str, Striatum",
+"parent":"BG, Basal Ganglia",
 "type":"file"
 },
 {
-"text":"Str_L_6_4",
+"text":"BG_L_6_4",
 "data":{
 "alias":"vmPu, ventromedial putamen",
 "cgram":[
@@ -4421,11 +4421,11 @@
 ]
 },
 "id":"225",
-"parent":"Str, Striatum",
+"parent":"BG, Basal Ganglia",
 "type":"file"
 },
 {
-"text":"Str_R_6_4",
+"text":"BG_R_6_4",
 "data":{
 "alias":"vmPu, ventromedial putamen",
 "cgram":[
@@ -4440,11 +4440,11 @@
 ]
 },
 "id":"226",
-"parent":"Str, Striatum",
+"parent":"BG, Basal Ganglia",
 "type":"file"
 },
 {
-"text":"Str_L_6_5",
+"text":"BG_L_6_5",
 "data":{
 "alias":"dCa, dorsal caudate",
 "cgram":[
@@ -4459,11 +4459,11 @@
 ]
 },
 "id":"227",
-"parent":"Str, Striatum",
+"parent":"BG, Basal Ganglia",
 "type":"file"
 },
 {
-"text":"Str_R_6_5",
+"text":"BG_R_6_5",
 "data":{
 "alias":"dCa, dorsal caudate",
 "cgram":[
@@ -4478,11 +4478,11 @@
 ]
 },
 "id":"228",
-"parent":"Str, Striatum",
+"parent":"BG, Basal Ganglia",
 "type":"file"
 },
 {
-"text":"Str_L_6_6",
+"text":"BG_L_6_6",
 "data":{
 "alias":"dlPu, dorsolateral putamen",
 "cgram":[
@@ -4497,11 +4497,11 @@
 ]
 },
 "id":"229",
-"parent":"Str, Striatum",
+"parent":"BG, Basal Ganglia",
 "type":"file"
 },
 {
-"text":"Str_R_6_6",
+"text":"BG_R_6_6",
 "data":{
 "alias":"dlPu, dorsolateral putamen",
 "cgram":[
@@ -4516,7 +4516,7 @@
 ]
 },
 "id":"230",
-"parent":"Str, Striatum",
+"parent":"BG, Basal Ganglia",
 "type":"file"
 },
 {

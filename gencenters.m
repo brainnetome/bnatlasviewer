@@ -1,6 +1,6 @@
 function gencenters(atlasfile,mapfile)
 
-outputdir = 'output/';
+outputdir = 'output/js/bnatlasviewer/';
 
 nim=load_nii(atlasfile);
 d=nim.img;
